@@ -19307,13 +19307,13 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
 /***/ }),
 
-/***/ "./resources/css/app.css":
-/*!*******************************!*\
-  !*** ./resources/css/app.css ***!
-  \*******************************/
+/***/ "./resources/scss/app.scss":
+/*!*********************************!*\
+  !*** ./resources/scss/app.scss ***!
+  \*********************************/
 /***/ (() => {
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/css-loader/dist/cjs.js):\nError: Can't resolve 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap' in 'D:\\projects\\team-project\\resources\\css'\n    at finishWithoutResolve (D:\\projects\\team-project\\node_modules\\enhanced-resolve\\lib\\Resolver.js:293:18)\n    at D:\\projects\\team-project\\node_modules\\enhanced-resolve\\lib\\Resolver.js:362:15\n    at D:\\projects\\team-project\\node_modules\\enhanced-resolve\\lib\\Resolver.js:410:5\n    at eval (eval at create (D:\\projects\\team-project\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:16:1)\n    at D:\\projects\\team-project\\node_modules\\enhanced-resolve\\lib\\Resolver.js:410:5\n    at eval (eval at create (D:\\projects\\team-project\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:27:1)\n    at D:\\projects\\team-project\\node_modules\\enhanced-resolve\\lib\\DescriptionFilePlugin.js:87:43\n    at D:\\projects\\team-project\\node_modules\\enhanced-resolve\\lib\\Resolver.js:410:5\n    at eval (eval at create (D:\\projects\\team-project\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at D:\\projects\\team-project\\node_modules\\enhanced-resolve\\lib\\Resolver.js:410:5\n    at processResult (D:\\projects\\team-project\\node_modules\\webpack\\lib\\NormalModule.js:751:19)\n    at D:\\projects\\team-project\\node_modules\\webpack\\lib\\NormalModule.js:853:5\n    at D:\\projects\\team-project\\node_modules\\loader-runner\\lib\\LoaderRunner.js:399:11\n    at D:\\projects\\team-project\\node_modules\\loader-runner\\lib\\LoaderRunner.js:251:18\n    at context.callback (D:\\projects\\team-project\\node_modules\\loader-runner\\lib\\LoaderRunner.js:124:13)\n    at Object.loader (D:\\projects\\team-project\\node_modules\\css-loader\\dist\\index.js:155:5)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at runNextTicks (internal/process/task_queues.js:62:3)\n    at processImmediate (internal/timers.js:434:9)");
+throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nValidationError: Invalid options object. Sass Loader has been initialized using an options object that does not match the API schema.\n - options has an unknown property '0'. These properties are valid:\n   object { implementation?, sassOptions?, additionalData?, sourceMap?, webpackImporter? }\n    at validate (D:\\projects\\team-project\\node_modules\\webpack\\node_modules\\schema-utils\\dist\\validate.js:105:11)\n    at Object.getOptions (D:\\projects\\team-project\\node_modules\\webpack\\lib\\NormalModule.js:578:19)\n    at Object.loader (D:\\projects\\team-project\\node_modules\\sass-loader\\dist\\index.js:25:24)\n    at processResult (D:\\projects\\team-project\\node_modules\\webpack\\lib\\NormalModule.js:751:19)\n    at D:\\projects\\team-project\\node_modules\\webpack\\lib\\NormalModule.js:853:5\n    at D:\\projects\\team-project\\node_modules\\loader-runner\\lib\\LoaderRunner.js:399:11\n    at D:\\projects\\team-project\\node_modules\\loader-runner\\lib\\LoaderRunner.js:251:18");
 
 /***/ }),
 
@@ -19579,7 +19579,7 @@ module.exports = JSON.parse('{"_from":"axios@^0.21","_id":"axios@0.21.4","_inBun
 /******/ 	// Load entry module and return exports
 /******/ 	__webpack_require__("./resources/js/app.js");
 /******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
-/******/ 	var __webpack_exports__ = __webpack_require__("./resources/css/app.css");
+/******/ 	var __webpack_exports__ = __webpack_require__("./resources/scss/app.scss");
 /******/ 	
 /******/ })()
 ;
