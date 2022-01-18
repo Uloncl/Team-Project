@@ -19,10 +19,10 @@ Route::get('/', function () {
 
 Route::get('/home', function () {
   return view('main.index');
-})
+});
 Route::get('/about', function () {
   return view('main.about');
-})
+});
 Route::get('/projects', function () {
   return view('main.projects');
-})
+});
