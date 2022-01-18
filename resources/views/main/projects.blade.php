@@ -6,5 +6,6 @@
         <title>{{ config('app.name', 'Team Project')  }}</title>
     </head>
     <body>
+      <h1>projects</h1>
     </body>
 </html>
