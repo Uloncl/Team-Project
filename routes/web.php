@@ -16,7 +16,7 @@ use App\Http\Controllers\PagesController;
 
 Route::get('/',         			[PagesController::class, 'home']);
 Route::get('/about',    			[PagesController::class, 'about']);
-Route::get('/projects/{{name}}', 	[PagesController::class, 'projects']);
+Route::get('/projects/{name}', 	[PagesController::class, 'projects']);
 
 Auth::routes();
 
