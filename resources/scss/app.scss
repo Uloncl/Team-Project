@@ -1,19 +1,22 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
 
-// Variables
-@import "variables";
+@import "../node_modules/bootstrap/scss/functions";
 
-// Bootstrap
-@import "~bootstrap/scss/bootstrap";
+// Colours
+$theme-colors: (
+	"primary": 	#83eec7,
+	"secondary": #7ee1e7
+);
 
-//SCSS
-body {
-	font: 100% $font-stack;
-	background-color: $background;
-	color: $text-color;
-}
+$body-bg: 	 #f00;//#efefef;
+$body-color: #222;
+
+// Typography
+//$font-stack: "Roboto", sans-serif;
+//$font-size-base: 14px;
+//$line-height-base: 1.6;
+
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
