@@ -1,18 +1,15 @@
-//not used atm but could be used later to make app.scss cleaner
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
 
-// Colours
-$primary: 		#83eec7; !important
-$secondary: 	#7ee1e7; !important
-//$info: 			#62ffc8;
-//$success: 		#98ff46;
-//$warning: 		#e7c93e;
-//$danger:		#f14f2f;
+$theme-colors: (
+	"primary": 	#83eec7,
+	"secondary": #7ee1e7
+);
 
-
-$body-bg: 		#efefef; !important
-$body-color: 	#424242; !important
+$body-bg: 	 #f00;//#efefef;
+$body-color: #222;
 
 // Typography
-$font-stack: "Roboto", sans-serif; !important
-$font-size-base: 14px; !important
-$line-height-base: 1.6; !important
+//$font-stack: "Roboto", sans-serif;
+//$font-size-base: 14px;
+//$line-height-base: 1.6;

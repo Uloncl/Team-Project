@@ -1,7 +1,15 @@
-// Body
-$body-bg: #f8fafc;
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
+
+$theme-colors: (
+	"primary": 	#83eec7,
+	"secondary": #7ee1e7
+);
+
+$body-bg: 	 #f00;//#efefef;
+$body-color: #222;
 
 // Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
-$font-size-base: 0.9rem;
-$line-height-base: 1.6;
+//$font-stack: "Roboto", sans-serif;
+//$font-size-base: 14px;
+//$line-height-base: 1.6;
