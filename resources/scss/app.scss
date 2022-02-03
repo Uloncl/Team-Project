@@ -1,19 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 // Fonts
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 // Variables
-@import "variables";
+@import 'variables';
 
 // Bootstrap
-@import "~bootstrap/scss/bootstrap";
-
-//SCSS
-body {
-	font: 100% $font-stack;
-	background-color: $background;
-	color: $text-color;
-}
+//@import '~bootstrap/scss/bootstrap';
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
