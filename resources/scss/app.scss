@@ -3,10 +3,17 @@
 @tailwind utilities;
 
 // Fonts
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
 
 // Variables
 @import "variables";
 
 // Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "~bootstrap/scss/bootstrap";
+
+//SCSS
+body {
+	font: 100% $font-stack;
+	background-color: $background;
+	color: $text-color;
+}
