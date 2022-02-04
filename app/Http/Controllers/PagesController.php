@@ -13,7 +13,7 @@ class PagesController extends Controller
 	public function about() {
 		return view('main.about');
 	}
-	public function projects($name) {
+	public function project() {
 		return view('main.project');
 	}
 }
