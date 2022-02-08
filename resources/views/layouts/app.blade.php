@@ -14,10 +14,7 @@
 <body>
     <div id="app">
         @include('inc.navbar')
-        <!--<main class="py-4">-->
-        <main class="container">
-            @yield('content')
-        </main>
+		@yield('content')
     </div>
 </body>
 </html>
