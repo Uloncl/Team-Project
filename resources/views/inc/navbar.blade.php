@@ -20,7 +20,7 @@
             <li><a class="dropdown-item" href="{{ url('/settings') }}">Settings</a></li>
             <li><a class="dropdown-item" href="{{ url('/profile') }}">Profile</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Sign out</a></li>
+            <li><a class="dropdown-item" href="{{ url('/') }}">Sign out</a></li>
           </ul>
         </div>
       </div>
