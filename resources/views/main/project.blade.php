@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-	<h1>put a fancy map here</h1>
+	<main class="container">
+		<h1>put a map here</h1>
+	</main>
 @endsection

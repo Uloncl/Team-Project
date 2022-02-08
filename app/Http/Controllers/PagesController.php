@@ -16,4 +16,10 @@ class PagesController extends Controller
 	public function project() {
 		return view('main.project');
 	}
+	public function settings() {
+		return view('main.settings');
+	}
+	public function profile() {
+		return view('main.profile');
+	}
 }
