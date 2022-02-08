@@ -2,6 +2,7 @@
 
 @section('content')
 	<main class="container">
-		<h1>put a map here</h1>
+		<h1>project</h1>
+		<p>https://www.bing.com/api/maps/sdkrelease/mapcontrol/isdk/loadmapasync#HTML</p>
 	</main>
 @endsection
