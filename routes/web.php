@@ -17,6 +17,8 @@ use App\Http\Controllers\PagesController;
 Route::get('/',         [PagesController::class, 'home']);
 Route::get('/about',    [PagesController::class, 'about']);
 Route::get('/project',	[PagesController::class, 'project']);
+Route::get('/settings',	[PagesController::class, 'settings']);
+Route::get('/profile',	[PagesController::class, 'profile']);
 
 Auth::routes();
 
