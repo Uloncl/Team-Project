@@ -1,78 +1,28 @@
-<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-	<div class="container">
-		<a class="navbar-brand" href="{{ url('/') }}">
-			{{ config('app.name', 'Laravel') }}
-		</a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+<header class="p-3 mb-3 border-bottom">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="{{ url('/') }}" class="nav-link px-2 link-dark">{{ config('app.name', 'Laravel') }}</a></li>
+		  <li><a href="{{ url('/about') }}" class="nav-link px-2 link-dark">About</a></li>
+          <li><a href="{{ url('/project') }}" class="nav-link px-2 link-dark">Map</a></li>
+        </ul>
 
-		<div class="collapse navbar-collapse" id="navbarsExample07">
-			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-				<li class="nav-item">
-					<a class="navbar-brand" href="{{ url('/about') }}">
-						About
-					</a>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="{{ url('/projects') }}" id="dropdown07" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
-					<ul class="dropdown-menu" aria-labelledby="dropdown07">
-						<li><a class="dropdown-item" href="{{ url('/projects/lewis') }}">Lewis</a></li>
-						<li><a class="dropdown-item" href="{{ url('/projects/andrea') }}">Andrea</a></li>
-						<li><a class="dropdown-item" href="{{ url('/projects/ben') }}">Ben</a></li>
-						<li><a class="dropdown-item" href="{{ url('/projects/aryan') }}">Aryan</a></li>
-						<li><a class="dropdown-item" href="{{ url('/projects/mabel') }}">Mabel</a></li>
-					</ul>
-				</li>
-			</ul>
-			<form>
-				<input class="form-control" type="text" placeholder="Search" aria-label="Search">
-			</form>
-		</div>
-	</div>
-	<!-- <div class="container">
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
 
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			Left Side Of Navbar
-			<ul class="navbar-nav me-auto">
-
-			</ul>
-
-			Right Side Of Navbar
-			<ul class="navbar-nav ms-auto">
-				Authentication Links
-				@guest
-					@if (Route::has('login'))
-						<li class="nav-item">
-							<a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-						</li>
-					@endif
-
-					@if (Route::has('register'))
-						<li class="nav-item">
-							<a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-						</li>
-					@endif
-				@else
-					<li class="nav-item dropdown">
-						<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-							{{ Auth::user()->name }}
-						</a>
-
-						<div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="{{ route('logout') }}"
-							   onclick="event.preventDefault();
-											 document.getElementById('logout-form').submit();">
-								{{ __('Logout') }}
-							</a>
-
-							<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-								@csrf
-							</form>
-						</div>
-					</li>
-				@endguest
-			</ul>
-		</div>
-	</div>-->
-</nav>
+        <div class="dropdown text-end">
+          <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://external-preview.redd.it/I298iZdWplRbjz9GUMAm8qGgZ8rAKdeC3Q0wl9n1CVM.jpg?auto=webp&s=0a990e77e6bb0faadd35be60365e472485a2fa4e" alt="mdo" width="32" height="32" class="rounded-circle">
+          </a>
+          <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+            <li><a class="dropdown-item" href="#">this stuff doesnt work</a></li>
+            <li><a class="dropdown-item" href="{{ url('/settings') }}">Settings</a></li>
+            <li><a class="dropdown-item" href="{{ url('/profile') }}">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="{{ url('/') }}">Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>

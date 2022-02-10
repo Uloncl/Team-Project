@@ -13,19 +13,13 @@ class PagesController extends Controller
 	public function about() {
 		return view('main.about');
 	}
-	public function projects($name) {
-		if ($name == null){
-			return view('main.projects');
-		} elseif ($name == "lewis") {
-			return view('lewis.Lewis');
-		} elseif ($name == "andrea") {
-			return view('andrea.andrea');
-		} elseif ($name == "ben") {
-			return view('ben.ben');
-		} elseif ($name == "aryan") {
-			return view('aryan.aryan');
-		} elseif ($name == "mabel") {
-			return view('mabel.mabel');
-		}
+	public function project() {
+		return view('main.project');
+	}
+	public function settings() {
+		return view('main.settings');
+	}
+	public function profile() {
+		return view('main.profile');
 	}
 }
