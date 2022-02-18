@@ -8,18 +8,18 @@ use App\Http\Controllers\Controller;
 class PagesController extends Controller
 {
 	public function home() {
-		return view('main.index');
+		return view('index');
 	}
 	public function about() {
-		return view('main.about');
+		return view('about');
 	}
 	public function project() {
-		return view('main.project');
+		return view('project');
 	}
 	public function settings() {
-		return view('main.settings');
+		return view('settings');
 	}
 	public function profile() {
-		return view('main.profile');
+		return view('profile');
 	}
 }
