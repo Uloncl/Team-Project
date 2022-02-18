@@ -16,8 +16,8 @@
 </head>
 	<body>
 		<div id="app">
-			{{ $navbar }}
-			{{ $content }}
+			<x-navbar/>
+			{{ $slot }}
 		</div>
 	</body>
 </html>
