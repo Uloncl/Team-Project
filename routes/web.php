@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,11 +16,14 @@ use App\Http\Controllers\PagesController;
 */
 
 Route::get('/',         [PagesController::class, 'home']);
-Route::get('/about',    [PagesController::class, 'about']);
-Route::get('/project',	[PagesController::class, 'project']);
-Route::get('/settings',	[PagesController::class, 'settings']);
-Route::get('/profile',	[PagesController::class, 'profile']);
+Route::get('about',     [PagesController::class, 'about']);
+Route::get('project',	[PagesController::class, 'project']);
+Route::get('settings',	[PagesController::class, 'settings']);
+Route::get('profile',	[PagesController::class, 'profile']);
 
-Auth::routes();
+Route::get('/register',  [RegisterController::class, 'create']);
+Route::post('register',  [RegisterController::class, 'store']);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Auth::routes();
+
+//Route::get('home',     [PagesController::class, 'home']);
