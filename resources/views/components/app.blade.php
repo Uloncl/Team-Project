@@ -9,6 +9,8 @@
 
 		<title>{{ config('app.name', 'Laravel') }}</title>
 		<script src="{{ asset('js/app.js') }}" ></script>
+		<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
 		<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 	</head>
@@ -17,5 +19,6 @@
 			<x-navbar/>
 			{{ $slot }}
 		</div>
+		<x-flash/>
 	</body>
 </html>

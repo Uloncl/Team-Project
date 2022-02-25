@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\SessionsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,8 +22,11 @@ Route::get('project',	[PagesController::class, 'project']);
 Route::get('settings',	[PagesController::class, 'settings']);
 Route::get('profile',	[PagesController::class, 'profile']);
 
-Route::get('/register',  [RegisterController::class, 'create']);
-Route::post('register',  [RegisterController::class, 'store']);
+Route::get('/register',  [RegisterController::class, 'create'] )->middleware('guest');
+Route::post('/register', [RegisterController::class, 'store']  )->middleware('guest');
+Route::get('/login',     [SessionsController::class, 'create'] )->name('login');
+Route::get('/logout',    [SessionsController::class, 'destroy'])->middleware('auth');
+Route::post('/sessions', [SessionsController::class, 'store']  )->name('session');
 
 //Auth::routes();
 
