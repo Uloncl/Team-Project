@@ -11,18 +11,31 @@
 				<input type="search" class="form-control" placeholder="Search..." aria-label="Search">
 			</form>
 
-			<div class="dropdown text-end">
-				<a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-					<img src="https://external-preview.redd.it/I298iZdWplRbjz9GUMAm8qGgZ8rAKdeC3Q0wl9n1CVM.jpg?auto=webp&s=0a990e77e6bb0faadd35be60365e472485a2fa4e" alt="mdo" width="32" height="32" class="rounded-circle">
-				</a>
-				<ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
-					<li><a class="dropdown-item" href="#">this stuff doesnt work</a></li>
-					<li><a class="dropdown-item" href="{{ url('/settings') }}">Settings</a></li>
-					<li><a class="dropdown-item" href="{{ url('/profile') }}">Profile</a></li>
-					<li><hr class="dropdown-divider"></li>
-					<li><a class="dropdown-item" href="{{ url('/register') }}">register</a></li>
-				</ul>
-			</div>
+			<!--if($login)-->
+			
+				<div class="dropdown text-end">
+					<a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+						<img src="https://external-preview.redd.it/I298iZdWplRbjz9GUMAm8qGgZ8rAKdeC3Q0wl9n1CVM.jpg?auto=webp&s=0a990e77e6bb0faadd35be60365e472485a2fa4e" alt="mdo" width="32" height="32" class="rounded-circle">
+					</a>
+					<ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+						<!--<li><a class="dropdown-item" href="#">this stuff doesnt work</a></li>
+						<li><a class="dropdown-item" href="{{ url('/settings') }}">Settings</a></li>
+						<li><a class="dropdown-item" href="{{ url('/profile') }}">Profile</a></li>
+						<li><hr class="dropdown-divider"></li>-->
+						<li><a class="dropdown-item" href="{{ url('/register') }}">register</a></li>
+						<li><a class="dropdown-item" href="{{ url('#') }}">login</a></li>
+					</ul>
+				</div>
+				
+			<!--else
+
+				<div class="col-md-3 text-end">
+					<button type="button" class="btn btn-outline-primary me-2">Login</button>
+					<button type="button" class="btn btn-primary">Sign-up</button>
+				</div>
+
+			endif-->
+
 		</div>
 	</div>
 </header>
