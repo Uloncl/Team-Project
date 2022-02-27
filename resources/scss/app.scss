@@ -1,13 +1,14 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 // Variables
 @import 'variables';
 
-// Bootstrap
-//@import '~bootstrap/scss/bootstrap';
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/root";
+//custom
+@import 'custom';      
 
-@import 'custom';
+@import "node_modules/bootstrap/scss/bootstrap";
