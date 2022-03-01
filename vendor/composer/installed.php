@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'fa3a87d760405327cbe0c5cc848392b92232b251',
+        'reference' => 'c81cb750de2866bddd933e56f05819b77c8e54e3',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -400,7 +400,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'fa3a87d760405327cbe0c5cc848392b92232b251',
+            'reference' => 'c81cb750de2866bddd933e56f05819b77c8e54e3',
             'dev_requirement' => false,
         ),
         'laravel/sail' => array(
@@ -1077,12 +1077,12 @@
             'dev_requirement' => false,
         ),
         'symfony/mailer' => array(
-            'pretty_version' => 'v6.0.3',
-            'version' => '6.0.3.0',
+            'pretty_version' => 'v6.0.5',
+            'version' => '6.0.5.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/mailer',
             'aliases' => array(),
-            'reference' => 'd958befe7dbee9d2b2157ef6dfa9b103efa94f82',
+            'reference' => '0f4772db6521a1beb44529aa2c0c1e56f671be8f',
             'dev_requirement' => false,
         ),
         'symfony/mime' => array(
