@@ -2,9 +2,9 @@
 	<div class="container">
 		<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
 			<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-				<li><a href="{{ url('/') }}" class="nav-link px-2 text-black">{{ config('app.name', 'Laravel') }}</a></li>
-				<li><a href="{{ url('/about') }}" class="nav-link px-2 text-black">About</a></li>
-				<li><a href="{{ url('/project') }}" class="nav-link px-2 text-black">Map</a></li>
+				<li><a href="{{ url('/') }}" class="nav-link px-2 text-light">{{ config('app.name', 'Laravel') }}</a></li>
+				<li><a href="{{ url('/about') }}" class="nav-link px-2 text-light">About</a></li>
+				<li><a href="{{ url('/project') }}" class="nav-link px-2 text-light">Map</a></li>
 			</ul>
 
 			<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
@@ -39,17 +39,17 @@
 </header>
 
 -->
-<header class="bg-dark site-header sticky-top py-1 text-black">
+<header class="bg-dark site-header sticky-top py-1 text-light">
   <nav class="container d-flex flex-column flex-md-row justify-content-between">
     <a class="py-2" href="#" aria-label="Product">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
     </a>
-    <a class="py-2 d-none d-md-inline-block nav-link text-black" href="#">Tour</a>
-    <a class="py-2 d-none d-md-inline-block nav-link text-black" href="#">Product</a>
-    <a class="py-2 d-none d-md-inline-block nav-link text-black" href="#">Features</a>
-    <a class="py-2 d-none d-md-inline-block nav-link text-black" href="#">Enterprise</a>
-    <a class="py-2 d-none d-md-inline-block nav-link text-black" href="#">Support</a>
-    <a class="py-2 d-none d-md-inline-block nav-link text-black" href="#">Pricing</a>
-    <a class="py-2 d-none d-md-inline-block nav-link text-black" href="#">Cart</a>
+    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="#">Tour</a>
+    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="#">Product</a>
+    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="#">Features</a>
+    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="#">Enterprise</a>
+    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="#">Support</a>
+    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="#">Pricing</a>
+    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="#">Cart</a>
   </nav>
 </header>
