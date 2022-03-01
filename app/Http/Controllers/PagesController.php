@@ -14,6 +14,7 @@ class PagesController extends Controller
 		return view('about');
 	}
 	public function project() {
+        auth()->logout();
 		return view('project');
 	}
 	public function settings() {
