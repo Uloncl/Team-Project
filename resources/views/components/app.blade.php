@@ -18,6 +18,7 @@
 		<div id="app">
 			<x-navbar/>
 			{{ $slot }}
+			<x-footer/>
 		</div>
 		<x-flash/>
 	</body>
