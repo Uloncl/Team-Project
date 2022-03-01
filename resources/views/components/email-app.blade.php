@@ -1,3 +1,5 @@
+<!--just like app and serves the same purpose but this is only for emails-->
+
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 	<head>
@@ -14,11 +16,10 @@
 		<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 	</head>
-	<body class="bg-dark">
+	<body>
 		<div id="app">
 			<x-navbar/>
 			{{ $slot }}
-			<x-footer/>
 		</div>
 		<x-flash/>
 	</body>
