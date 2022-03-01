@@ -1,9 +1,5 @@
 <x-app>
 	<main class="container">
-<<<<<<< HEAD
-		<h1>{{ config('app.name', 'Laravel') }}</h1>
-		<h2> Hello, Ciao, TEST </h2>
-=======
   <body>
 
 
@@ -141,6 +137,5 @@
 
 
 </body>
->>>>>>> master
 	</main>
 </x-app>
