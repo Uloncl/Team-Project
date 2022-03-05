@@ -73,6 +73,5 @@
 		</div>
 
 	@endauth
-
   </nav>
 </header>
