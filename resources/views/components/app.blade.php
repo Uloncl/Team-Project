@@ -14,7 +14,7 @@
 		<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 	</head>
-	<body class="bg-light">
+	<body class="bg-sahara">
 		<div id="app">
 			<x-navbar/>
 			{{ $slot }}
