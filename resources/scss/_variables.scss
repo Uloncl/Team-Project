@@ -7,8 +7,24 @@ $cyan: #7ee1e7;
 
 $custom-theme-colors: (
   "turquoise": $turquoise,
-  "cyan": $cyan
+  "cyan": $cyan,
+  "orange":     $orange-300,
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800,
+  "sahara":     #fda93c
 );
+
+
+
 
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);
 $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
