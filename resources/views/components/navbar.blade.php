@@ -48,12 +48,12 @@
 			<path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path>
 			</svg>
     </a>
-    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="#">Tour</a>
-    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="#">Product</a>
-    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="#">Features</a>
-    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="#">Enterprise</a>
-    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="#">Support</a>
-    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="#">Pricing</a>
-    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="#">Cart</a>
+    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="tour">Tour</a>
+    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="product">Product</a>
+    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="features">Features</a>
+    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="enterprise">Enterprise</a>
+    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="support">Support</a>
+    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="pricing">Pricing</a>
+    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="cart">Cart</a>
   </nav>
 </header>

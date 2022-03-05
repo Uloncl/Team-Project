@@ -17,10 +17,25 @@ class PagesController extends Controller
         auth()->logout();
 		return view('project');
 	}
-	public function settings() {
-		return view('settings');
+	public function tour() {
+		return view('tour');
 	}
-	public function profile() {
-		return view('profile');
+	public function product() {
+		return view('product');
+	}
+	public function features() {
+		return view('features');
+	}
+	public function enterprise() {
+		return view('enterprise');
+	}
+	public function support() {
+		return view('support');
+	}
+	public function pricing() {
+		return view('pricing');
+	}
+	public function cart() {
+		return view('cart');
 	}
 }
