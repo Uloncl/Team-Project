@@ -44,12 +44,12 @@
     <a class="py-2" href="#" aria-label="Product">
 		<img src="{{ asset('img/Sahara-32px.png') }}" alt="Sahara Logo">
     </a>
-    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="#">Tour</a>
-    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="#">Product</a>
-    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="#">Features</a>
-    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="#">Enterprise</a>
-    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="#">Support</a>
-    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="#">Pricing</a>
-    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="#">Cart</a>
+    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="tour">Tour</a>
+    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="product">Product</a>
+    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="features">Features</a>
+    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="enterprise">Enterprise</a>
+    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="support">Support</a>
+    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="pricing">Pricing</a>
+    <a class="py-2 d-none d-md-inline-block nav-link text-light" href="cart">Cart</a>
   </nav>
 </header>
