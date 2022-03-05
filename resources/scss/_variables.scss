@@ -10,11 +10,28 @@ $custom-theme-colors: (
   "cyan": $cyan
 );
 
-$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+$colors: (
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange-400,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+);
+
+
+$theme-colors: map-merge($theme-colors, $custom-theme-colors, $colors);
 $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
 $utilities-colors: map-merge($utilities-colors, $theme-colors-rgb);
 $utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text");
-$utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
+$utilities-bg-colors: map-loop($colors, $utilities-colors, rgba-css-var, "$key", "bg");
 
 
 // Typography
