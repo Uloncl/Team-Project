@@ -1,5 +1,6 @@
 <x-app>
-    <main class="container text-light bg-dark">
+
+    <main class="container bg-sahara">
         <h1>This is pricing</h1>
         <p> Beep boop.</p>
     </main>
