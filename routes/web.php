@@ -2,8 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
-use App\Http\Controllers\RegisterController;
-use App\Http\Controllers\SessionsController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\VerificationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,17 +17,24 @@ use App\Http\Controllers\SessionsController;
 |
 */
 
-Route::get('/',         [PagesController::class, 'home']);
-Route::get('about',     [PagesController::class, 'about']);
-Route::get('project',	[PagesController::class, 'project']);
-Route::get('settings',	[PagesController::class, 'settings']);
-Route::get('profile',	[PagesController::class, 'profile']);
+Route::get('/',             [PagesController::class, 'home']);
+Route::get('about',         [PagesController::class, 'about']);
+Route::get('project',	    [PagesController::class, 'project']);
+Route::get('tour',	        [PagesController::class, 'tour']);
+Route::get('product',	    [PagesController::class, 'product']);
+Route::get('features',	    [PagesController::class, 'features']);
+Route::get('enterprise',	[PagesController::class, 'enterprise']);
+Route::get('support',	    [PagesController::class, 'support']);
+Route::get('pricing',	    [PagesController::class, 'pricing']);
+Route::get('cart',	        [PagesController::class, 'cart']);
 
-Route::get('/register',  [RegisterController::class, 'create'] )->middleware('guest');
-Route::post('/register', [RegisterController::class, 'store']  )->middleware('guest');
-Route::get('/login',     [SessionsController::class, 'create'] )->name('login');
-Route::get('/logout',    [SessionsController::class, 'destroy'])->middleware('auth');
-Route::post('/sessions', [SessionsController::class, 'store']  )->name('session');
+Route::get('/register',             [RegisterController::class, 'create']       )->middleware('guest');
+Route::post('/register',            [RegisterController::class, 'store']        )->middleware('guest');
+Route::get('/verify',               [VerificationController::class, 'notice']   )->middleware('auth')->name('verification.notice');
+Route::get('/verify/{id}/{hash}',   [VerificationController::class, 'verify']   )->middleware(['auth', 'signed'])->name('verification.verify');
+Route::get('/login',                [LoginController::class, 'create']          )->middleware('guest')->name('login');
+Route::get('/logout',               [LoginController::class, 'destroy']         )->middleware('auth')->name('logout');
+Route::post('/sessions',            [LoginController::class, 'store']           )->middleware('guest')->name('session');
 
 //Auth::routes();
 
