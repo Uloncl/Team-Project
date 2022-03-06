@@ -21,6 +21,9 @@ Route::get('/',             [PagesController::class, 'home']);
 Route::get('about',         [PagesController::class, 'about']);
 Route::get('project',	    [PagesController::class, 'project']);
 Route::get('games',	        [PagesController::class, 'games']);
+Route::get('prebuilt',	    [PagesController::class, 'prebuilt']);
+Route::get('components',	[PagesController::class, 'components']);
+Route::get('consoles',	    [PagesController::class, 'consoles']);
 
 Route::get('/register',             [RegisterController::class, 'create']       )->middleware('guest');
 Route::post('/register',            [RegisterController::class, 'store']        )->middleware('guest');

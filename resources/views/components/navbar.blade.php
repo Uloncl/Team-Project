@@ -5,9 +5,9 @@
 			<img src="{{ asset('img/Sahara-32px.png') }}" alt="Sahara Logo">
 		</a>
 		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="games">Games</a>
-		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="components">Pre-built PCs</a>
-		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="consoles">Computer Components</a>
-		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="prebuilds">Consoles</a>
+		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="prebuilt">Pre-built PCs</a>
+		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="components">Computer Components</a>
+		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="consoles">Consoles</a>
 	</div>
 
 	@auth
