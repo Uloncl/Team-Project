@@ -17,16 +17,13 @@ use App\Http\Controllers\Auth\VerificationController;
 |
 */
 
-Route::get('/',             [PagesController::class, 'home']);
-Route::get('about',         [PagesController::class, 'about']);
-Route::get('project',	    [PagesController::class, 'project']);
-Route::get('tour',	        [PagesController::class, 'tour']);
-Route::get('product',	    [PagesController::class, 'product']);
-Route::get('features',	    [PagesController::class, 'features']);
-Route::get('enterprise',	[PagesController::class, 'enterprise']);
-Route::get('support',	    [PagesController::class, 'support']);
-Route::get('pricing',	    [PagesController::class, 'pricing']);
-Route::get('cart',	        [PagesController::class, 'cart']);
+Route::controller(PagesController::class)->group(function () {
+    Route::get('/',                   'home');
+    Route::get('about',               'about');
+    Route::get('/products/{product}', 'products');
+    Route::get('profile',             'profile');
+    Route::get('settings',            'settings');
+});
 
 Route::get('/register',             [RegisterController::class, 'create']       )->middleware('guest');
 Route::post('/register',            [RegisterController::class, 'store']        )->middleware('guest');
