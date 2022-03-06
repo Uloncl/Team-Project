@@ -21,4 +21,16 @@ class PagesController extends Controller
 	public function games() {
 		return view('games');
 	}
+
+	public function prebuilt() {
+		return view('prebuilt');
+	}
+
+	public function components() {
+		return view('components');
+	}
+
+	public function consoles() {
+		return view('consoles');
+	}
 }
