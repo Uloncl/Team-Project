@@ -20,6 +20,6 @@ class PagesController extends Controller
 		return view('settings');
 	}
 	public function products($product) {
-		return view('products', [$product]);
+		return view('products', compact('product'));
 	}
 }
