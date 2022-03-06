@@ -55,6 +55,12 @@
       </div>
     </div>
 
+    <div class="d-flex justify-content-center flex-wrap">
+      <x-buttons/>
+
+    </div>
+ 
+
     <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
       <x-product/>
       <x-product/>
