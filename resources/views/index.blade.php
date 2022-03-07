@@ -57,8 +57,8 @@
 
 <div class="d-flex bd-highlight">
   <div class="flex-fill flex-shrink-0 bd-highlight"><x-buttons/></div>
-  <div class="flex-fill flex-shrink-0 bd-highlight"><x-buttons/></div>
-  <div class="flex-fill flex-shrink-0 bd-highlight"><x-buttons/></div>
+  <!-- <div class="flex-fill flex-shrink-0 bd-highlight"><x-buttons/></div> -->
+  <!-- <div class="flex-fill flex-shrink-0 bd-highlight"><x-buttons/></div> -->
 </div>
  
 
