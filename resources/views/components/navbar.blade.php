@@ -26,9 +26,9 @@
 
 	@else
 
-		<div class="col-md-3">
-			<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="{{ url('/login') }}" role="button">Login</button>
-			<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="{{ url('/register') }}" role="button">Register</a>
+		<div class="row">
+			<a class="col-sm py-2 d-none d-md-inline-block nav-link text-dark" href="{{ url('/login') }}" role="button">Login</button>
+			<a class="col-sm py-2 d-none d-md-inline-block nav-link text-dark" href="{{ url('/register') }}" role="button">Register</a>
 		</div>
 
 	@endauth

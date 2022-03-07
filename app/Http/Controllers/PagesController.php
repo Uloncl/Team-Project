@@ -20,6 +20,27 @@ class PagesController extends Controller
 		return view('settings');
 	}
 	public function products($product) {
-		return view('products', compact('product'));
+		switch ($product) {
+			case "games":
+				$product = "Games";
+				return view('products', compact('product'));
+				break;
+			case "components":
+				$product = "Components";
+				return view('products', compact('product'));
+				break;
+			case "consoles":
+				$product = "Consoles";
+				return view('products', compact('product'));
+				break;
+			case "prebuilds":
+				$product = "Pre-Builds";
+				return view('products', compact('product'));
+				break;
+			default:
+				$product = "no dont do that";
+				return view('products', compact('product'));
+				break;
+		}
 	}
 }
