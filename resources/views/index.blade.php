@@ -24,7 +24,7 @@
             <img class="d-block w-100" src="../img/banner-games.jpg" alt="Third slide">
             <div class="container">
               <div class="carousel-caption">
-                <h1>Browse our Games</h1>
+                <h1>Browse games</h1>
                 <p>Find the best deals for games on Steam, Epic Games, Origin and more!</p>
                 <p><a class="btn btn-lg btn-primary bg-sahara" href="about">See games</a></p>
               </div>
@@ -56,9 +56,15 @@
     </div>
 
 <div class="d-flex bd-highlight">
+<<<<<<< HEAD
   <div class="ml-4 flex-shrink-0 bd-highlight"><x-buttons/></div>
   <div class="ml-4 flex-shrink-0 bd-highlight"><x-buttons/></div>
   <div class="ml-4 flex-shrink-0 bd-highlight"><x-buttons/></div>
+=======
+  <div class="flex-fill flex-shrink-0 bd-highlight"><x-buttons/></div>
+  <!-- <div class="flex-fill flex-shrink-0 bd-highlight"><x-buttons/></div> -->
+  <!-- <div class="flex-fill flex-shrink-0 bd-highlight"><x-buttons/></div> -->
+>>>>>>> 76e2d3bbd1be59d445e19996e2fa6a8db0db1120
 </div>
  
 
