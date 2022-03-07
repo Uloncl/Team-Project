@@ -33,7 +33,8 @@ Route::get('/verify/{id}/{hash}',   [VerificationController::class, 'verify']   
 Route::get('/login',                [LoginController::class, 'create']          )->middleware('guest')->name('login');
 Route::get('/logout',               [LoginController::class, 'destroy']         )->middleware('auth')->name('logout');
 Route::post('/sessions',            [LoginController::class, 'store']           )->middleware('guest')->name('session');
-Route::get('/',                     [MailController::class, 'sendMail']);
+
+Route::get('/email',                [MailController::class, 'sendMail']);
 
 //Auth::routes();
 
