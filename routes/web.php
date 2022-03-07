@@ -5,6 +5,7 @@ use App\Http\Controllers\PagesController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\VerificationController;
+use App\Http\Controller\MailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,6 +36,7 @@ Route::get('/verify/{id}/{hash}',   [VerificationController::class, 'verify']   
 Route::get('/login',                [LoginController::class, 'create']          )->middleware('guest')->name('login');
 Route::get('/logout',               [LoginController::class, 'destroy']         )->middleware('auth')->name('logout');
 Route::post('/sessions',            [LoginController::class, 'store']           )->middleware('guest')->name('session');
+Route::get('/',                     [MailController::class, 'sendMail']);
 
 //Auth::routes();
 
