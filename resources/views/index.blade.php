@@ -1,6 +1,5 @@
 <x-app>
-	<main class="container">
-    <div class="position-relative overflow-hidden m-md-3 text-center">
+    <div class="position-relative overflow-hidden m-b-3 text-center">
       <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" style="height: 400px">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
@@ -94,6 +93,5 @@
       <x-product/>
     </div>
 
-	</main>
   <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </x-app>

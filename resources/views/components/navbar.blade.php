@@ -6,8 +6,8 @@
 		</a>
 		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="{{ url('/products/games') }}">Games</a>
 		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="{{ url('/products/components') }}">PC Components</a>
-		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="{{ url('/products/consoles') }}">Prebuilt PCs</a>
-		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="{{ url('/products/prebuilds') }}">Consoles</a>
+		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="{{ url('/products/prebuilds') }}">Prebuilt PCs</a>
+		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="{{ url('/products/consoles') }}">Consoles</a>
 	</div>
 
 	@auth
