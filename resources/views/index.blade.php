@@ -10,7 +10,7 @@
       <div class="carousel-inner" style="height: 400px">
         <div class="carousel-item active" style="height: 400px">
           <img class="d-block w-100" src="../img/banner-prebuilt.jpg" alt="Third slide">
-          <div class="container">
+          <div>
             <div class="carousel-caption text-start">
               <h1>Unleash the power</h1>
               <p>Reliable and highly configurable prebuilt PCs, perfect for people new to PC gaming!</p>
@@ -21,7 +21,7 @@
 
         <div class="carousel-item" style="height: 400px">
           <img class="d-block w-100" src="../img/banner-games.jpg" alt="Third slide">
-          <div class="container">
+          <div>
             <div class="carousel-caption">
               <h1>Browse games</h1>
               <p>Find the best deals for games on Steam, Epic Games, Origin and more!</p>
@@ -32,7 +32,7 @@
         
         <div class="carousel-item" style="height: 400px">
         <img class="d-block w-100" src="../img/banner-signup.jpg" alt="Third slide">
-          <div class="container">
+          <div>
             <div class="carousel-caption text-end">
               <h1>Stay updated</h1>
               <p>Register now to wishlist products, checkout faster, and receive weekly deals right in your inbox!</p>
@@ -54,22 +54,22 @@
     </div>
   </div>
 
-  <div class="row m-3">
+  <div class="row m-5">
     <div class="col-sm">
     <a class= "text-decoration-none text-dark" href="{{ url('/products/games') }}"><img class="m-auto d-flex w-50" src="../img/gaming.png" alt="Image missing because we are cool!"><h3 class="text-center pt-2">Games</h3></a>
     </div>
     <div class="col-sm">
-    <a class= "text-decoration-none text-dark" href="{{ url('/products/Computers') }}"><img class="m-auto d-flex w-50" src="../img/prebuild.png" alt="Image missing because we are cool!"><h3 class="text-center pt-2">Computers</h3></a>
+    <a class= "text-decoration-none text-dark" href="{{ url('/products/prebuilds') }}"><img class="m-auto d-flex w-50" src="../img/prebuild.png" alt="Image missing because we are cool!"><h3 class="text-center pt-2">Computers</h3></a>
     </div>
     <div class="col-sm">
-    <a class= "text-decoration-none text-dark" href="{{ url('/products/Consoles') }}"><img class="m-auto d-flex w-50" src="../img/console.png" alt="Image missing because we are cool!"><h3 class="text-center pt-2">Consoles</h3></a>
+    <a class= "text-decoration-none text-dark" href="{{ url('/products/consoles') }}"><img class="m-auto d-flex w-50" src="../img/console.png" alt="Image missing because we are cool!"><h3 class="text-center pt-2">Consoles</h3></a>
     </div>
     <div class="col-sm">
-      <a class= "text-decoration-none text-dark" href="{{ url('/products/Components') }}"><img class="m-auto d-flex w-50" src="../img/component.png" alt="Image missing because we are cool!"><h3 class="text-center pt-2">Components</h3></a>
+      <a class= "text-decoration-none text-dark" href="{{ url('/products/components') }}"><img class="m-auto d-flex w-50" src="../img/component.png" alt="Image missing because we are cool!"><h3 class="text-center pt-2">Components</h3></a>
     </div>
   </div>
 
-  <div class="row">
+  <div class="row mx-5">
     <x-product/>
     <x-product/>
     <x-product/>
