@@ -56,15 +56,9 @@
     </div>
 
 <div class="d-flex bd-highlight">
-<<<<<<< HEAD
   <div class="ml-4 flex-shrink-0 bd-highlight"><x-buttons/></div>
   <div class="ml-4 flex-shrink-0 bd-highlight"><x-buttons/></div>
   <div class="ml-4 flex-shrink-0 bd-highlight"><x-buttons/></div>
-=======
-  <div class="flex-fill flex-shrink-0 bd-highlight"><x-buttons/></div>
-  <!-- <div class="flex-fill flex-shrink-0 bd-highlight"><x-buttons/></div> -->
-  <!-- <div class="flex-fill flex-shrink-0 bd-highlight"><x-buttons/></div> -->
->>>>>>> 76e2d3bbd1be59d445e19996e2fa6a8db0db1120
 </div>
  
 
