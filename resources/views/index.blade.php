@@ -55,12 +55,23 @@
       </div>
     </div>
 
-<div class="d-flex bd-highlight">
-  <div class="ml-4 flex-shrink-0 bd-highlight"><x-buttons/></div>
-  <div class="ml-4 flex-shrink-0 bd-highlight"><x-buttons/></div>
-  <div class="ml-4 flex-shrink-0 bd-highlight"><x-buttons/></div>
-</div>
+<!--<div class="row">
+  <div class="col-sm"></div>
+  <div class="col-sm"></div>
+  <div class="col-sm"></div>
+</div>-->
  
+<div class="row">
+  <div class="col-sm">
+    <a href="{{ url('/products/games') }}"><img class="m-auto d-flex w-50" src="../img/game.png" alt="Image missing because we are cool!"></a>
+  </div>
+  <div class="col-sm">
+    <a href="{{ url('/products/games') }}"><img class="m-auto d-flex w-50" src="../img/game.png" alt="Image missing because we are cool!"></a>
+  </div>
+  <div class="col-sm">
+    <a href="{{ url('/products/games') }}"><img class="m-auto d-flex w-50" src="../img/game.png" alt="Image missing because we are cool!"></a>
+  </div>
+</div>
 
     <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
       <x-product/>
