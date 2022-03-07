@@ -66,7 +66,7 @@
     <a href="{{ url('/products/games') }}"><img class="m-auto d-flex w-50" src="../img/game.png" alt="Image missing because we are cool!"></a>
   </div>
   <div class="col-sm">
-    <a href="{{ url('/products/games') }}"><img class="m-auto d-flex w-50" src="../img/game.png" alt="Image missing because we are cool!"></a>
+    <a href="{{ url('/products/games') }}"><img class="m-auto d-flex w-50" src="../img/computer.png" alt="Image missing because we are cool!"></a>
   </div>
   <div class="col-sm">
     <a href="{{ url('/products/games') }}"><img class="m-auto d-flex w-50" src="../img/game.png" alt="Image missing because we are cool!"></a>
