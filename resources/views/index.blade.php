@@ -1,5 +1,5 @@
 <x-app>
-  <div class="position-relative overflow-hidden m-b-3 text-center">
+  <div class="position-relative overflow-hidden mb-3 text-center">
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" style="height: 400px">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
@@ -54,43 +54,35 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row m-3">
     <div class="col-sm">
-    <a class= "text-decoration-none text-dark" href="{{ url('/products/games') }}"><img class="m-auto d-flex w-50" src="../img/game.png" alt="Image missing because we are cool!"><h3 class="text-center pt-2">Games</h3></a>
+    <a class= "text-decoration-none text-dark" href="{{ url('/products/games') }}"><img class="m-auto d-flex w-50" src="../img/gaming.png" alt="Image missing because we are cool!"><h3 class="text-center pt-2">Games</h3></a>
     </div>
     <div class="col-sm">
-    <a class= "text-decoration-none text-dark" href="{{ url('/products/Computers') }}"><img class="m-auto d-flex w-50" src="../img/computer.png" alt="Image missing because we are cool!"><h3 class="text-center pt-2">Computers</h3></a>
+    <a class= "text-decoration-none text-dark" href="{{ url('/products/Computers') }}"><img class="m-auto d-flex w-50" src="../img/prebuild.png" alt="Image missing because we are cool!"><h3 class="text-center pt-2">Computers</h3></a>
     </div>
     <div class="col-sm">
     <a class= "text-decoration-none text-dark" href="{{ url('/products/Consoles') }}"><img class="m-auto d-flex w-50" src="../img/console.png" alt="Image missing because we are cool!"><h3 class="text-center pt-2">Consoles</h3></a>
     </div>
     <div class="col-sm">
-      <a class= "text-decoration-none text-dark" href="{{ url('/products/Components') }}"><img class="m-auto d-flex w-50" src="../img/components.png" alt="Image missing because we are cool!"><h3 class="text-center pt-2">Components</h3></a>
+      <a class= "text-decoration-none text-dark" href="{{ url('/products/Components') }}"><img class="m-auto d-flex w-50" src="../img/component.png" alt="Image missing because we are cool!"><h3 class="text-center pt-2">Components</h3></a>
     </div>
   </div>
 
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+  <div class="row">
     <x-product/>
     <x-product/>
     <x-product/>
-  </div>
-
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <x-product/>
+    <div class="w-100"></div>
     <x-product/>
     <x-product/>
     <x-product/>
-  </div>
-
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <x-product/>
+    <div class="w-100"></div>
     <x-product/>
     <x-product/>
     <x-product/>
-  </div>
-
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
     <x-product/>
-    <x-product/>
-    <x-product/>
-  </div>
   <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </x-app>
