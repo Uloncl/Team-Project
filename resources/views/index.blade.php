@@ -1,14 +1,14 @@
 <x-app>
   <div class="position-relative overflow-hidden mb-3 text-center">
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" style="height: 400px">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" style="height: 550px">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
       </div>
       
-      <div class="carousel-inner" style="height: 400px">
-        <div class="carousel-item active" style="height: 400px">
+      <div class="carousel-inner" style="height: 550px">
+        <div class="carousel-item active" style="height: 550px">
           <img class="d-block w-100" src="../img/banner-prebuilt.jpg" alt="Third slide">
           <div>
             <div class="carousel-caption text-start">
@@ -19,7 +19,7 @@
           </div>
         </div>
 
-        <div class="carousel-item" style="height: 400px">
+        <div class="carousel-item" style="height: 550px">
           <img class="d-block w-100" src="../img/banner-games.jpg" alt="Third slide">
           <div>
             <div class="carousel-caption">
@@ -30,7 +30,7 @@
           </div>
         </div>
         
-        <div class="carousel-item" style="height: 400px">
+        <div class="carousel-item" style="height: 550px">
         <img class="d-block w-100" src="../img/banner-signup.jpg" alt="Third slide">
           <div>
             <div class="carousel-caption text-end">
