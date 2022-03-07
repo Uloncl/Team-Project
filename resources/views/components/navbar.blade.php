@@ -1,13 +1,13 @@
-<header class="bg-none site-header sticky-top py-1 text-dark">
+<header class="bg-sahara site-header sticky-top py-1 text-dark">
   <nav class="container d-flex flex-column flex-md-row justify-content-between">
 	<div class="justify-content-lg-start">
 		<a class="py-2 d-none d-md-inline-block nav-link" href="{{ url('/') }}" aria-label="Product">
 			<img src="{{ asset('img/Sahara-32px.png') }}" alt="Sahara Logo">
 		</a>
-		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="games">games</a>
-		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="components">pc components</a>
-		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="consoles">consoles</a>
-		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="prebuilds">prebuilt PCs</a>
+		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="games">Games</a>
+		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="prebuilt">Pre-built PCs</a>
+		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="components">Computer Components</a>
+		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="consoles">Consoles</a>
 	</div>
 
 	@auth
@@ -20,7 +20,7 @@
 				<li><a class="dropdown-item" href="{{ url('/settings') }}">Settings</a></li>
 				<li><a class="dropdown-item" href="{{ url('/profile') }}">Profile</a></li>
 				<li><hr class="dropdown-divider"></li>
-				<li><a class="dropdown-item" href="{{ url('/logout') }}">log out</a></li>
+				<li><a class="dropdown-item" href="{{ url('/logout') }}">Log out</a></li>
 			</ul>
 		</div>
 
