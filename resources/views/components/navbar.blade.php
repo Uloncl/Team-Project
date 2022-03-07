@@ -1,4 +1,4 @@
-<header class="bg-none site-header sticky-top py-1 text-dark">
+<header class="bg-sahara site-header sticky-top py-1 text-dark">
   <nav class="container d-flex flex-column flex-md-row justify-content-between">
 	<div class="justify-content-lg-start">
 		<a class="py-2 d-none d-md-inline-block nav-link" href="{{ url('/') }}" aria-label="Product">
@@ -20,7 +20,7 @@
 				<li><a class="dropdown-item" href="{{ url('/settings') }}">Settings</a></li>
 				<li><a class="dropdown-item" href="{{ url('/profile') }}">Profile</a></li>
 				<li><hr class="dropdown-divider"></li>
-				<li><a class="dropdown-item" href="{{ url('/logout') }}">log out</a></li>
+				<li><a class="dropdown-item" href="{{ url('/logout') }}">Log out</a></li>
 			</ul>
 		</div>
 
