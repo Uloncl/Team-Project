@@ -54,24 +54,21 @@
         </button>
       </div>
     </div>
-
-<!--<div class="row">
-  <div class="col-sm"></div>
-  <div class="col-sm"></div>
-  <div class="col-sm"></div>
-</div>-->
  
-<div class="row">
-  <div class="col-sm">
-    <a href="{{ url('/products/games') }}"><img class="m-auto d-flex w-50" src="../img/game.png" alt="Image missing because we are cool!"></a>
-  </div>
-  <div class="col-sm">
-    <a href="{{ url('/products/games') }}"><img class="m-auto d-flex w-50" src="../img/computer.png" alt="Image missing because we are cool!"></a>
-  </div>
-  <div class="col-sm">
-    <a href="{{ url('/products/games') }}"><img class="m-auto d-flex w-50" src="../img/game.png" alt="Image missing because we are cool!"></a>
-  </div>
-</div>
+    <div class="row">
+      <div class="col-sm">
+        <a href="{{ url('/products/games') }}"><img class="m-auto d-flex w-50" src="../img/game.png" alt="Image missing because we are cool!"></a>
+      </div>
+      <div class="col-sm">
+        <a href="{{ url('/products/games') }}"><img class="m-auto d-flex w-50" src="../img/computer.png" alt="Image missing because we are cool!"></a>
+      </div>
+      <div class="col-sm">
+        <a href="{{ url('/products/games') }}"><img class="m-auto d-flex w-50" src="../img/game.png" alt="Image missing because we are cool!"></a>
+      </div>
+      <div class="col-sm">
+        <a href="{{ url('/products/games') }}"><img class="m-auto d-flex w-50" src="../img/game.png" alt="Image missing because we are cool!"></a>
+      </div>
+    </div>
 
     <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
       <x-product/>
