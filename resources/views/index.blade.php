@@ -57,16 +57,16 @@
  
     <div class="row">
       <div class="col-sm">
-        <a href="{{ url('/products/games') }}"><img class="m-auto d-flex w-50" src="../img/game.png" alt="Image missing because we are cool!"></a>
+      <a class= "text-decoration-none text-dark" href="{{ url('/products/games') }}"><img class="m-auto d-flex w-50" src="../img/game.png" alt="Image missing because we are cool!"><h3 class="text-center pt-2">Games</h3></a>
       </div>
       <div class="col-sm">
-        <a href="{{ url('/products/games') }}"><img class="m-auto d-flex w-50" src="../img/computer.png" alt="Image missing because we are cool!"></a>
+      <a class= "text-decoration-none text-dark" href="{{ url('/products/Computers') }}"><img class="m-auto d-flex w-50" src="../img/computer.png" alt="Image missing because we are cool!"><h3 class="text-center pt-2">Computers</h3></a>
       </div>
       <div class="col-sm">
-        <a href="{{ url('/products/games') }}"><img class="m-auto d-flex w-50" src="../img/game.png" alt="Image missing because we are cool!"></a>
+      <a class= "text-decoration-none text-dark" href="{{ url('/products/Consoles') }}"><img class="m-auto d-flex w-50" src="../img/console.png" alt="Image missing because we are cool!"><h3 class="text-center pt-2">Consoles</h3></a>
       </div>
       <div class="col-sm">
-        <a href="{{ url('/products/games') }}"><img class="m-auto d-flex w-50" src="../img/game.png" alt="Image missing because we are cool!"></a>
+        <a class= "text-decoration-none text-dark" href="{{ url('/products/Components') }}"><img class="m-auto d-flex w-50" src="../img/components.png" alt="Image missing because we are cool!"><h3 class="text-center pt-2">Components</h3></a>
       </div>
     </div>
 
