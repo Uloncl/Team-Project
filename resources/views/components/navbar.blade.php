@@ -4,10 +4,10 @@
 		<a class="py-2 d-none d-md-inline-block nav-link" href="{{ url('/') }}" aria-label="Product">
 			<img src="{{ asset('img/Sahara-32px.png') }}" alt="Sahara Logo">
 		</a>
-		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="{{ url('/products/games') }}">games</a>
-		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="{{ url('/products/components') }}">pc components</a>
-		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="{{ url('/products/consoles') }}">consoles</a>
-		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="{{ url('/products/prebuilds') }}">prebuilt PCs</a>
+		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="{{ url('/products/games') }}">Games</a>
+		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="{{ url('/products/components') }}">PC Components</a>
+		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="{{ url('/products/consoles') }}">Prebuilt PCs</a>
+		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="{{ url('/products/prebuilds') }}">Consoles</a>
 	</div>
 
 	@auth
