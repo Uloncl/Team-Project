@@ -43,4 +43,8 @@ class PagesController extends Controller
 				break;
 		}
 	}
+
+	public function cart() {
+		return view('cart');
+	}
 }
