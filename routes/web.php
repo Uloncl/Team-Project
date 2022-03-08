@@ -23,7 +23,7 @@ Route::controller(PagesController::class)->group(function () {
     Route::get('/products/{product}', 'products');
     Route::get('profile',             'profile');
     Route::get('settings',            'settings');
-    Route::get('cart',                'cart');
+    Route::get('saved',               'saved');
 });
 
 Route::get('/register',             [RegisterController::class, 'create']       )->middleware('guest');

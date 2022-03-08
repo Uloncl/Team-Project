@@ -9,7 +9,6 @@
 		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="{{ url('/products/components') }}">PC Components</a>
 		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="{{ url('/products/prebuilds') }}">Prebuilt PCs</a>
 		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="{{ url('/products/consoles') }}">Consoles</a>
-		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="{{ url('/cart') }}">Cart</a>
 	</div>
 
 	@auth
@@ -22,15 +21,22 @@
 				<li><a class="dropdown-item" href="{{ url('/settings') }}">Settings</a></li>
 				<li><a class="dropdown-item" href="{{ url('/profile') }}">Profile</a></li>
 				<li><hr class="dropdown-divider"></li>
+				<li><a class="dropdown-item" href="{{ url('/saved') }}">Your Saved Products</a></li>
+				<li><hr class="dropdown-divider"></li>
 				<li><a class="dropdown-item" href="{{ url('/logout') }}">Log out</a></li>
 			</ul>
 		</div>
 
 	@else
 
-		<div class="row  mx-5">
-			<a class="col-sm py-2 d-none d-md-inline-block nav-link text-dark" href="{{ url('/login') }}" role="button">Login</button>
-			<a class="col-sm py-2 d-none d-md-inline-block nav-link text-dark" href="{{ url('/register') }}" role="button">Register</a>
+		<div class="dropdown text-end  mx-5">
+			<a href="#" class="py-2 d-none d-md-inline-block d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+				<img src="../img/default-pfp.png" alt="mdo" width="32" height="32" class="rounded-circle">
+			</a>
+			<ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+				<li><a class="dropdown-item" href="{{ url('/login') }}">Login</a></li>
+				<li><a class="dropdown-item" href="{{ url('/register') }}">Register</a></li>
+			</ul>
 		</div>
 
 	@endauth

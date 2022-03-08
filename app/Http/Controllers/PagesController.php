@@ -44,7 +44,13 @@ class PagesController extends Controller
 		}
 	}
 
-	public function cart() {
-		return view('cart');
+	public function saved() {
+
+		$link = "https://www.amazon.co.uk/ASUS-GeForce-buffed-up-chart-topping-performance/dp/B095YF4L9W/ref=sr_1_8?crid=19PWXQ3S0M5BV&keywords=3080&qid=1646723576&sprefix=3080%2Caps%2C85&sr=8-8";
+		$img  = "https://m.media-amazon.com/images/I/71F-iS7SfcS._AC_SX679_.jpg";
+		return view('saved', [
+			"link" => $link,
+			"img"  => $img
+		]);
 	}
 }
