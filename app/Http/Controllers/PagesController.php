@@ -45,12 +45,33 @@ class PagesController extends Controller
 	}
 
 	public function saved() {
+		$products = [
+			[
+				"title" => "ASUS TUF Gaming GeForce RTX™ 3080 Ti OC Edition 12GB GDDR6X",
+				"link"  => "https://www.amazon.co.uk/ASUS-GeForce-buffed-up-chart-topping-performance/dp/B095YF4L9W/ref=sr_1_8?crid=19PWXQ3S0M5BV&keywords=3080&qid=1646723576&sprefix=3080%2Caps%2C85&sr=8-8",
+				"img"   => "https://m.media-amazon.com/images/I/71F-iS7SfcS._AC_SX679_.jpg",
+				"best"  => "1800",
+				"avg"   => "1900"
+			],[
+				"title" => "AMD Ryzen Threadripper 3990X",
+				"link"  => "https://www.amazon.co.uk/DANIPEW-AMD-Ryzen-Threadripper-3990X/dp/B0815SBQ9W/ref=sr_1_fkmr1_2?keywords=AMD%20RYZEN%20THREADRIPPER%203990X&qid=1581093524&sr=8-2-fkmr1%0D%0A",
+				"img"   => "https://m.media-amazon.com/images/I/711VabzLQ2L._AC_SX679_.jpg",
+				"best"  => "3900",
+				"avg"   => "4000"
+			],[
+				"title" => "Elden Ring",
+				"link"  => "https://store.steampowered.com/app/1245620/ELDEN_RING/",
+				"img"   => "https://cdn.akamai.steamstatic.com/steam/apps/1245620/header.jpg?t=1646406355",
+				"best"  => "40",
+				"avg"   => "50"
+			],
+		];
 
-		$link = "https://www.amazon.co.uk/ASUS-GeForce-buffed-up-chart-topping-performance/dp/B095YF4L9W/ref=sr_1_8?crid=19PWXQ3S0M5BV&keywords=3080&qid=1646723576&sprefix=3080%2Caps%2C85&sr=8-8";
-		$img  = "https://m.media-amazon.com/images/I/71F-iS7SfcS._AC_SX679_.jpg";
+		$total = array_sum(array_column($products, 'best'));
+
 		return view('saved', [
-			"link" => $link,
-			"img"  => $img
+			"products" => $products,
+			"total"	   => $total
 		]);
 	}
 }
