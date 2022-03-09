@@ -21,7 +21,7 @@ class PagesController extends Controller
 	}
 	public function products($category) {
 		switch ($category) {
-			case "games"
+			case "games":
 				$category = "Games";
 				$products = [
 					[//1
