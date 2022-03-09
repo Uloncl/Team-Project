@@ -46,40 +46,40 @@ class PagesController extends Controller
 						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/914179592aa3523210dd00c0bb030c30.png",
 						"best"  => "49.99"
 					],[//4
-						"name"  => "Elden Ring",
-						"dev"   => "From Software",
-						"pub"   => "From Software",
-						"link"  => "https://store.steampowered.com/app/1245620/ELDEN_RING/",
-						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/13e02498b2ae3df0c9078db2f9eb9b2d.webp",
-						"best"  => "49.99"
+						"name"  => "God of War",
+						"dev"   => "Santa Monica Studio",
+						"pub"   => "Santa Monica Studio",
+						"link"  => "https://www.epicgames.com/store/en-US/p/dying-light-2-stay-human",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/5855660034a74cfe0e5fc8d57d17f4ac.png",
+						"best"  => "39.99"
 					],[//5
-						"name"  => "Elden Ring",
-						"dev"   => "From Software",
-						"pub"   => "From Software",
-						"link"  => "https://store.steampowered.com/app/1245620/ELDEN_RING/",
-						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/13e02498b2ae3df0c9078db2f9eb9b2d.webp",
-						"best"  => "49.99"
+						"name"  => "GTA V",
+						"dev"   => "Rockstar Games",
+						"pub"   => "Rockstar Games",
+						"link"  => "https://www.epicgames.com/store/en-US/p/grand-theft-auto-v",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/43f6943d7a020cdcb8d27aebb9d96221.png",
+						"best"  => "14.99"
 					],[//6
-						"name"  => "Elden Ring",
-						"dev"   => "From Software",
-						"pub"   => "From Software",
-						"link"  => "https://store.steampowered.com/app/1245620/ELDEN_RING/",
-						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/13e02498b2ae3df0c9078db2f9eb9b2d.webp",
-						"best"  => "49.99"
+						"name"  => "Arkham Knight",
+						"dev"   => "Ubisoft Annecy",
+						"pub"   => "Ubisoft",
+						"link"  => "https://store.steampowered.com/app/208650/Batman_Arkham_Knight/",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/0ea50e88822a30ab6cd93ba4a082d614.png",
+						"best"  => "15.99"
 					],[//7
-						"name"  => "Elden Ring",
+						"name"  => "Riders Republic",
 						"dev"   => "From Software",
 						"pub"   => "From Software",
-						"link"  => "https://store.steampowered.com/app/1245620/ELDEN_RING/",
-						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/13e02498b2ae3df0c9078db2f9eb9b2d.webp",
-						"best"  => "49.99"
+						"link"  => "https://www.epicgames.com/store/en-US/p/riders-republic",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/3d02d7d499c5801377ccbddcf8b0759e.png",
+						"best"  => "29.99"
 					],[//8
-						"name"  => "Elden Ring",
-						"dev"   => "From Software",
-						"pub"   => "From Software",
-						"link"  => "https://store.steampowered.com/app/1245620/ELDEN_RING/",
-						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/13e02498b2ae3df0c9078db2f9eb9b2d.webp",
-						"best"  => "49.99"
+						"name"  => "Ghostrunner",
+						"dev"   => "505 Games",
+						"pub"   => "505 Games",
+						"link"  => "https://store.steampowered.com/app/1139900/Ghostrunner/",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/458e998ed46376eb777b4df39beb02ce.png",
+						"best"  => "9.99"
 					]
 				];
 		
