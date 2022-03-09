@@ -1,10 +1,22 @@
 <header class="bg-sahara site-header sticky-top py-1 text-dark">
+
+<div class="profile-image" id="profile-image">
+	<a href="/">
+		<img src="{{ asset('../img/SaharaBW.png') }}" alt="Sahara Logo">
+	</a>
+</div>
+
   <nav class="navbar navbar-default d-flex flex-column flex-md-row justify-content-between">
 	
+<<<<<<< HEAD
 	<div class="justify-content-lg-start  mx-5">
 		<a class="py-2 d-none d-md-inline-block nav-link" href="{{ url('/') }}" aria-label="Product">
 			<img src="{{ asset('../img/sahara-32px.png') }}" alt="Sahara Logo">
 		</a>
+=======
+
+	<div class="justify-content-lg-start mx-5">
+>>>>>>> 8d43fe6263883e7e0a7a401f3d6c665e2dcde05a
 		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="{{ url('/products/games') }}">Games</a>
 		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="{{ url('/products/components') }}">PC Components</a>
 		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="{{ url('/products/prebuilds') }}">Prebuilt PCs</a>
