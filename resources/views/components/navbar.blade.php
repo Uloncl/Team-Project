@@ -1,9 +1,9 @@
 <header class="bg-sahara site-header sticky-top py-1 text-dark">
-  <nav class="d-flex flex-column flex-md-row justify-content-between">
+  <nav class="navbar navbar-default d-flex flex-column flex-md-row justify-content-between">
 	
 	<div class="justify-content-lg-start  mx-5">
 		<a class="py-2 d-none d-md-inline-block nav-link" href="{{ url('/') }}" aria-label="Product">
-			<img src="{{ asset('img/Sahara-32px.png') }}" alt="Sahara Logo">
+			<img src="{{ asset('../img/sahara32.png') }}" alt="Sahara Logo">
 		</a>
 		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="{{ url('/products/games') }}">Games</a>
 		<a class="py-2 d-none d-md-inline-block nav-link text-dark" href="{{ url('/products/components') }}">PC Components</a>

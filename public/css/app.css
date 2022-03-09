@@ -4905,8 +4905,11 @@ textarea.form-control-lg {
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
   font-size: 1.25rem;
+  width: 32px;
+  left: 15px;
   text-decoration: none;
   white-space: nowrap;
+  position: relative;
 }
 .navbar-nav {
   display: flex;
