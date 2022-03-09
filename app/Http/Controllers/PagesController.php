@@ -22,8 +22,72 @@ class PagesController extends Controller
 	public function products($product) {
 		switch ($product) {
 			case "games":
-				$product = "Games";
-				return view('products', compact('product'));
+				$title = "Games";
+				$products = [
+					[//1
+						"name"  => "Elden Ring",
+						"dev"   => "From Software",
+						"pub"   => "From Software",
+						"link"  => "https://store.steampowered.com/app/1245620/ELDEN_RING/",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/13e02498b2ae3df0c9078db2f9eb9b2d.webp",
+						"best"  => "49.99"
+					],[//2
+						"name"  => "Cyberpunk 2077",
+						"dev"   => "CD Project Red",
+						"pub"   => "CD Project Red",
+						"link"  => "https://www.gog.com/en/game/cyberpunk_2077",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/561adbb4e6094bef3c29e38ceb6bd929.png",
+						"best"  => "49.99"
+					],[//3
+						"name"  => "AC Valhalla",
+						"dev"   => "Ubisoft Montreal",
+						"pub"   => "Ubisoft",
+						"link"  => "https://store.ubi.com/uk/game?pid=5e849c6c5cdf9a21c0b4e731&dwvar_5e849c6c5cdf9a21c0b4e731_Platform=pcdl&edition=Standard%20Edition&source=detail",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/914179592aa3523210dd00c0bb030c30.png",
+						"best"  => "49.99"
+					],[//4
+						"name"  => "Elden Ring",
+						"dev"   => "From Software",
+						"pub"   => "From Software",
+						"link"  => "https://store.steampowered.com/app/1245620/ELDEN_RING/",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/13e02498b2ae3df0c9078db2f9eb9b2d.webp",
+						"best"  => "49.99"
+					],[//5
+						"name"  => "Elden Ring",
+						"dev"   => "From Software",
+						"pub"   => "From Software",
+						"link"  => "https://store.steampowered.com/app/1245620/ELDEN_RING/",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/13e02498b2ae3df0c9078db2f9eb9b2d.webp",
+						"best"  => "49.99"
+					],[//6
+						"name"  => "Elden Ring",
+						"dev"   => "From Software",
+						"pub"   => "From Software",
+						"link"  => "https://store.steampowered.com/app/1245620/ELDEN_RING/",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/13e02498b2ae3df0c9078db2f9eb9b2d.webp",
+						"best"  => "49.99"
+					],[//7
+						"name"  => "Elden Ring",
+						"dev"   => "From Software",
+						"pub"   => "From Software",
+						"link"  => "https://store.steampowered.com/app/1245620/ELDEN_RING/",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/13e02498b2ae3df0c9078db2f9eb9b2d.webp",
+						"best"  => "49.99"
+					],[//8
+						"name"  => "Elden Ring",
+						"dev"   => "From Software",
+						"pub"   => "From Software",
+						"link"  => "https://store.steampowered.com/app/1245620/ELDEN_RING/",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/13e02498b2ae3df0c9078db2f9eb9b2d.webp",
+						"best"  => "49.99"
+					]
+				];
+		
+				$total = array_sum(array_column($products, 'best'));
+				return view('products', [
+					"title"    => $title,
+					"products" => $products
+				]);
 				break;
 			case "components":
 				$product = "Components";
