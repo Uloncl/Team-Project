@@ -40,8 +40,8 @@ class PagesController extends Controller
 						"best"  => "49.99"
 					],[//3
 						"name"  => "Tetris Effect",
-						"dev"   => "Ubisoft Montreal",
-						"pub"   => "Ubisoft",
+						"dev"   => "Sony Interactive",
+						"pub"   => "Sony Interactive",
 						"link"  => "https://store.ubi.com/uk/game?pid=5e849c6c5cdf9a21c0b4e731&dwvar_5e849c6c5cdf9a21c0b4e731_Platform=pcdl&edition=Standard%20Edition&source=detail",
 						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/dd5cdc1c8ca1c1a34941e8d3cb5abc1c.webp",
 						"best"  => "49.99"
