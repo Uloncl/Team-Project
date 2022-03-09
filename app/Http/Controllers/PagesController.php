@@ -82,8 +82,6 @@ class PagesController extends Controller
 						"best"  => "9.99"
 					]
 				];
-		
-				$total = array_sum(array_column($products, 'best'));
 				return view('products', [
 					"product"    => $product,
 					"products" => $products
