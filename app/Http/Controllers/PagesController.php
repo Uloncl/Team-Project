@@ -80,6 +80,20 @@ class PagesController extends Controller
 						"link"  => "https://store.steampowered.com/app/1139900/Ghostrunner/",
 						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/458e998ed46376eb777b4df39beb02ce.png",
 						"best"  => "9.99"
+					],[//8
+						"name"  => "Ghostrunner",
+						"dev"   => "505 Games",
+						"pub"   => "505 Games",
+						"link"  => "https://store.steampowered.com/app/1139900/Ghostrunner/",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/458e998ed46376eb777b4df39beb02ce.png",
+						"best"  => "9.99"
+					],[//8
+						"name"  => "Ghostrunner",
+						"dev"   => "505 Games",
+						"pub"   => "505 Games",
+						"link"  => "https://store.steampowered.com/app/1139900/Ghostrunner/",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/458e998ed46376eb777b4df39beb02ce.png",
+						"best"  => "9.99"
 					]
 				];
 				return view('products', [
