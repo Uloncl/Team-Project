@@ -36,28 +36,28 @@ class PagesController extends Controller
 						"dev"   => "CD Project Red",
 						"pub"   => "CD Project Red",
 						"link"  => "https://www.gog.com/en/game/cyberpunk_2077",
-						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/561adbb4e6094bef3c29e38ceb6bd929.png",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/2d0d6a7929c9542ee1d63b2065a40983.webp",
 						"best"  => "49.99"
 					],[//3
-						"name"  => "AC Valhalla",
+						"name"  => "Tetris Effect",
 						"dev"   => "Ubisoft Montreal",
 						"pub"   => "Ubisoft",
 						"link"  => "https://store.ubi.com/uk/game?pid=5e849c6c5cdf9a21c0b4e731&dwvar_5e849c6c5cdf9a21c0b4e731_Platform=pcdl&edition=Standard%20Edition&source=detail",
-						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/914179592aa3523210dd00c0bb030c30.png",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/dd5cdc1c8ca1c1a34941e8d3cb5abc1c.webp",
 						"best"  => "49.99"
 					],[//4
 						"name"  => "God of War",
 						"dev"   => "Santa Monica Studio",
 						"pub"   => "Santa Monica Studio",
 						"link"  => "https://www.epicgames.com/store/en-US/p/dying-light-2-stay-human",
-						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/5855660034a74cfe0e5fc8d57d17f4ac.png",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/d1e6275ba67b9deba97c36664a972a9c.webp",
 						"best"  => "39.99"
 					],[//5
 						"name"  => "GTA V",
 						"dev"   => "Rockstar Games",
 						"pub"   => "Rockstar Games",
 						"link"  => "https://www.epicgames.com/store/en-US/p/grand-theft-auto-v",
-						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/43f6943d7a020cdcb8d27aebb9d96221.png",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/d987910809b497fce04ec48bb38779a9.png",
 						"best"  => "14.99"
 					],[//6
 						"name"  => "Arkham Knight",
@@ -78,22 +78,22 @@ class PagesController extends Controller
 						"dev"   => "505 Games",
 						"pub"   => "505 Games",
 						"link"  => "https://store.steampowered.com/app/1139900/Ghostrunner/",
-						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/458e998ed46376eb777b4df39beb02ce.png",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/d5a1d4455d761af262e24e2b26b35064.png",
 						"best"  => "9.99"
-					],[//8
-						"name"  => "Ghostrunner",
-						"dev"   => "505 Games",
-						"pub"   => "505 Games",
-						"link"  => "https://store.steampowered.com/app/1139900/Ghostrunner/",
-						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/458e998ed46376eb777b4df39beb02ce.png",
-						"best"  => "9.99"
-					],[//8
-						"name"  => "Ghostrunner",
-						"dev"   => "505 Games",
-						"pub"   => "505 Games",
-						"link"  => "https://store.steampowered.com/app/1139900/Ghostrunner/",
-						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/458e998ed46376eb777b4df39beb02ce.png",
-						"best"  => "9.99"
+					],[//9
+						"name"  => "Monster Hunter",
+						"dev"   => "Capcom Co.",
+						"pub"   => "Capcom Co.",
+						"link"  => "https://store.steampowered.com/app/582010/Monster_Hunter_World/",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/601f9a238f7d2f9faeaa2a4e31e13e66.png",
+						"best"  => "24.99"
+					],[//10
+						"name"  => "DOOM Eternal",
+						"dev"   => "id Software",
+						"pub"   => "id Software",
+						"link"  => "https://store.steampowered.com/app/782330/DOOM_Eternal/",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/7a37e5ef930630650790791fe509e8dc.png",
+						"best"  => "19.99"
 					]
 				];
 				return view('products', [
