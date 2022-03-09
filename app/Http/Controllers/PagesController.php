@@ -61,15 +61,15 @@ class PagesController extends Controller
 						"best"  => "14.99"
 					],[//6
 						"name"  => "Arkham Knight",
-						"dev"   => "Ubisoft Annecy",
-						"pub"   => "Ubisoft",
+						"dev"   => "Rocksteady Games",
+						"pub"   => "Rocksteady",
 						"link"  => "https://store.steampowered.com/app/208650/Batman_Arkham_Knight/",
 						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/0ea50e88822a30ab6cd93ba4a082d614.png",
 						"best"  => "15.99"
 					],[//7
 						"name"  => "Riders Republic",
-						"dev"   => "From Software",
-						"pub"   => "From Software",
+						"dev"   => "Ubisoft Annecy",
+						"pub"   => "Ubisoft",
 						"link"  => "https://www.epicgames.com/store/en-US/p/riders-republic",
 						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/3d02d7d499c5801377ccbddcf8b0759e.png",
 						"best"  => "29.99"
