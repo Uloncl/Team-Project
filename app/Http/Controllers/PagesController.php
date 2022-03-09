@@ -64,7 +64,7 @@ class PagesController extends Controller
 						"dev"   => "Rocksteady Games",
 						"pub"   => "Rocksteady",
 						"link"  => "https://store.steampowered.com/app/208650/Batman_Arkham_Knight/",
-						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/0ea50e88822a30ab6cd93ba4a082d614.png",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/a241000aa7e57b9fe80ebecfddd317af.png",
 						"best"  => "15.99"
 					],[//7
 						"name"  => "Riders Republic",
