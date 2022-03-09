@@ -42,14 +42,14 @@ class PagesController extends Controller
 						"name"  => "Tetris Effect",
 						"dev"   => "Sony Interactive",
 						"pub"   => "Sony Interactive",
-						"link"  => "https://store.ubi.com/uk/game?pid=5e849c6c5cdf9a21c0b4e731&dwvar_5e849c6c5cdf9a21c0b4e731_Platform=pcdl&edition=Standard%20Edition&source=detail",
+						"link"  => "https://store.steampowered.com/app/1003590/Tetris_Effect_Connected/",
 						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/dd5cdc1c8ca1c1a34941e8d3cb5abc1c.webp",
 						"best"  => "49.99"
 					],[//4
 						"name"  => "God of War",
 						"dev"   => "Santa Monica Studio",
 						"pub"   => "Santa Monica Studio",
-						"link"  => "https://www.epicgames.com/store/en-US/p/dying-light-2-stay-human",
+						"link"  => "https://store.steampowered.com/app/1593500/God_of_War/",
 						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/d1e6275ba67b9deba97c36664a972a9c.webp",
 						"best"  => "39.99"
 					],[//5
@@ -67,12 +67,12 @@ class PagesController extends Controller
 						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/a241000aa7e57b9fe80ebecfddd317af.png",
 						"best"  => "15.99"
 					],[//7
-						"name"  => "Riders Republic",
-						"dev"   => "Ubisoft Annecy",
-						"pub"   => "Ubisoft",
-						"link"  => "https://www.epicgames.com/store/en-US/p/riders-republic",
-						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/3d02d7d499c5801377ccbddcf8b0759e.png",
-						"best"  => "29.99"
+						"name"  => "Sniper Elite v2",
+						"dev"   => "Rebellion Developments",
+						"pub"   => "Rebellion Developments",
+						"link"  => "https://store.steampowered.com/app/63380/Sniper_Elite_V2/",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/37c7e42a816d7df558110a5b877c3412.webp",
+						"best"  => "14.99"
 					],[//8
 						"name"  => "Ghostrunner",
 						"dev"   => "505 Games",
