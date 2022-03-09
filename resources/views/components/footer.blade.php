@@ -5,7 +5,6 @@
     </div>
     
     <div class="row">
-      
       <div class="col-6 col-md">
         <h5>About</h5>
         <ul class="list-unstyled text-small">
