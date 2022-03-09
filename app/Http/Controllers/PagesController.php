@@ -22,7 +22,7 @@ class PagesController extends Controller
 	public function products($product) {
 		switch ($product) {
 			case "games":
-				$title = "Games";
+				$product = "Games";
 				$products = [
 					[//1
 						"name"  => "Elden Ring",
@@ -85,7 +85,7 @@ class PagesController extends Controller
 		
 				$total = array_sum(array_column($products, 'best'));
 				return view('products', [
-					"title"    => $title,
+					"product"    => $product,
 					"products" => $products
 				]);
 				break;
