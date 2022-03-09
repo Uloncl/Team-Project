@@ -9,7 +9,7 @@
         @forelse ($products as $product)
           <x-saved-product :product="$product"/>
         @empty
-          <h3>no saved products</h3>
+          <h3>No saved products</h3>
         @endforelse
       </div>
 

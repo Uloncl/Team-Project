@@ -1,7 +1,7 @@
 <footer class="container py-5">
   <div class="row">
     <div class="col-12 col-md">
-      <small class="d-block mb-3 text-muted">© 2017–2021</small>
+      <small class="d-block mb-3 text-muted">© 2022</small>
     </div>
     <div class="col-6 col-md">
       <h5>Features</h5>
