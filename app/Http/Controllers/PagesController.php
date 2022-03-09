@@ -19,10 +19,10 @@ class PagesController extends Controller
 	public function settings() {
 		return view('settings');
 	}
-	public function products($product) {
-		switch ($product) {
-			case "games":
-				$product = "Games";
+	public function products($category) {
+		switch ($category) {
+			case "games"
+				$category = "Games";
 				$products = [
 					[//1
 						"name"  => "Elden Ring",
@@ -85,25 +85,25 @@ class PagesController extends Controller
 		
 				$total = array_sum(array_column($products, 'best'));
 				return view('products', [
-					"product"    => $product,
+					"category"    => $category,
 					"products" => $products
 				]);
 				break;
 			case "components":
-				$product = "Components";
-				return view('products', compact('product'));
+				$category = "Components";
+				return view('products', compact('category'));
 				break;
 			case "consoles":
-				$product = "Consoles";
-				return view('products', compact('product'));
+				$category = "Consoles";
+				return view('products', compact('category'));
 				break;
 			case "prebuilds":
-				$product = "Pre-Builds";
-				return view('products', compact('product'));
+				$category = "Pre-Builds";
+				return view('products', compact('category'));
 				break;
 			default:
-				$product = "no dont do that";
-				return view('products', compact('product'));
+				$category = "no dont do that";
+				return view('products', compact('category'));
 				break;
 		}
 	}
