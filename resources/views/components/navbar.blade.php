@@ -4,7 +4,6 @@
 	<a href="/">
 		<img src="{{ asset('../img/SaharaBW.png') }}" alt="Sahara Logo">
 	</a>
-	
 </div>
 
   <nav class="navbar navbar-default d-flex flex-column flex-md-row justify-content-between">
