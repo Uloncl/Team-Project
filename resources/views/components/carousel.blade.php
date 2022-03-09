@@ -16,7 +16,7 @@
           <div class="carousel-caption">
             <h1>Browse Games</h1>
             <p>Find the best deals for games on Steam, Epic Games, Origin and more!</p>
-            <p><a class="btn btn-lg btn-primary bg-sahara" href="prebuilt">Find Games</a></p>
+            <p><a class="btn btn-lg btn-primary bg-sahara" href="products/games">Find Games</a></p>
           </div>
         </div>
       </div>
@@ -27,7 +27,7 @@
           <div class="carousel-caption text-end top-0 mt-5 pt-5">
             <h1>Browse Computers</h1>
             <p>Reliable and highly configurable prebuilt PCs<br>perfect for people new to the world of computers!</p>
-            <p><a class="btn btn-lg btn-primary bg-sahara" href="about">Find Computers</a></p>
+            <p><a class="btn btn-lg btn-primary bg-sahara" href="products/prebuilds">Find Computers</a></p>
           </div>
         </div>
       </div>
@@ -38,7 +38,7 @@
           <div class="carousel-caption text-start text-dark mt-5 pt-5 top-0">
             <h1>Browse Consoles</h1>
             <p>the best consoles from the biggest players!</p>
-            <p><a class="btn btn-lg btn-primary bg-sahara" href="register">Find Consoles</a></p>
+            <p><a class="btn btn-lg btn-primary bg-sahara" href="products/consoles">Find Consoles</a></p>
           </div>
         </div>
       </div>
@@ -49,7 +49,7 @@
           <div class="carousel-caption text-start mt-5 pt-5 top-0">
             <h1>Browse Components</h1>
             <p>Fancy a personal pc build? find all the components you need, for the best price!</p>
-            <p><a class="btn btn-lg btn-primary bg-sahara" href="about">Find Components</a></p>
+            <p><a class="btn btn-lg btn-primary bg-sahara" href="products/components">Find Components</a></p>
           </div>
         </div>
       </div>
