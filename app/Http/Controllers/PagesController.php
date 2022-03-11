@@ -107,7 +107,53 @@ class PagesController extends Controller
 				break;
 			case "consoles":
 				$category = "Consoles";
-				return view('products', compact('category'));
+				$products = [
+					[//1
+						"name"  => "PlayStation 5 Disc",
+						"dev"   => "Disc Edition",
+						"pub"   => "Disc Edition",
+						"link"  => "https://www.playstation.com/en-gb/ps5/",
+						"img"   => "../img/consoles-ps5-disc.png",
+						"best"  => "449.99"
+					],
+					[//1
+						"name"  => "PlayStation 5 Digital",
+						"dev"   => "Digital Edition",
+						"pub"   => "Digital Edition",
+						"link"  => "https://www.playstation.com/en-gb/ps5/",
+						"img"   => "../img/consoles-ps5-digital.png",
+						"best"  => "359.99"
+					],
+					[//1
+						"name"  => "Xbox Series X",
+						"dev"   => "Microsoft",
+						"pub"   => "Microsoft",
+						"link"  => "https://www.xbox.com/en-GB/consoles/xbox-series-x",
+						"img"   => "../img/consoles-xbox-series-x.png",
+						"best"  => "449.99"
+					],
+					[//1
+						"name"  => "Xbox Series S",
+						"dev"   => "Microsoft",
+						"pub"   => "Microsoft",
+						"link"  => "https://www.xbox.com/en-GB/consoles/xbox-series-s",
+						"img"   => "../img/consoles-xbox-series-s.png",
+						"best"  => "249.99"
+					],
+					[//1
+						"name"  => "Nintendo Switch",
+						"dev"   => "OLED Edition",
+						"pub"   => "OLED Edition",
+						"link"  => "https://www.nintendo.com/switch/oled-model/",
+						"img"   => "../img/consoles-switch-oled.png",
+						"best"  => "309.99"
+					]
+				];
+
+				return view('products', [
+					"category"    => $category,
+					"products" => $products
+				]);
 				break;
 			case "prebuilds":
 				$category = "Pre-Builds";

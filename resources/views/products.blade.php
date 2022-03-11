@@ -15,6 +15,17 @@
 						why is there nothing wtf
 					@endforelse
 				@endif
+
+				@if ($category == "Consoles")
+					@forelse ($products as $product)
+						<x-game-vert-card  :product="$product"/>
+						@if ($loop->iteration % 5 == 0)
+							<div class="w-100"></div>
+						@endif
+					@empty
+						why is there nothing wtf
+					@endforelse
+				@endif
 			</div>
 		</div>
 	</div>
