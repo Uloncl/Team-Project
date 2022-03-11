@@ -36,56 +36,56 @@ class PagesController extends Controller
 						"dev"   => "CD PROJEKT RED",
 						"pub"   => "CD PROJEKT RED",
 						"link"  => "https://www.gog.com/en/game/cyberpunk_2077",
-						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/2d0d6a7929c9542ee1d63b2065a40983.webp",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/561adbb4e6094bef3c29e38ceb6bd929.png",
 						"best"  => "49.99"
 					],[//3
 						"name"  => "Tetris Effect",
 						"dev"   => "Enhance",
 						"pub"   => "Enhance",
 						"link"  => "https://store.steampowered.com/app/1003590/Tetris_Effect_Connected/",
-						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/dd5cdc1c8ca1c1a34941e8d3cb5abc1c.webp",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/ec1e28295c9fe4e013bbc4c45e2ed0ea.png",
 						"best"  => "49.99"
 					],[//4
 						"name"  => "God of War",
 						"dev"   => "PlayStation PC",
 						"pub"   => "PlayStation PC",
 						"link"  => "https://store.steampowered.com/app/1593500/God_of_War/",
-						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/d1e6275ba67b9deba97c36664a972a9c.webp",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/5855660034a74cfe0e5fc8d57d17f4ac.png",
 						"best"  => "39.99"
 					],[//5
 						"name"  => "GTA V",
 						"dev"   => "Rockstar Games",
 						"pub"   => "Rockstar Games",
 						"link"  => "https://www.epicgames.com/store/en-US/p/grand-theft-auto-v",
-						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/d987910809b497fce04ec48bb38779a9.png",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/43f6943d7a020cdcb8d27aebb9d96221.png",
 						"best"  => "14.99"
 					],[//6
 						"name"  => "Arkham Knight",
 						"dev"   => "Warner Bros",
 						"pub"   => "Warner Bros",
 						"link"  => "https://store.steampowered.com/app/208650/Batman_Arkham_Knight/",
-						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/a241000aa7e57b9fe80ebecfddd317af.png",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/0ea50e88822a30ab6cd93ba4a082d614.png",
 						"best"  => "15.99"
 					],[//7
 						"name"  => "Sniper Elite v2",
 						"dev"   => "Rebellion",
 						"pub"   => "Rebellion",
 						"link"  => "https://store.steampowered.com/app/63380/Sniper_Elite_V2/",
-						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/37c7e42a816d7df558110a5b877c3412.webp",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/c9766f9867f5bbe212da9b9c59726cb8.png",
 						"best"  => "14.99"
 					],[//8
 						"name"  => "Ghostrunner",
 						"dev"   => "505 Games",
 						"pub"   => "505 Games",
 						"link"  => "https://store.steampowered.com/app/1139900/Ghostrunner/",
-						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/d5a1d4455d761af262e24e2b26b35064.png",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/2cf297f54a6678a3d0f225a64a2c6db3.png",
 						"best"  => "9.99"
 					],[//9
 						"name"  => "Monster Hunter",
 						"dev"   => "CAPCOM",
 						"pub"   => "CAPCOM",
 						"link"  => "https://store.steampowered.com/app/582010/Monster_Hunter_World/",
-						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/601f9a238f7d2f9faeaa2a4e31e13e66.png",
+						"img"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/36f0052da9cf0f101267b6e7f6629248.jpg",
 						"best"  => "24.99"
 					],[//10
 						"name"  => "DOOM Eternal",
