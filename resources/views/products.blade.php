@@ -7,7 +7,7 @@
 			<div class="row">
 				@if ($category == "Games")
 					@forelse ($products as $product)
-						<x-vert-card-game  :product="$product"/>
+						<x-card-vert-game  :product="$product"/>
 						@if ($loop->iteration % 5 == 0)
 							<div class="w-100"></div>
 						@endif
@@ -18,7 +18,29 @@
 
 				@if ($category == "Consoles")
 					@forelse ($products as $product)
-						<x-vert-card-consoles  :product="$product"/>
+						<x-card-vert-consoles  :product="$product"/>
+						@if ($loop->iteration % 5 == 0)
+							<div class="w-100"></div>
+						@endif
+					@empty
+						why is there nothing wtf
+					@endforelse
+				@endif
+
+				@if ($category == "Prebuilds")
+					@forelse ($products as $product)
+						<x-card-vert-prebuilds  :product="$product"/>
+						@if ($loop->iteration % 5 == 0)
+							<div class="w-100"></div>
+						@endif
+					@empty
+						why is there nothing wtf
+					@endforelse
+				@endif
+
+				@if ($category == "Components")
+					@forelse ($products as $product)
+						<x-card-vert-components  :product="$product"/>
 						@if ($loop->iteration % 5 == 0)
 							<div class="w-100"></div>
 						@endif

@@ -103,7 +103,53 @@ class PagesController extends Controller
 				break;
 			case "components":
 				$category = "Components";
-				return view('products', compact('category'));
+				$products = [
+					[//1
+						"name"  => "NVIDIA GeForce RTX 3090 FE",
+						"desc"   => "VRAM: 24GB GDDR6X",
+						"link"  => "#",
+						"img-hor"   => "..\img\components\hor-3090.png",
+						"img-vert"   => "..\img\components/vert-3090.png",
+						"best"  => "2100.00"
+					],
+					[//2
+						"name"  => "NZXT Kraken Z73 AIO Cooler",
+						"desc"   => "Fans: 360mm (3x120mm)",
+						"link"  => "#",
+						"img-hor"   => "..\img\components\hor-cooler.png",
+						"img-vert"   => "..\img\components/vert-cooler.png",
+						"best"  => "249.99"
+					],
+					[//3
+						"name"  => "Intel Core i9-11900K Desktop Processor",
+						"desc"   => "Cores: 8C+8c/24T",
+						"link"  => "#",
+						"img-hor"   => "..\img\components\hor-cpu.png",
+						"img-vert"   => "..\img\components/vert-cpu.png",
+						"best"  => "545.00"
+					],
+					[//4
+						"name"  => "G.SKILL Trident Z RGB Series",
+						"desc"   => "Kits: 16 GB DDR4",
+						"link"  => "#",
+						"img-hor"   => "..\img\components\hor-ram.png",
+						"img-vert"   => "..\img\components/vert-ram.png",
+						"best"  => "112.99"
+					],
+					[//5
+						"name"  => "Samsung 980 1 TB Solid State Drive",
+						"desc"   => "Connectivity: NVMe M.2",
+						"link"  => "#",
+						"img-hor"   => "..\img\components\hor-ssd.png",
+						"img-vert"   => "..\img\components/vert-ssd.png",
+						"best"  => "110.00"
+					]
+				];
+
+				return view('products', [
+					"category"    => $category,
+					"products" => $products
+				]);
 				break;
 			case "consoles":
 				$category = "Consoles";
@@ -156,8 +202,54 @@ class PagesController extends Controller
 				]);
 				break;
 			case "prebuilds":
-				$category = "Pre-Builds";
-				return view('products', compact('category'));
+				$category = "Prebuilds";
+				$products = [
+					[//1
+						"name"  => "Corsair One i300",
+						"desc"   => "i9-12900K / RTX 3080 Ti / 64GB DDR5",
+						"link"  => "#",
+						"img-vert"   => "..\img\prebuilds/vert-corsair.png",
+						"img-hor"   => "..\img\prebuilds/hor-corsair.png",
+						"best"  => "1000"
+					],
+					[//2
+						"name"  => "Predator Orion 3000",
+						"desc"   => "i7-8700K / GTX 1080 / 64GB DDR4",
+						"link"  => "#",
+						"img-vert"   => "..\img\prebuilds/vert-acer.png",
+						"img-hor"   => "..\img\prebuilds/hor-acer.png",
+						"best"  => "1000"
+					],
+					[//3
+						"name"  => "Asus ROG GA15",
+						"desc"   => "R7-3800X / RTX 2070S / 16GB DDR4",
+						"link"  => "#",
+						"img-vert"   => "..\img\prebuilds/vert-asus.png",
+						"img-hor"   => "..\img\prebuilds/hor-asus.png",
+						"best"  => "1000"
+					],
+					[//4
+						"name"  => "Alienware R12",
+						"desc"   => "i9-10900K / RTX 3090 / 32GB DDR4",
+						"link"  => "#",
+						"img-vert"   => "..\img\prebuilds/vert-alienware.png",
+						"img-hor"   => "..\img\prebuilds/hor-alienware.png",
+						"best"  => "1000"
+					],
+					[//5
+						"name"  => "HP Omen 30L",
+						"desc"   => "i9-10850K / RTX 3090 / 16GB DDR4",
+						"link"  => "#",
+						"img-vert"   => "..\img\prebuilds/vert-hp.png",
+						"img-hor"   => "..\img\prebuilds/hor-hp.png",
+						"best"  => "1000"
+					]
+				];
+
+				return view('products', [
+					"category"    => $category,
+					"products" => $products
+				]);
 				break;
 			default:
 				$category = "no dont do that";
