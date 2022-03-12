@@ -19,12 +19,12 @@ use App\Http\Controller\MailController;
 */
 
 Route::controller(PagesController::class)->group(function () {
-    Route::get('/',                   'home');
-    Route::get('about',               'about');
-    Route::get('/products/{category}', 'products');
-    Route::get('profile',             'profile');
-    Route::get('settings',            'settings');
-    Route::get('saved',               'saved');
+    Route::get('/',                   'home')       ->name("page.home");
+    Route::get('about',               'about')      ->name("page.about");
+    Route::get('profile',             'profile')    ->name("page.profile");
+    Route::get('settings',            'settings')   ->name("page.settings");
+    Route::get('saved',               'saved')      ->name("page.saved");
+    Route::get('/products/{category}/{orientation?}', 'products')->name("page.products");
 });
 
 Route::get('/register',             [RegisterController::class, 'create']       )->middleware('guest');
