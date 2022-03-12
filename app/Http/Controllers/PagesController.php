@@ -40,60 +40,60 @@ class PagesController extends Controller
 						"img-vert"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/32c3d0cdaa575bc25350c7fce4ad91e2.jpg",
 						"best"  => "49.99"
 					],[//3
-						"name"  => "Tetris Effect",
-						"dev"   => "Enhance",
-						"pub"   => "Enhance",
-						"link"  => "https://store.steampowered.com/app/1003590/Tetris_Effect_Connected/",
-						"img-hori"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/ec1e28295c9fe4e013bbc4c45e2ed0ea.png",
-						"img-vert"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/ec1e28295c9fe4e013bbc4c45e2ed0ea.png",
+						"name"  => "Stellaris",
+						"dev"   => "Paradox",
+						"pub"   => "Paradox",
+						"link"  => "https://store.steampowered.com/app/281990/Stellaris/",
+						"img-hori"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/b2d07452cf118e98723c0dae380ea76b.png",
+						"img-vert"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/0f31278390b7703f66815f634998d6ea.png",
 						"best"  => "49.99"
 					],[//4
-						"name"  => "God of War",
-						"dev"   => "PlayStation PC",
-						"pub"   => "PlayStation PC",
-						"link"  => "https://store.steampowered.com/app/1593500/God_of_War/",
-						"img-hori"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/5855660034a74cfe0e5fc8d57d17f4ac.png",
-						"img-vert"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/5855660034a74cfe0e5fc8d57d17f4ac.png",
+						"name"  => "No Mans Sky",
+						"dev"   => "Hello Games",
+						"pub"   => "Hello Games",
+						"link"  => "https://store.steampowered.com/app/275850/No_Mans_Sky/",
+						"img-hori"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/c8d77146931324f4001237a93fe4ba8c.png",
+						"img-vert"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/f4c08424dfb92c8e97f05905215fba86.png",
 						"best"  => "39.99"
 					],[//5
-						"name"  => "GTA V",
-						"dev"   => "Rockstar Games",
-						"pub"   => "Rockstar Games",
-						"link"  => "https://www.epicgames.com/store/en-US/p/grand-theft-auto-v",
-						"img-hori"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/43f6943d7a020cdcb8d27aebb9d96221.png",
-						"img-vert"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/43f6943d7a020cdcb8d27aebb9d96221.png",
+						"name"  => "Humankind",
+						"dev"   => "Amplitude",
+						"pub"   => "Sega",
+						"link"  => "https://store.steampowered.com/app/1124300/HUMANKIND/",
+						"img-hori"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/dc1abec14aa6e50efb6f3cdfbb45c2a0.png",
+						"img-vert"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/7f91ef16b2f9174fb249618802b860ea.png",
 						"best"  => "14.99"
 					],[//6
-						"name"  => "Arkham Knight",
-						"dev"   => "Warner Bros",
-						"pub"   => "Warner Bros",
-						"link"  => "https://store.steampowered.com/app/208650/Batman_Arkham_Knight/",
-						"img-hori"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/0ea50e88822a30ab6cd93ba4a082d614.png",
-						"img-vert"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/0ea50e88822a30ab6cd93ba4a082d614.png",
+						"name"  => "Satisfactory",
+						"dev"   => "Coffee Stain",
+						"pub"   => "Coffee Stain",
+						"link"  => "https://store.steampowered.com/app/526870/Satisfactory/",
+						"img-hori"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/43a34043a4ff0d83060d0c1c4bbf7f6f.jpg",
+						"img-vert"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/0f6df0b7e985e2877adf1f36f8d3bbf3.png",
 						"best"  => "15.99"
 					],[//7
-						"name"  => "Sniper Elite v2",
-						"dev"   => "Rebellion",
-						"pub"   => "Rebellion",
-						"link"  => "https://store.steampowered.com/app/63380/Sniper_Elite_V2/",
-						"img-hori"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/c9766f9867f5bbe212da9b9c59726cb8.png",
-						"img-vert"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/c9766f9867f5bbe212da9b9c59726cb8.png",
+						"name"  => "Everspace",
+						"dev"   => "Rockfish",
+						"pub"   => "Rockfish",
+						"link"  => "https://store.steampowered.com/app/1128920/EVERSPACE_2/",
+						"img-hori"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/2e4107ccdf29b2ba754931d865b97d4b.png",
+						"img-vert"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/b453b5a7a737a3fc489fa11aaac1618b.png",
 						"best"  => "14.99"
 					],[//8
-						"name"  => "Ghostrunner",
-						"dev"   => "505 Games",
-						"pub"   => "505 Games",
-						"link"  => "https://store.steampowered.com/app/1139900/Ghostrunner/",
-						"img-hori"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/2cf297f54a6678a3d0f225a64a2c6db3.png",
-						"img-vert"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/2cf297f54a6678a3d0f225a64a2c6db3.png",
+						"name"  => "Astroneer",
+						"dev"   => "System Era Softworks",
+						"pub"   => "System Era Softworks",
+						"link"  => "https://store.steampowered.com/app/361420/ASTRONEER/",
+						"img-hori"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/4af0e3f08d279f5e0fa660bc86b70c78.png",
+						"img-vert"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/01d5fe9395cb06bd35475b88f6647d32.png",
 						"best"  => "9.99"
 					],[//9
-						"name"  => "Monster Hunter",
-						"dev"   => "CAPCOM",
-						"pub"   => "CAPCOM",
-						"link"  => "https://store.steampowered.com/app/582010/Monster_Hunter_World/",
-						"img-hori"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/36f0052da9cf0f101267b6e7f6629248.jpg",
-						"img-vert"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/36f0052da9cf0f101267b6e7f6629248.jpg",
+						"name"  => "Sid Meier's Civilisation 6",
+						"dev"   => "Firaxis Games",
+						"pub"   => "2K",
+						"link"  => "https://store.steampowered.com/app/289070/Sid_Meiers_Civilization_VI/",
+						"img-hori"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/938f7afcfd8745c92c3010b5bf4ba75d.png",
+						"img-vert"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/c9ee6a825655d889ae6a84bde2802bc2.png",
 						"best"  => "24.99"
 					],[//10
 						"name"  => "DOOM Eternal",
@@ -101,7 +101,7 @@ class PagesController extends Controller
 						"pub"   => "Bethesda Softworks",
 						"link"  => "https://store.steampowered.com/app/782330/DOOM_Eternal/",
 						"img-hori"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/7a37e5ef930630650790791fe509e8dc.png",
-						"img-vert"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/7a37e5ef930630650790791fe509e8dc.png",
+						"img-vert"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/ecdcece693ca678ef57153c813cdd5b7.png",
 						"best"  => "19.99"
 					]
 				];
@@ -124,8 +124,8 @@ class PagesController extends Controller
 							"memory: 24GB"
 						],
 						"link"  => "#",
-						"img-hori"   => "..\img\components\hor-3090.png",
-						"img-vert"   => "..\img\components/vert-3090.png",
+						"img-hori"   => "https://assets.nvidia.partners/images/png/nvidia-geforce-rtx-3090.png",
+						"img-vert"   => "https://assets.nvidia.partners/images/png/nvidia-geforce-rtx-3090.png",
 						"best"  => "2100.00"
 					],
 					[//2
@@ -135,8 +135,8 @@ class PagesController extends Controller
 							"pump speed: 10496"
 						],
 						"link"  => "#",
-						"img-hori"   => "..\img\components\hor-cooler.png",
-						"img-vert"   => "..\img\components/vert-cooler.png",
+						"img-hori"   => "https://m.media-amazon.com/images/I/71xtDBbXZyL._AC_SX679_.jpg",
+						"img-vert"   => "https://m.media-amazon.com/images/I/71xtDBbXZyL._AC_SX679_.jpg",
 						"best"  => "249.99"
 					],
 					[//3
@@ -148,8 +148,8 @@ class PagesController extends Controller
 							"max clock speed: 5.30Ghz"
 						],
 						"link"  => "#",
-						"img-hori"   => "..\img\components\hor-cpu.png",
-						"img-vert"   => "..\img\components/vert-cpu.png",
+						"img-hori"   => "https://m.media-amazon.com/images/I/41jGx-EgaJL._AC_.jpg",
+						"img-vert"   => "https://m.media-amazon.com/images/I/41jGx-EgaJL._AC_.jpg",
 						"best"  => "545.00"
 					],
 					[//4
@@ -161,8 +161,8 @@ class PagesController extends Controller
 							"speed: 3600"
 						],
 						"link"  => "#",
-						"img-hori"   => "..\img\components\hor-ram.png",
-						"img-vert"   => "..\img\components/vert-ram.png",
+						"img-hori"   => "https://www.gskill.com/_upload/images/1809101101280.png",
+						"img-vert"   => "https://www.gskill.com/_upload/images/1809101101280.png",
 						"best"  => "112.99"
 					],
 					[//5
@@ -174,8 +174,8 @@ class PagesController extends Controller
 							"write speed: 5.1GB/s"
 						],
 						"link"  => "#",
-						"img-hori"   => "..\img\components\hor-ssd.png",
-						"img-vert"   => "..\img\components/vert-ssd.png",
+						"img-hori"   => "https://images.samsung.com/is/image/samsung/p6pim/uk/mz-v8v1t0bw/gallery/uk-980-nvme-m2-ssd-mz-v8v1t0bw-399698720?$2052_1641_PNG$",
+						"img-vert"   => "https://images.samsung.com/is/image/samsung/p6pim/uk/mz-v8v1t0bw/gallery/uk-980-nvme-m2-ssd-mz-v8v1t0bw-399698720?$2052_1641_PNG$",
 						"best"  => "110.00"
 					]
 				];
@@ -194,40 +194,40 @@ class PagesController extends Controller
 						"brand"   => "Sony",
 						"desc"   => "Disk Edition",
 						"link"  => "https://www.playstation.com/en-gb/ps5/",
-						"img-hori"   => "../img/consoles-ps5-disc.png",
-						"img-vert"   => "../img/consoles-ps5-disc.png",
+						"img-hori"   => "https://m.media-amazon.com/images/I/61W3QAWieSL._AC_SX679_.jpg",
+						"img-vert"   => "https://m.media-amazon.com/images/I/61W3QAWieSL._AC_SX679_.jpg",
 						"best"  => "449.99"
 					],[//1
 						"name"  => "PlayStation 5 Digital",
 						"brand"   => "Sony",
 						"desc"   => "Digital Edition",
 						"link"  => "https://www.playstation.com/en-gb/ps5/",
-						"img-hori"   => "../img/consoles-ps5-digital.png",
-						"img-vert"   => "../img/consoles-ps5-digital.png",
+						"img-hori"   => "https://cdn.media.amplience.net/i/currysprod/10205198?\$l-large$&fmt=auto",
+						"img-vert"   => "https://cdn.media.amplience.net/i/currysprod/10205198?\$l-large$&fmt=auto",
 						"best"  => "359.99"
 					],[//1
 						"name"  => "Xbox Series X",
 						"brand"   => "Microsoft",
 						"desc"   => "Best Version",
 						"link"  => "https://www.xbox.com/en-GB/consoles/xbox-series-x",
-						"img-hori"   => "../img/consoles-xbox-series-x.png",
-						"img-vert"   => "../img/consoles-xbox-series-x.png",
+						"img-hori"   => "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRG4rakR2orK4xT8SMQJ6POoY3VlzEPH8DVZFyoT90V-fFCm7r2ff8lkwiKTUZm6VOwkucN6ytYuIVQTtKFN1Rr_HYsveznGL1CdL6sg_ZQljLO0zcK0Pxcgg&usqp=CAE",
+						"img-vert"   => "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRG4rakR2orK4xT8SMQJ6POoY3VlzEPH8DVZFyoT90V-fFCm7r2ff8lkwiKTUZm6VOwkucN6ytYuIVQTtKFN1Rr_HYsveznGL1CdL6sg_ZQljLO0zcK0Pxcgg&usqp=CAE",
 						"best"  => "449.99"
 					],[//1
 						"name"  => "Xbox Series S",
 						"brand"   => "Microsoft",
 						"desc"   => "Budget Version",
 						"link"  => "https://www.xbox.com/en-GB/consoles/xbox-series-s",
-						"img-hori"   => "../img/consoles-xbox-series-s.png",
-						"img-vert"   => "../img/consoles-xbox-series-s.png",
+						"img-hori"   => "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQtDAGQNPaZgV2WJ6Dpvf6pTNIqKvJx06fIyI3TQGBPeK2if9YC9T1I3i5QLT5zU4staiqhx-tIzalWgzt3za3X4XSUWczemb7hIiee9mmaH8xO-md1lWks2w&usqp=CAE",
+						"img-vert"   => "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQtDAGQNPaZgV2WJ6Dpvf6pTNIqKvJx06fIyI3TQGBPeK2if9YC9T1I3i5QLT5zU4staiqhx-tIzalWgzt3za3X4XSUWczemb7hIiee9mmaH8xO-md1lWks2w&usqp=CAE",
 						"best"  => "249.99"
 					],[//1
 						"name"  => "Nintendo Switch",
 						"brand"   => "Nintendo",
 						"desc"   => "OLED Edition",
 						"link"  => "https://www.nintendo.com/switch/oled-model/",
-						"img-hori"   => "../img/consoles-switch-oled.png",
-						"img-vert"   => "../img/consoles-switch-oled.png",
+						"img-hori"   => "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTElLMZBu8dmYV0XosxAII5Pl0vZsJR5YAS2gY8diNxBqB4triw3T5EqFenyC8ogvktIVkLqZBa0eNFpCjb48vUoTmCewP0Ttu_a4m4-5E&usqp=CAE",
+						"img-vert"   => "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTElLMZBu8dmYV0XosxAII5Pl0vZsJR5YAS2gY8diNxBqB4triw3T5EqFenyC8ogvktIVkLqZBa0eNFpCjb48vUoTmCewP0Ttu_a4m4-5E&usqp=CAE",
 						"best"  => "309.99"
 					]
 				];
@@ -249,8 +249,8 @@ class PagesController extends Controller
 							"ram" => "64GB DDR5"
 						],
 						"link"  => "#",
-						"img-vert"   => "..\img\prebuilds/vert-corsair.png",
-						"img-hori"   => "..\img\prebuilds/hor-corsair.png",
+						"img-vert"   => "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRNqFRWOu8h_J7f-X1z9KZI9JV4t1cct4rbBSSIw4eBZOgrkHsvN6zARnU8DHWdkgK2Mw8jnfeab0z6AyqanHA0ZVR9PwDimbCOit7ftIMt&usqp=CAE",
+						"img-hori"   => "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRNqFRWOu8h_J7f-X1z9KZI9JV4t1cct4rbBSSIw4eBZOgrkHsvN6zARnU8DHWdkgK2Mw8jnfeab0z6AyqanHA0ZVR9PwDimbCOit7ftIMt&usqp=CAE",
 						"best"  => "1000"
 					],
 					[//2
@@ -261,8 +261,8 @@ class PagesController extends Controller
 							"ram" => "64GB DDR5"
 						],
 						"link"  => "#",
-						"img-vert"   => "..\img\prebuilds/vert-acer.png",
-						"img-hori"   => "..\img\prebuilds/hor-acer.png",
+						"img-vert"   => "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT5kRfCy6guheizFEmG1j85TcnXdVqZHRL8Z6vh_4NthUW9YUPOxmlrXCfutXJS4LpRT6Yqp10au5kfq57nPTCwvMP1OR2tVtO3PJIPikeycSuk96xcOZDNBg&usqp=CAE",
+						"img-hori"   => "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT5kRfCy6guheizFEmG1j85TcnXdVqZHRL8Z6vh_4NthUW9YUPOxmlrXCfutXJS4LpRT6Yqp10au5kfq57nPTCwvMP1OR2tVtO3PJIPikeycSuk96xcOZDNBg&usqp=CAE",
 						"best"  => "1000"
 					],
 					[//3
@@ -273,8 +273,8 @@ class PagesController extends Controller
 							"ram" => "64GB DDR5"
 						],
 						"link"  => "#",
-						"img-vert"   => "..\img\prebuilds/vert-asus.png",
-						"img-hori"   => "..\img\prebuilds/hor-asus.png",
+						"img-vert"   => "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQnz5dHcTZVb-Tq1OJQ4lPyDz8ACNhS_J_8-GEgRyRoKVzj8NXmT2nbh84sTV51pji3VxHqDcB_kqG3p3OoUbHCcVVXhv9pkJoEwHFMpLyuKLDTtIAyTJiH&usqp=CAE",
+						"img-hori"   => "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQnz5dHcTZVb-Tq1OJQ4lPyDz8ACNhS_J_8-GEgRyRoKVzj8NXmT2nbh84sTV51pji3VxHqDcB_kqG3p3OoUbHCcVVXhv9pkJoEwHFMpLyuKLDTtIAyTJiH&usqp=CAE",
 						"best"  => "1000"
 					],
 					[//4
@@ -285,8 +285,8 @@ class PagesController extends Controller
 							"ram" => "64GB DDR5"
 						],
 						"link"  => "#",
-						"img-vert"   => "..\img\prebuilds/vert-alienware.png",
-						"img-hori"   => "..\img\prebuilds/hor-alienware.png",
+						"img-vert"   => "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR6YagCY8eQufe6ZjLGl78TCdXtAlAr1KKUxKyNJdz4vpthG3LX_m7YDPF3nAtG0P6Ux72vvExyHesqiS_iibl_KzpHOud6kKLEo8BmREHXev_m0oC-u6BCsg&usqp=CAE",
+						"img-hori"   => "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR6YagCY8eQufe6ZjLGl78TCdXtAlAr1KKUxKyNJdz4vpthG3LX_m7YDPF3nAtG0P6Ux72vvExyHesqiS_iibl_KzpHOud6kKLEo8BmREHXev_m0oC-u6BCsg&usqp=CAE",
 						"best"  => "1000"
 					],
 					[//5
@@ -297,8 +297,8 @@ class PagesController extends Controller
 							"ram" => "64GB DDR5"
 						],
 						"link"  => "#",
-						"img-vert"   => "..\img\prebuilds/vert-hp.png",
-						"img-hori"   => "..\img\prebuilds/hor-hp.png",
+						"img-vert"   => "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ5WIl4yJWQQHCRzNdrdjTcYoBkaMvlZGB1uKxabgyB41eacKWBwYpR4ANiV6-SDCS3GbfY4uJmL4zSkyr3Aki9xDy_KWUsCO72s-dtpoU&usqp=CAE",
+						"img-hori"   => "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ5WIl4yJWQQHCRzNdrdjTcYoBkaMvlZGB1uKxabgyB41eacKWBwYpR4ANiV6-SDCS3GbfY4uJmL4zSkyr3Aki9xDy_KWUsCO72s-dtpoU&usqp=CAE",
 						"best"  => "1000"
 					]
 				];

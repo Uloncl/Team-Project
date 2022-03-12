@@ -14,7 +14,7 @@
             </script>
 
             <div class="col-sm-8 row">
-                <div class="w-100 my-auto"><h5 class="col w-100 card-title mt-2">{{ $product['name'] }}</h5></div>
+                <div class="w-100 my-auto"><h5 class="col w-100 card-title mt-2">{{ $product['name'] = str_replace('_', ' ', $product['name']) }}</h5></div>
 
                 @if ($category == 'games')
                     <div class="w-100 my-auto"><p class="col w-100 card-text">{{ $product['dev'] }}</p></div>
@@ -35,7 +35,7 @@
                     <div class="w-100 my-auto"><p class="col w-100 card-text">{{ $product['brand'] }}</p></div>
                     <div class="w-100 my-auto"><p class="col w-100 card-text">{{ $product['desc'] }}</p></div>
                 @endif
-                
+
                 <div class="w-100 my-auto"><a href="{{ $product['link'] }}" class="col btn btn-primary mb-2">£{{ $product['best'] }}</a></div>
             </div>
             
