@@ -53,11 +53,11 @@
 							<break>
 	                        <div class="row mb-0">
 	                            <div class="col-md-8 offset-md-4">
-	                                <button type="submit" class="btn btn-primary">
+	                                <button type="submit" class="btn btn-primary" value="login">
 	                                    {{ __('Login') }}
 	                                </button>
 
-	                                <a class= "text-decoration-none text-dark" href="{{ url('/forgot') }}">forgot password</a>
+	                                <a class="text-decoration-none text-dark" href="{{ route('password.forgot') }}">forgot password</a>
 	                            </div>
 	                        </div>
 	                    </form>

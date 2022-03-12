@@ -19,4 +19,14 @@ class ForgotPasswordController extends Controller
     */
 
     use SendsPasswordResetEmails;
+
+    
+	public function forgot() {
+		return view('auth.passwords.email');
+	}
+    
+	public function update() {
+        //email stuff here
+		return view('auth.passwords.email')->with('success', 'check you emails to verify that your password can be changed');
+	}
 }
