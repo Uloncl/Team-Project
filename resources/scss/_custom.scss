@@ -17,7 +17,6 @@
     
  }
 
- .dropdown-toggle::after {
-  content: none;
-  display: none;
+ .dropdown-toggle:after {
+  border: none;
 }

@@ -13,7 +13,7 @@
 
 			<div class="col-sm">
 				<div class="dropdown mx-5">
-					<a href="#" class="py-2 d-none d-md-inline-block d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+					<a href="#" class="py-2 d-none d-md-inline-block d-block link-dark text-decoration-none" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
 						Games
 					</a>
 					<ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
@@ -26,8 +26,8 @@
 
 		<div class="col-sm">
 			<div class="dropdown mx-5">
-				<a href="#" class="py-2 d-none d-md-inline-block d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-					PC Components
+				<a href="#" class="py-2 d-none d-md-inline-block d-block link-dark text-decoration-none" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+					Components
 				</a>
 				<ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
 					<li><a class="dropdown-item" href="#">CPU</a></li>
@@ -42,7 +42,7 @@
 	
 		<div class="col-sm">
 			<div class="dropdown mx-5">
-				<a href="#" class="py-2 d-none d-md-inline-block d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+				<a href="#" class="py-2 d-none d-md-inline-block d-block link-dark text-decoration-none" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
 					Consoles
 				</a>
 				<ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
@@ -55,7 +55,7 @@
 
 	<div class="col-sm">
 			<div class="dropdown">
-				<a href="#" class="py-2 d-none d-md-inline-block d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+				<a href="#" class="py-2 d-none d-md-inline-block d-block link-dark text-decoration-none" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
 					Pre-built PCs
 				</a>
 				<ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
