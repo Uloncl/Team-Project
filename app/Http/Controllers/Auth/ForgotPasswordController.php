@@ -29,9 +29,9 @@ class ForgotPasswordController extends Controller
 		return view('auth.passwords.email');
 	}
     
-	public function update(Request $request {
+	public function update(Request $request) {
         $user = User::whereEmail($request->$email)->first(); 
-        if("""Get email from database"""){
+        if("Get email from database"){
             return redirect()->back()->with(['error' => 'Email does not exist']);
         }
 
@@ -49,7 +49,7 @@ class ForgotPasswordController extends Controller
                 $message->to($user->email);
                 $message->subject("Hello $user->name", "Activate your account."); 
             }
-        ) 
+        );
     }
 
     public function sendEmail($user, $code){
@@ -60,6 +60,6 @@ class ForgotPasswordController extends Controller
                 $message->to($user->email);
                 $message->subject("Hello $user->name", "Reset your password."); 
             }
-        ) 
+        );
     }
 }
