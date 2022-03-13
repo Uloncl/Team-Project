@@ -13,7 +13,7 @@
 
 			<div class="col-sm">
 				<div class="dropdown mx-5">
-					<a href="{{ url('/products/games') }}" class="py-2 d-none d-md-inline-block d-block link-dark text-decoration-none" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+					<a href="{{ url('/products/games') }}" class="py-2 d-none d-md-inline-block d-block link-dark text-decoration-none" id="dropdownUser1" data-bs-toggle="{{ url('/products/games') }}" aria-expanded="false">
 						Games
 					</a>
 					<ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
