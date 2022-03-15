@@ -76,6 +76,7 @@
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
   --bs-sahara: #fda93c;
+  --bs-navy: #183d50;
   --bs-primary-rgb: 13, 110, 253;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
@@ -99,6 +100,7 @@
   --bs-gray-rgb: 108, 117, 125;
   --bs-gray-dark-rgb: 52, 58, 64;
   --bs-sahara-rgb: 253, 169, 60;
+  --bs-navy-rgb: 24, 61, 80;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
@@ -3768,6 +3770,36 @@ textarea.form-control-lg {
   border-color: #fda93c;
 }
 
+.btn-navy {
+  color: #fff;
+  background-color: #183d50;
+  border-color: #183d50;
+}
+.btn-navy:hover {
+  color: #fff;
+  background-color: #143444;
+  border-color: #133140;
+}
+.btn-check:focus + .btn-navy, .btn-navy:focus {
+  color: #fff;
+  background-color: #143444;
+  border-color: #133140;
+  box-shadow: 0 0 0 0.25rem rgba(59, 90, 106, 0.5);
+}
+.btn-check:checked + .btn-navy, .btn-check:active + .btn-navy, .btn-navy:active, .btn-navy.active, .show > .btn-navy.dropdown-toggle {
+  color: #fff;
+  background-color: #133140;
+  border-color: #122e3c;
+}
+.btn-check:checked + .btn-navy:focus, .btn-check:active + .btn-navy:focus, .btn-navy:active:focus, .btn-navy.active:focus, .show > .btn-navy.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(59, 90, 106, 0.5);
+}
+.btn-navy:disabled, .btn-navy.disabled {
+  color: #fff;
+  background-color: #183d50;
+  border-color: #183d50;
+}
+
 .btn-outline-primary {
   color: #0d6efd;
   border-color: #0d6efd;
@@ -4340,6 +4372,31 @@ textarea.form-control-lg {
 }
 .btn-outline-sahara:disabled, .btn-outline-sahara.disabled {
   color: #fda93c;
+  background-color: transparent;
+}
+
+.btn-outline-navy {
+  color: #183d50;
+  border-color: #183d50;
+}
+.btn-outline-navy:hover {
+  color: #fff;
+  background-color: #183d50;
+  border-color: #183d50;
+}
+.btn-check:focus + .btn-outline-navy, .btn-outline-navy:focus {
+  box-shadow: 0 0 0 0.25rem rgba(24, 61, 80, 0.5);
+}
+.btn-check:checked + .btn-outline-navy, .btn-check:active + .btn-outline-navy, .btn-outline-navy:active, .btn-outline-navy.active, .btn-outline-navy.dropdown-toggle.show {
+  color: #fff;
+  background-color: #183d50;
+  border-color: #183d50;
+}
+.btn-check:checked + .btn-outline-navy:focus, .btn-check:active + .btn-outline-navy:focus, .btn-outline-navy:active:focus, .btn-outline-navy.active:focus, .btn-outline-navy.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(24, 61, 80, 0.5);
+}
+.btn-outline-navy:disabled, .btn-outline-navy.disabled {
+  color: #183d50;
   background-color: transparent;
 }
 
@@ -6013,6 +6070,15 @@ textarea.form-control-lg {
   color: #513613;
 }
 
+.alert-navy {
+  color: #0e2530;
+  background-color: #d1d8dc;
+  border-color: #bac5cb;
+}
+.alert-navy .alert-link {
+  color: #0b1e26;
+}
+
 @-webkit-keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem;
@@ -6608,6 +6674,20 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #654418;
   border-color: #654418;
+}
+
+.list-group-item-navy {
+  color: #0e2530;
+  background-color: #d1d8dc;
+}
+.list-group-item-navy.list-group-item-action:hover, .list-group-item-navy.list-group-item-action:focus {
+  color: #0e2530;
+  background-color: #bcc2c6;
+}
+.list-group-item-navy.list-group-item-action.active {
+  color: #fff;
+  background-color: #0e2530;
+  border-color: #0e2530;
 }
 
 .btn-close {
@@ -7813,6 +7893,13 @@ textarea.form-control-lg {
   color: #fdba63;
 }
 
+.link-navy {
+  color: #183d50;
+}
+.link-navy:hover, .link-navy:focus {
+  color: #133140;
+}
+
 .ratio {
   position: relative;
   width: 100%;
@@ -8300,6 +8387,10 @@ textarea.form-control-lg {
 
 .border-sahara {
   border-color: #fda93c !important;
+}
+
+.border-navy {
+  border-color: #183d50 !important;
 }
 
 .border-1 {
@@ -9210,6 +9301,11 @@ textarea.form-control-lg {
   color: rgba(var(--bs-sahara-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-navy {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-navy-rgb), var(--bs-text-opacity)) !important;
+}
+
 .text-muted {
   --bs-text-opacity: 1;
   color: #6c757d !important;
@@ -9359,6 +9455,11 @@ textarea.form-control-lg {
 .bg-sahara {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-sahara-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-navy {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-navy-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-transparent {
