@@ -10,7 +10,6 @@
 		<title>{{ config('app.name', 'Laravel') }}</title>
 		<script src="{{ asset('js/app.js') }}" ></script>
 		<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
 		<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 

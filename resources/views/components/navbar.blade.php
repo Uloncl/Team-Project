@@ -1,4 +1,4 @@
-<script>//for hiding the navbar when scrolling
+<script>
 	var prevScrollpos = window.pageYOffset;
 	window.onscroll = function() {
 		var currentScrollPos = window.pageYOffset;
@@ -10,9 +10,13 @@
 		prevScrollpos = currentScrollPos;
 	}
 </script>
-
-<header id="navbar" class="bg-light site-header sticky-top text-dark">
-	<div class="row mx-5">
+<style>
+	.navbar {
+		transition: top 0.2s ease;
+	}
+</style>
+<header id="navbar" class="navbar navbar-expand-md bg-light site-header sticky-top text-dark">
+	<div class="row mx-5 w-100">
 		<div class="col-sm-1 text-center">
 			<a href="/" class="text-decoration-none">
 				<h2 class="my-3 text-sahara fst-italic">Sahara</h2>
@@ -21,9 +25,9 @@
 
 
 		<div class="col row my-1">
-			
+
 			<div class="col dropdown" id="dropdownUser1">
-				<a data-target="{{ url('/products/games') }}"  target="_self" href="{{ url('/products/games') }}" class="text-center text-decoration-none d-block py-2 p-3">
+				<a data-target="{{ url('/products/games') }}" target="_self" href="{{ url('/products/games') }}" class="text-center text-decoration-none d-block py-2 p-3">
 					<h6 class="text-dark p-2 my-2 rounded-pill">
 						Games
 					</h6>
@@ -35,7 +39,7 @@
 			</div>
 
 			<div class="col dropdown" id="dropdownUser1">
-				<a data-target="{{ url('/products/components') }}"  target="_self" href="{{ url('/products/components') }}" class="text-center text-decoration-none d-block py-2 p-3">
+				<a data-target="{{ url('/products/components') }}" target="_self" href="{{ url('/products/components') }}" class="text-center text-decoration-none d-block py-2 p-3">
 					<h6 class="text-dark p-2 my-2 rounded-pill">
 						Components
 					</h6>
@@ -51,7 +55,7 @@
 			</div>
 
 			<div class="col dropdown" id="dropdownUser1">
-				<a data-target="{{ url('/products/consoles') }}"  target="_self" href="{{ url('/products/consoles') }}" class="text-center text-decoration-none d-block py-2 p-3">
+				<a data-target="{{ url('/products/consoles') }}" target="_self" href="{{ url('/products/consoles') }}" class="text-center text-decoration-none d-block py-2 p-3">
 					<h6 class="text-dark p-2 my-2 rounded-pill">
 						Consoles
 					</h6>
@@ -64,7 +68,7 @@
 			</div>
 
 			<div class="col dropdown" id="dropdownUser1">
-				<a data-target="{{ url('/products/prebuilds') }}"  target="_self" href="{{ url('/products/prebuilds') }}" class="text-center text-decoration-none d-block py-2 p-3">
+				<a data-target="{{ url('/products/prebuilds') }}" target="_self" href="{{ url('/products/prebuilds') }}" class="text-center text-decoration-none d-block py-2 p-3">
 					<h6 class="text-dark p-2 my-2 rounded-pill">
 						Computers
 					</h6>
