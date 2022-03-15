@@ -1,5 +1,5 @@
 <div class="position-relative overflow-hidden mb-3 text-center">
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" style="height: 55vh">
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" style="height: 63vh">
 
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
@@ -8,9 +8,9 @@
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4" class=""></button>
     </div>
     
-    <div class="carousel-inner" style="height: 55vh">
+    <div class="carousel-inner" style="height: 63vh">
 
-      <div class="carousel-item active" style="height: 55vh">
+      <div class="carousel-item active" style="height: 63vh">
         <img class="d-block w-100" src="../img/banner-games.png" alt="first slide">
         <div>
           <div class="carousel-caption">
@@ -21,7 +21,7 @@
         </div>
       </div>
 
-      <div class="carousel-item" style="height: 55vh">
+      <div class="carousel-item" style="height: 63vh">
         <img class="d-block w-100" src="../img/banner-computers.png" alt="second slide">
         <div>
           <div class="carousel-caption text-end top-0 mt-5 pt-5">
@@ -32,7 +32,7 @@
         </div>
       </div>
       
-      <div class="carousel-item" style="height: 55vh">
+      <div class="carousel-item" style="height: 63vh">
         <img class="d-block w-100" src="../img/banner-consoles.png" alt="Third slide">
         <div>
           <div class="carousel-caption text-start text-dark mt-5 pt-5 top-0">
@@ -43,7 +43,7 @@
         </div>
       </div>
 
-      <div class="carousel-item" style="height: 55vh">
+      <div class="carousel-item" style="height: 63vh">
         <img class="d-block w-100" src="../img/banner-components.png" alt="fourth slide">
         <div>
           <div class="carousel-caption text-start mt-5 pt-5 top-0">

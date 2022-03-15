@@ -1,35 +1,46 @@
-<header class="bg-sahara site-header sticky-top py-1 text-dark">
+<script>//for hiding the navbar when scrolling
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+		var currentScrollPos = window.pageYOffset;
+		if (prevScrollpos > currentScrollPos) {
+			document.getElementById("navbar").style.top = "0";
+		} else {
+			document.getElementById("navbar").style.top = "-100px";
+		}
+		prevScrollpos = currentScrollPos;
+	}
+</script>
 
-<div class="profile-image" id="profile-image">
-	<a href="/">
-		<img src="{{ asset('../img/SaharaBW.png') }}" alt="Sahara Logo">
-	</a>
-</div>
+<header id="navbar" class="bg-light site-header sticky-top text-dark">
+	<div class="row mx-5">
+		<div class="col-sm-1 text-center">
+			<a href="/" class="text-decoration-none">
+				<h2 class="my-3 text-sahara fst-italic">Sahara</h2>
+			</a>
+		</div>
 
-	<nav class="navbar navbar-default d-flex flex-column flex-md-row justify-content-between">
 
-	<div class="container">
-		<div class="row">
-
-			<div class="col-sm">
-				<div class="dropdown mx-5">
-					<a href="{{ url('/products/games') }}" class="py-2 d-none d-md-inline-block d-block link-dark text-decoration-none" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+		<div class="col row my-1">
+			
+			<div class="col dropdown" id="dropdownUser1">
+				<a data-target="{{ url('/products/games') }}"  target="_self" href="{{ url('/products/games') }}" class="text-center text-decoration-none d-block py-2 p-3">
+					<h6 class="text-dark p-2 my-2 rounded-pill">
 						Games
-					</a>
-					<ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
-						<li><a class="dropdown-item" href="#">PC</a></li>
-						<li><a class="dropdown-item" href="#">Consoles</a></li>
-					</ul>
-				</div>
-			</div>
-		
-
-		<div class="col-sm">
-			<div class="dropdown mx-5">
-				<a href="{{ url('/products/components') }}" class="py-2 d-none d-md-inline-block d-block link-dark text-decoration-none" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-					Components
+					</h6>
 				</a>
-				<ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+				<ul class="dropdown-menu text-small border-0 bg-light">
+					<li><a class="dropdown-item" href="{{ url('/products/games') }}">PC</a></li>
+					<li><a class="dropdown-item" href="{{ url('/products/games') }}">Consoles</a></li>
+				</ul>
+			</div>
+
+			<div class="col dropdown" id="dropdownUser1">
+				<a data-target="{{ url('/products/components') }}"  target="_self" href="{{ url('/products/components') }}" class="text-center text-decoration-none d-block py-2 p-3">
+					<h6 class="text-dark p-2 my-2 rounded-pill">
+						Components
+					</h6>
+				</a>
+				<ul class="dropdown-menu text-small border-0 bg-light">
 					<li><a class="dropdown-item" href="#">CPU</a></li>
 					<li><a class="dropdown-item" href="#">RAM</a></li>
 					<li><a class="dropdown-item" href="#">Video Cards</a></li>
@@ -38,67 +49,77 @@
 					<li><a class="dropdown-item" href="#">Power Supply</a></li>
 				</ul>
 			</div>
-		</div>
-	
-		<div class="col-sm">
-			<div class="dropdown mx-5">
-				<a href="{{ url('/products/consoles') }}" class="py-2 d-none d-md-inline-block d-block link-dark text-decoration-none" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-					Consoles
+
+			<div class="col dropdown" id="dropdownUser1">
+				<a data-target="{{ url('/products/consoles') }}"  target="_self" href="{{ url('/products/consoles') }}" class="text-center text-decoration-none d-block py-2 p-3">
+					<h6 class="text-dark p-2 my-2 rounded-pill">
+						Consoles
+					</h6>
 				</a>
-				<ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
-					<li><a class="dropdown-item" href="#">Microsoft</a></li>
-					<li><a class="dropdown-item" href="#">Sony</a></li>
+				<ul class="dropdown-menu text-small border-0 bg-light">
+					<li><a class="dropdown-item" href="#">Xbox's</a></li>
+					<li><a class="dropdown-item" href="#">Playstations</a></li>
 					<li><a class="dropdown-item" href="#">Nintendo</a></li>
 				</ul>
 			</div>
-		</div>
 
-	<div class="col-sm">
-			<div class="dropdown">
-				<a href="{{ url('/products/prebuilds') }}" class="py-2 d-none d-md-inline-block d-block link-dark text-decoration-none" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-					Pre-built PCs
+			<div class="col dropdown" id="dropdownUser1">
+				<a data-target="{{ url('/products/prebuilds') }}"  target="_self" href="{{ url('/products/prebuilds') }}" class="text-center text-decoration-none d-block py-2 p-3">
+					<h6 class="text-dark p-2 my-2 rounded-pill">
+						Computers
+					</h6>
 				</a>
-				<ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+				<ul class="dropdown-menu text-small border-0 bg-light">
 					<li><a class="dropdown-item" href="#">High end</a></li>
 					<li><a class="dropdown-item" href="#">Middle</a></li>
 					<li><a class="dropdown-item" href="#">Low end</a></li>
 				</ul>
 			</div>
+
 		</div>
-	</div>
-</div>
-  
-	
 
+		<div class="w-50"></div>
 
-	@auth
+		@auth
 
-		<div class="dropdown mx-5">
-			<a href="#" class="py-2 d-none d-md-inline-block d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+		<div class="col-sm-1 dropdown my-4 text-center">
+			<a href="#" class="text-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
 				<img src="https://external-preview.redd.it/I298iZdWplRbjz9GUMAm8qGgZ8rAKdeC3Q0wl9n1CVM.jpg?auto=webp&s=0a990e77e6bb0faadd35be60365e472485a2fa4e" alt="mdo" width="32" height="32" class="rounded-circle">
 			</a>
-			<ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+			<ul class="dropdown-menu text-small border-0 bg-light" aria-labelledby="dropdownUser1">
 				<li><a class="dropdown-item" href="{{ url('/settings') }}">Settings</a></li>
 				<li><a class="dropdown-item" href="{{ url('/profile') }}">Profile</a></li>
-				<li><hr class="dropdown-divider"></li>
+				<li>
+					<hr class="dropdown-divider">
+				</li>
 				<li><a class="dropdown-item" href="{{ url('/saved') }}">Your Saved Products</a></li>
-				<li><hr class="dropdown-divider"></li>
+				<li>
+					<hr class="dropdown-divider">
+				</li>
 				<li><a class="dropdown-item" href="{{ url('/logout') }}">Log out</a></li>
 			</ul>
 		</div>
 
-	@else
+		@else
 
-		<div class="dropdown mx-5">
-			<a href="#" class="py-2 d-none d-md-inline-block d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+		<div class="col-sm-1 dropdown my-4 text-center">
+			<a href="#" class="text-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
 				<img src="../img/default-pfp.png" alt="mdo" width="32" height="32" class="rounded-circle">
 			</a>
-			<ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+			<ul class="dropdown-menu text-small border-0 bg-light" aria-labelledby="dropdownUser1">
 				<li><a class="dropdown-item" href="{{ url('/login') }}">Login</a></li>
 				<li><a class="dropdown-item" href="{{ url('/register') }}">Register</a></li>
 			</ul>
 		</div>
 
-	@endauth
-  </nav>
+		@endauth
+
+	</div>
+
+
+
+
+
+
+	</nav>
 </header>

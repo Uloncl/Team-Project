@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
 	</head>
-	<body class="bg-light" style="overflow-x:hidden">
+	<body class="bg-light" style="overflow-x:hidden; min-width: 1880px; width: auto;">
 		<div id="app">
 			<x-navbar/>
 			{{ $slot }}
