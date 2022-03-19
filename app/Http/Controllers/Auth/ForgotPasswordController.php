@@ -43,17 +43,6 @@ class ForgotPasswordController extends Controller
 
     public function sendEmail($user, $code){
         Mail:send(
-            'email.activation',
-            ['user' => $user, 'code', $code],
-            function($message) use ($user){
-                $message->to($user->email);
-                $message->subject("Hello $user->name", "Activate your account."); 
-            }
-        );
-    }
-
-    public function sendEmail($user, $code){
-        Mail:send(
             'email.forgot',
             ['user' => $user, 'code', $code],
             function($message) use ($user){
