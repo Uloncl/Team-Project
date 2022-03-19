@@ -145,9 +145,9 @@
 
 		@else
 
-		<div class="dropdown text-end  mx-5">
-			<a href="#" class="py-2 d-none d-md-inline-block d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-				<img src="https://isobarscience.com/wp-content/uploads/2020/09/default-profile-picture1.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
+		<div class="col-sm-1 dropdown my-4 text-center">
+			<a href="#" class="text-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+				<img src="../img/default-pfp.png" alt="mdo" width="32" height="32" class="rounded-circle">
 			</a>
 			<ul class="dropdown-menu text-small border-0 bg-{{ $theme == 'light' ? 'light' : 'navy' }}" aria-labelledby="dropdownUser1">
 				<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="{{ url('/login') }}">Login</a></li>
