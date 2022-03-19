@@ -158,11 +158,4 @@
 		@endauth
 
 	</div>
-
-
-
-
-
-
-	</nav>
 </header>
