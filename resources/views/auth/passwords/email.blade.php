@@ -5,7 +5,7 @@
 	            <div class="card">
 	                <div class="card-header">{{ __('Reset Password') }}</div>
 
-	                <div class="card-body">
+	                
 	                    @if (session('status'))
 	                        <div class="alert alert-success" role="alert">
 	                            {{ session('status') }}
@@ -36,6 +36,12 @@
 	                                </button>
 	                            </div>
 	                        </div>
+							
+							@if (session('message'))
+								<div class="alert alert-sent" role="alert">
+									{{ session('message') }}
+								</div>
+							@endif	
 	                    </form>
 	                </div>
 	            </div>
