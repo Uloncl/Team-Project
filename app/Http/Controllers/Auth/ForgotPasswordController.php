@@ -36,6 +36,7 @@ class ForgotPasswordController extends Controller
             $message->to(Request('email'))
                 ->subject("Hello");
         });
-
+        
+        return view('auth.passwords.sent')->with("success", "email sent");
     }
 }
