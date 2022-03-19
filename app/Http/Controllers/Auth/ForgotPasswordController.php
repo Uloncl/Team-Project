@@ -37,5 +37,7 @@ class ForgotPasswordController extends Controller
                 ->subject("Hello");
         });
 
+        return redirect('/contact')
+            ->with('message', 'email sent');
     }
 }
