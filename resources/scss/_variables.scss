@@ -19,7 +19,8 @@ $custom-theme-colors: (
   "white":      $white,
   "gray":       $gray-600,
   "gray-dark":  $gray-800,
-  "sahara":     #fda93c
+  "sahara":   #fda93c,
+  "navy":     #183d50
 );
 
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);

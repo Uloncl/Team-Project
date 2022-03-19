@@ -20,7 +20,7 @@
 
         
         <div class="col-md-2 px-2">
-            <a href="#" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+            <a href="#" class="text-danger"><i class="bi bi-x"></i></a>
         </div>
     </div>
 </div>

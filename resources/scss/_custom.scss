@@ -10,3 +10,13 @@
     height: 150%;
     width: 150%;
   }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    
+ }
+
+ .dropdown-toggle:after {
+  border: none;
+}
