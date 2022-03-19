@@ -54,7 +54,6 @@
 			</a>
 		</div>
 
-
 		<div class="col row my-1">
 
 			<div class="col-sm-2 dropdown" id="dropdownUser1">
