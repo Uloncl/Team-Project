@@ -41,11 +41,7 @@
 		document.cookie = name + "=" + value + ";" + expires + ";path=/";
 	}
 </script>
-<style>
-	.navbar {
-		transition: top 0.2s ease;
-	}
-</style>
+
 <header id="navbar" class="navbar navbar-expand-md bg-{{ $theme == 'light' ? 'light' : 'navy' }} site-header sticky-top text-dark">
 	<div class="row mx-5 w-100">
 		<div class="col-sm-1 text-center">
