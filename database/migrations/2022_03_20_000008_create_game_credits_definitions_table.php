@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSavedPropertiesTable extends Migration
+class CreateGameCreditsDefinitionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateSavedPropertiesTable extends Migration
      */
     public function up()
     {
-        Schema::create('saved_properties', function (Blueprint $table) {
+        Schema::create('game_credits_definitions', function (Blueprint $table) {
             $table->id();
-	        $table->integer('user_id');
-		    $table->integer('property_id');
+            $table->string('name');
+            $table->string('type');
         });
     }
 
@@ -27,6 +27,6 @@ class CreateSavedPropertiesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('saved_properties');
+        Schema::dropIfExists('game_credits_definitions');
     }
 }

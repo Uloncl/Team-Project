@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePropertiesTable extends Migration
+class CreateGameVideosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,11 @@ class CreatePropertiesTable extends Migration
      */
     public function up()
     {
-        Schema::create('properties', function (Blueprint $table) {
+        Schema::create('game_videos', function (Blueprint $table) {
             $table->id();
-			$table->string('name');
-			$table->text('description');
-			$table->text('image_location')->nullable();
-			$table->integer('latitude');
-			$table->integer('longitude');
+            $table->string('thumbnail');
+            $table->string('video_480p');
+            $table->string('video_max');
             $table->timestamps();
         });
     }
@@ -31,6 +29,6 @@ class CreatePropertiesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('properties');
+        Schema::dropIfExists('game_videos');
     }
 }

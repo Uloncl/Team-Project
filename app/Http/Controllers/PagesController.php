@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Game;
 
 class PagesController extends Controller
 {
@@ -105,7 +106,6 @@ class PagesController extends Controller
 						"best"  => "19.99"
 					]
 				];
-				
 				
 				return view('products', [
 					"category"    	=> $category,
