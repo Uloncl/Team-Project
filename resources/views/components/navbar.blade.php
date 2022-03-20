@@ -131,13 +131,13 @@
 			<ul class="dropdown-menu text-small border-0 bg-{{ $theme == 'light' ? 'light' : 'navy' }}" aria-labelledby="dropdownUser1">
 				<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="{{ url('/settings') }}">Settings</a></li>
 				<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="{{ url('/profile') }}">Profile</a></li>
-				<li>
-					<hr class="dropdown-divider">
-				</li>
+				@if (Auth::user()->is_admin)
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="{{ route('admin.panel') }}">admin panel</a></li>
+				@endif
+				<li><hr class="dropdown-divider"></li>
 				<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="{{ url('/saved') }}">Your Saved Products</a></li>
-				<li>
-					<hr class="dropdown-divider">
-				</li>
+				<li><hr class="dropdown-divider"></li>
 				<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="{{ url('/logout') }}">Log out</a></li>
 			</ul>
 		</div>

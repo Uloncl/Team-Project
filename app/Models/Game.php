@@ -15,6 +15,19 @@ class Game extends Model
      * @var string
      */
     protected $table = 'games';
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+    protected $fillable = [
+        'steam_id',
+        'gog_id',
+        'epic_id',
+        'type',
+        'title',
+    ];
     
     /**
      * Get the details for this game

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\VerificationController;
@@ -39,6 +40,9 @@ Route::post('/sessions',            [LoginController::class, 'store']           
 Route::get('/mail',            [MailController::class, 'sendMail']);
 Route::get('/password/forgot', [ForgotPasswordController::class, 'forgot'])->name("password.forgot");
 Route::post('/password/update', [ForgotPasswordController::class, 'update'])->name("password.update");
+
+Route::get('/admin', [AdminController::class, 'panel'])->name("admin.panel");
+Route::post('/admin', [AdminController::class, 'update'])->name("admin.update");
 
 //Auth::routes();
 
