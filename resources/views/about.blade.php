@@ -12,7 +12,7 @@
 
 			<div class="row" style="margin: 10%">
 				<div class="card col m-2 p-0" style="width: 0; height: 15%">
-					<img src="/img/team/andrea.jpg" class="card-img-top" alt="Andrea" />
+					<img src="/img/team/andrea.jpg" class="card-img-top rounded-circle m-5" style="width: 65%; height: 65%" alt="Andrea" />
 					<div class="card-body">
 						<h5 class="card-title">Andrea La Fauci De Leo</h5>
 						<p class="card-text">Front End</p>
@@ -32,7 +32,7 @@
 				</div>
 
 				<div class="card col m-2 p-0" style="width: 15%; height: 15%">
-					<img src="/img/team/lewis.jpg" class="card-img-top" alt="Andrea" />
+					<img src="/img/team/lewis.jpg" class="card-img-top rounded-circle m-5" style="width: 65%; height: 65%" alt="Andrea" />
 					<div class="card-body">
 						<h5 class="card-title">Lewis Mann</h5>
 						<p class="card-text">Back End</p>
@@ -52,7 +52,7 @@
 				</div>
 
 				<div class="card col m-2 p-0" style="width: 15%; height: 15%">
-					<img src="/img/team/lewis.jpg" class="card-img-top" alt="Andrea" />
+					<img src="/img/team/lewis.jpg" class="card-img-top rounded-circle m-5" style="width: 65%; height: 65%" alt="Andrea" />
 					<div class="card-body">
 						<h5 class="card-title">Aryan Prince</h5>
 						<p class="card-text">Back End</p>
@@ -72,7 +72,7 @@
 				</div>
 
 				<div class="card col m-2 p-0" style="width: 15%; height: 15%">
-					<img src="/img/team/lewis.jpg" class="card-img-top" alt="Andrea" />
+					<img src="/img/team/lewis.jpg" class="card-img-top rounded-circle m-5" style="width: 65%; height: 65%" alt="Andrea" />
 					<div class="card-body">
 						<h5 class="card-title">Benjamin Miles</h5>
 						<p class="card-text">Back End</p>
@@ -92,7 +92,7 @@
 				</div>
 
 				<div class="card col m-2 p-0" style="width: 15%; height: 15%">
-					<img src="/img/team/lewis.jpg" class="card-img-top" alt="Andrea" />
+					<img src="/img/team/lewis.jpg" class="card-img-top rounded-circle m-5" style="width: 65%; height: 65%" alt="Andrea" />
 					<div class="card-body">
 						<h5 class="card-title">Mabel McDonald</h5>
 						<p class="card-text">Back End</p>
