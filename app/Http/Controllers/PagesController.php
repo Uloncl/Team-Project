@@ -13,6 +13,11 @@ class PagesController extends Controller
 	public function about() {
 		return view('about');
 	}
+
+	public function privacy() {
+		return view('privacy');
+	}
+
 	public function profile() {
 		return view('profile');
 	}
