@@ -26,7 +26,7 @@ class Game extends Model
         'gog_id',
         'epic_id',
         'type',
-        'title',
+        'title'
     ];
     
     /**

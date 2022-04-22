@@ -14,9 +14,9 @@ class AddForeignKeysToTables extends Migration
     public function up()
     {
         Schema::table('games', function (Blueprint $table) {
-            $table->foreignId('details_id')->constrained('game_details')->after('id');
-            $table->foreignId('pricing_id')->constrained('game_pricing')->after('details_id');
-            $table->foreignId('requirements_id')->constrained('game_requirements')->after('pricing_id');
+            $table->foreignId('details_id')->constrained('game_details')->after('id')->nullable()->unique();
+            $table->foreignId('pricing_id')->constrained('game_pricing')->after('details_id')->nullable()->unique();
+            $table->foreignId('requirements_id')->constrained('game_requirements')->after('pricing_id')->nullable()->unique();
         });
 
         Schema::table('game_details', function (Blueprint $table) {
