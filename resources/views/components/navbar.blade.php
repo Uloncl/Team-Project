@@ -107,6 +107,14 @@
 				</ul>
 			</div>
 
+			<div class="col-sm-2" id="dropdownUser1">
+				<a data-target="{{ url('/about') }}" target="_self" href="{{ url('/about') }}" class="text-center text-decoration-none d-block py-2 p-3">
+					<h6 class="text-{{ $theme == 'light' ? 'dark' : 'light' }} p-2 my-2 rounded-pill">
+						About Us
+					</h6>
+				</a>
+			</div>
+
 		</div>
 
 		<div class="w-25"></div>
