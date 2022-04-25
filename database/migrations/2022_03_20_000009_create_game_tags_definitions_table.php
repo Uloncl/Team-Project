@@ -15,7 +15,7 @@ class CreateGameTagsDefinitionsTable extends Migration
     {
         Schema::create('game_tags_definitions', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name')->unique();
             $table->string('type');
         });
     }

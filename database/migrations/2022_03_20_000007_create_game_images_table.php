@@ -17,7 +17,6 @@ class CreateGameImagesTable extends Migration
             $table->id();
             $table->string('thumbnail');
             $table->string('full');
-            $table->timestamps();
         });
     }
 

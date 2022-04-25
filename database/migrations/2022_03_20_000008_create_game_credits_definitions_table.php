@@ -15,7 +15,7 @@ class CreateGameCreditsDefinitionsTable extends Migration
     {
         Schema::create('game_credits_definitions', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name')->unique();
             $table->string('type');
         });
     }
