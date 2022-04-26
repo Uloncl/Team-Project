@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\DB;
 class WishlistController extends Controller
 {
     public function add(){
+        ddd(request());
         if (Auth::check() && request()->validate([
             'product_id' => 'required',
             'type' => 'required'
@@ -23,6 +24,7 @@ class WishlistController extends Controller
     }
     
     public function remove(){
+        ddd(request());
         if (Auth::check() && request()->validate([
             'product_id' => 'required',
             'type' => 'required'

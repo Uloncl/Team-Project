@@ -49,29 +49,38 @@
 
                 <script>
                     function id<?php echo $product->id ?>() {
-                        var heart = $("#id{{ $product->id }}").hasClass("bi-heart");
-                        if (heart) {
+                        if ($("#id{{ $product->id }}").hasClass("bi-heart")) {
                             $.ajax({
-                                url:"{{ route('wishlist.add') }}",
-                                type:"POST",
-                                data:{
-                                    product_id:<?php echo $product->id ?>,
-                                    type:<?php echo $category ?>
+                                url: "{{ route('wishlist.add') }}",
+                                type: "POST",
+                                data: {
+                                    product_id: <?php echo $product->id ?>,
+                                    type: "{{ $category }}"
                                 },
-                                success:function(){
+                                success: function(data) {
+                                    console.log(data);
                                     $(<?php echo $product->id ?>).removeClass('bi-heart');
                                     $(<?php echo $product->id ?>).addClass('bi-heart-fill');
+                                },
+                                statusCode: {
+                                    200: function(data) {
+                                        console.log(data);
+                                    },
+                                    500: function(data) {
+                                        console.log(data);
+                                    }
                                 }
                             })
                         } else {
                             $.ajax({
-                                url:"{{ route('wishlist.remove') }}",
-                                type:"POST",
-                                data:{
-                                    product_id:<?php echo $product->id ?>,
-                                    type:<?php echo $category ?>
+                                url: "{{ route('wishlist.remove') }}",
+                                type: "POST",
+                                data: {
+                                    product_id: <?php echo $product->id ?>,
+                                    type: "{{ $category }}"
                                 },
-                                success:function(){
+                                success: function() {
+                                    console.log(data);
                                     $(<?php echo $product->id ?>).removeClass('bi-heart-fill');
                                     $(<?php echo $product->id ?>).addClass('bi-heart');
                                 }
