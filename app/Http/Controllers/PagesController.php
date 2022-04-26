@@ -274,33 +274,48 @@ class PagesController extends Controller
 
 	public function saved()
 	{
-		$products = [
-			[
-				"title" => "ASUS TUF Gaming GeForce RTX™ 3080 Ti OC Edition 12GB GDDR6X",
-				"link"  => "https://www.amazon.co.uk/ASUS-GeForce-buffed-up-chart-topping-performance/dp/B095YF4L9W/ref=sr_1_8?crid=19PWXQ3S0M5BV&keywords=3080&qid=1646723576&sprefix=3080%2Caps%2C85&sr=8-8",
-				"img"   => "https://m.media-amazon.com/images/I/71F-iS7SfcS._AC_SX679_.jpg",
-				"best"  => "1800",
-				"avg"   => "1900"
-			], [
-				"title" => "AMD Ryzen Threadripper 3990X",
-				"link"  => "https://www.amazon.co.uk/DANIPEW-AMD-Ryzen-Threadripper-3990X/dp/B0815SBQ9W/ref=sr_1_fkmr1_2?keywords=AMD%20RYZEN%20THREADRIPPER%203990X&qid=1581093524&sr=8-2-fkmr1%0D%0A",
-				"img"   => "https://m.media-amazon.com/images/I/711VabzLQ2L._AC_SX679_.jpg",
-				"best"  => "3900",
-				"avg"   => "4000"
-			], [
-				"title" => "Elden Ring",
-				"link"  => "https://store.steampowered.com/app/1245620/ELDEN_RING/",
-				"img"   => "https://cdn.akamai.steamstatic.com/steam/apps/1245620/header.jpg?t=1646406355",
-				"best"  => "40",
-				"avg"   => "50"
-			],
-		];
+		$product_ids = DB::table('user_products_mappings')
+			->where('user_id', Auth::user()->id)
+			->get('product_id');
+		
+		$product_ids_t = [];
 
-		$total = array_sum(array_column($products, 'best'));
+		foreach ($product_ids as $id) {
+			$product_ids_t[] = $id->product_id;
+		}
+
+		$product_ids = $product_ids_t;
+
+		$products = DB::table('games')->whereIn('id', $product_ids)->paginate(10);
+		
+		foreach ($products as $key => $product) {
+			$creditIDsObj = DB::table('game_credits_mappings')->where('game_id', $product->id)->get('credit_id');
+			$creditIDs = [];
+			foreach ($creditIDsObj as $c) {
+				$creditIDs[] = $c->credit_id;
+			}
+			Log::info($creditIDs);
+			$product->best_price = $product->best_price == '' ? null : substr_replace($product->best_price, '.', strlen($product->best_price) - 2, 0);
+			$product->developer = DB::table('game_credits_definitions')->whereIn('id', $creditIDs)->where('type', 'developer')->exists() ? DB::table('game_credits_definitions')->whereIn('id', $creditIDs)->where('type', 'developer')->get()->first()->name : null;
+			$product->publisher = DB::table('game_credits_definitions')->whereIn('id', $creditIDs)->where('type', 'publisher')->exists() ? DB::table('game_credits_definitions')->whereIn('id', $creditIDs)->where('type', 'publisher')->get()->first()->name : null;
+			$product->header_image = DB::table('game_images')
+				->where('game_id', $product->id)
+				->where('type', 'header')
+				->get()->first()->full;
+			if (Auth::check()) {
+				$product->wishlist = DB::table('user_products_mappings')
+					->where('user_id', Auth::user()->id)
+					->where('product_id', $product->id)
+					->where('type', 'games')
+					->get()
+					->first();
+			}
+		}
+
+		// dd($products);
 
 		return view('saved', [
-			"products" => $products,
-			"total"	   => $total
+			"products" => $products
 		]);
 	}
 }

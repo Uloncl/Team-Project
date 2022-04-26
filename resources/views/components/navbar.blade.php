@@ -5,7 +5,7 @@
 		if (prevScrollpos > currentScrollPos) {
 			document.getElementById("navbar").style.top = "0";
 		} else {
-			document.getElementById("navbar").style.top = "-100px";
+			document.getElementById("navbar").style.top = "-150px";
 		}
 		prevScrollpos = currentScrollPos;
 	}
@@ -42,7 +42,7 @@
 	}
 </script>
 
-<header id="navbar" class="navbar navbar-expand-md bg-{{ $theme == 'light' ? 'light' : 'navy' }} site-header sticky-top text-dark">
+<header id="navbar" class="navbar navbar-expand-md bg-{{ $theme == 'light' ? 'light' : 'navy' }} site-header sticky-top text-dark shadow ">
 	<div class="row mx-5 w-100">
 		<div class="col-sm-1 text-center">
 			<a href="/" class="text-decoration-none">
@@ -136,7 +136,7 @@
 				<li>
 					<hr class="dropdown-divider">
 				</li>
-				<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="{{ url('/saved') }}">Your Saved Products</a></li>
+				<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="{{ url('/saved') }}">Your Wishlist</a></li>
 				<li>
 					<hr class="dropdown-divider">
 				</li>
