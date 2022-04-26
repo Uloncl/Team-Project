@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Game;
+use Illuminate\Pagination\Paginator;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\DB;
 
 class PagesController extends Controller
 {
@@ -28,90 +31,23 @@ class PagesController extends Controller
 	{
 		switch ($category) {
 			case "games":
-				$products = [
-					[ //1
-						"name"  => "Elden Ring",
-						"dev"   => "FromSoftware",
-						"pub"   => "FromSoftware",
-						"link"  => "https://store.steampowered.com/app/1245620/ELDEN_RING/",
-						"img-hori"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/13e02498b2ae3df0c9078db2f9eb9b2d.webp",
-						"img-vert"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/e8a2134c849b73bd279caa9f87c94c40.png",
-						"best"  => "49.99"
-					], [ //2
-						"name"  => "Cyberpunk 2077",
-						"dev"   => "CD PROJEKT RED",
-						"pub"   => "CD PROJEKT RED",
-						"link"  => "https://www.gog.com/en/game/cyberpunk_2077",
-						"img-hori"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/561adbb4e6094bef3c29e38ceb6bd929.png",
-						"img-vert"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/32c3d0cdaa575bc25350c7fce4ad91e2.jpg",
-						"best"  => "49.99"
-					], [ //3
-						"name"  => "Stellaris",
-						"dev"   => "Paradox",
-						"pub"   => "Paradox",
-						"link"  => "https://store.steampowered.com/app/281990/Stellaris/",
-						"img-hori"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/b2d07452cf118e98723c0dae380ea76b.png",
-						"img-vert"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/0f31278390b7703f66815f634998d6ea.png",
-						"best"  => "49.99"
-					], [ //4
-						"name"  => "No Mans Sky",
-						"dev"   => "Hello Games",
-						"pub"   => "Hello Games",
-						"link"  => "https://store.steampowered.com/app/275850/No_Mans_Sky/",
-						"img-hori"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/c8d77146931324f4001237a93fe4ba8c.png",
-						"img-vert"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/f4c08424dfb92c8e97f05905215fba86.png",
-						"best"  => "39.99"
-					], [ //5
-						"name"  => "Humankind",
-						"dev"   => "Amplitude",
-						"pub"   => "Sega",
-						"link"  => "https://store.steampowered.com/app/1124300/HUMANKIND/",
-						"img-hori"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/dc1abec14aa6e50efb6f3cdfbb45c2a0.png",
-						"img-vert"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/7f91ef16b2f9174fb249618802b860ea.png",
-						"best"  => "14.99"
-					], [ //6
-						"name"  => "Satisfactory",
-						"dev"   => "Coffee Stain",
-						"pub"   => "Coffee Stain",
-						"link"  => "https://store.steampowered.com/app/526870/Satisfactory/",
-						"img-hori"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/43a34043a4ff0d83060d0c1c4bbf7f6f.jpg",
-						"img-vert"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/0f6df0b7e985e2877adf1f36f8d3bbf3.png",
-						"best"  => "15.99"
-					], [ //7
-						"name"  => "Everspace",
-						"dev"   => "Rockfish",
-						"pub"   => "Rockfish",
-						"link"  => "https://store.steampowered.com/app/1128920/EVERSPACE_2/",
-						"img-hori"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/2e4107ccdf29b2ba754931d865b97d4b.png",
-						"img-vert"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/b453b5a7a737a3fc489fa11aaac1618b.png",
-						"best"  => "14.99"
-					], [ //8
-						"name"  => "Astroneer",
-						"dev"   => "System Era Softworks",
-						"pub"   => "System Era Softworks",
-						"link"  => "https://store.steampowered.com/app/361420/ASTRONEER/",
-						"img-hori"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/4af0e3f08d279f5e0fa660bc86b70c78.png",
-						"img-vert"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/01d5fe9395cb06bd35475b88f6647d32.png",
-						"best"  => "9.99"
-					], [ //9
-						"name"  => "Sid Meier's Civilisation 6",
-						"dev"   => "Firaxis Games",
-						"pub"   => "2K",
-						"link"  => "https://store.steampowered.com/app/289070/Sid_Meiers_Civilization_VI/",
-						"img-hori"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/938f7afcfd8745c92c3010b5bf4ba75d.png",
-						"img-vert"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/c9ee6a825655d889ae6a84bde2802bc2.png",
-						"best"  => "24.99"
-					], [ //10
-						"name"  => "DOOM Eternal",
-						"dev"   => "Bethesda Softworks",
-						"pub"   => "Bethesda Softworks",
-						"link"  => "https://store.steampowered.com/app/782330/DOOM_Eternal/",
-						"img-hori"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/7a37e5ef930630650790791fe509e8dc.png",
-						"img-vert"   => "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/ecdcece693ca678ef57153c813cdd5b7.png",
-						"best"  => "19.99"
-					]
-				];
-
+				$products = DB::table('games')->where('type', 'game')->where('banned', false)->orderBy('recommendations', 'desc')->paginate(20);//->get('id', 'title', 'best_price', 'steam_url');
+				foreach ($products as $key => $product) {
+					$creditIDsObj = DB::table('game_credits_mappings')->where('game_id', $product->id)->get('credit_id');
+					$creditIDs = [];
+					foreach ($creditIDsObj as $c) {
+						$creditIDs[] = $c->credit_id;
+					}
+					Log::info($creditIDs);
+					$product->best_price = $product->best_price == '' ? null : substr_replace($product->best_price, '.', strlen($product->best_price)-2, 0);
+					$product->developer = DB::table('game_credits_definitions')->whereIn('id', $creditIDs)->where('type', 'developer')->exists() ? DB::table('game_credits_definitions')->whereIn('id', $creditIDs)->where('type', 'developer')->get()->first()->name : null;
+					$product->publisher = DB::table('game_credits_definitions')->whereIn('id', $creditIDs)->where('type', 'publisher')->exists() ? DB::table('game_credits_definitions')->whereIn('id', $creditIDs)->where('type', 'publisher')->get()->first()->name : null;
+					$product->header_image = DB::table('game_images')
+												->where('game_id', $product->id)
+												->where('type', 'header')
+												->get()->first()->full;
+				}
+				// return $products;
 				return view('products', [
 					"category"    	=> $category,
 					"orientation"   => $orientation,

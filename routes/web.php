@@ -44,6 +44,9 @@ Route::post('/password/update', [ForgotPasswordController::class, 'update'])->na
 Route::get('/admin', [AdminController::class, 'panel'])->name("admin.panel");
 Route::post('/admin', [AdminController::class, 'update'])->name("admin.update");
 
+Route::post('/wishlist/add', [WishlistController::class, 'add'])->name('wishlist.add');
+Route::post('/wishlist/remove', [WishlistController::class, 'remove'])->name('wishlist.remove');
+
 //Auth::routes();
 
 //Route::get('home',     [PagesController::class, 'home']);

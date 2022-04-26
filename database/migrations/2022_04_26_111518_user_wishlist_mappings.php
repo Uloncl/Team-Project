@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateGameImagesTable extends Migration
+class UserWishlistMappings extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateGameImagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('game_images', function (Blueprint $table) {
+        Schema::create('user_products_mappings', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained('users');
+            $table->integer('product_id');
             $table->string('type');
-            $table->string('thumbnail')->nullable();
-            $table->string('full');
         });
     }
 
@@ -28,6 +28,6 @@ class CreateGameImagesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('game_images');
+        Schema::dropIfExists('user_products_mappings');
     }
 }

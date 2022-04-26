@@ -24,6 +24,7 @@ class CreateGamesTable extends Migration
             $table->longText('description')->nullable();
             $table->longText('about')->nullable();
             $table->longText('languages')->nullable();
+            $table->longText('notes')->nullable();
             $table->string('release_date')->nullable();
             $table->string('steam_url')->nullable();
             $table->String('gog_url')->nullable();
@@ -36,19 +37,19 @@ class CreateGamesTable extends Migration
             $table->integer('current_gog_price')->nullable();
             $table->integer('current_epic_price')->nullable();
             $table->integer('best_price')->nullable();
-            $table->integer('best_store')->nullable();
+            $table->string('best_store')->nullable();
 
             $table->boolean('windows')->nullable();
-            $table->string('pc_recommended')->nullable();
-            $table->string('pc_minimum')->nullable();
+            $table->longText('pc_recommended')->nullable();
+            $table->longText('pc_minimum')->nullable();
 
             $table->boolean('linux')->nullable();
-            $table->string('linux_recommended')->nullable();
-            $table->string('linux_minimum')->nullable();
+            $table->longText('linux_recommended')->nullable();
+            $table->longText('linux_minimum')->nullable();
 
             $table->boolean('mac')->nullable();
-            $table->string('mac_recommended')->nullable();
-            $table->string('mac_minimum')->nullable();
+            $table->longText('mac_recommended')->nullable();
+            $table->longText('mac_minimum')->nullable();
         });
     }
 
