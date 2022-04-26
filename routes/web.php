@@ -7,8 +7,8 @@ use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\VerificationController;
 use App\Http\Controllers\Auth\ForgotPasswordController;
-use App\Http\Controller\MailController;
-use App\Http\Controller\WishlistController;
+use App\Http\Controllers\MailController;
+use App\Http\Controllers\WishlistController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +20,9 @@ use App\Http\Controller\WishlistController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::post('/wishlist/add', [WishlistController::class, 'add']);
+Route::post('/wishlist/remove', [WishlistController::class, 'remove']);
 
 Route::controller(PagesController::class)->group(function () {
     Route::get('/',                   'home')       ->name("home");
@@ -45,5 +48,3 @@ Route::post('/password/update', [ForgotPasswordController::class, 'update'])->na
 Route::get('/admin', [AdminController::class, 'panel'])->name("admin.panel");
 Route::post('/admin', [AdminController::class, 'update'])->name("admin.update");
 
-Route::post('/wishlist/add', [WishlistController::class, 'add'])->middleware(['auth', 'signed'])->name('wishlist.add');
-Route::post('/wishlist/remove', [WishlistController::class, 'remove'])->middleware(['auth', 'signed'])->name('wishlist.remove');

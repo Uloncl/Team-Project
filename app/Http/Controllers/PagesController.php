@@ -8,6 +8,7 @@ use App\Models\Game;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 class PagesController extends Controller
 {
@@ -31,7 +32,7 @@ class PagesController extends Controller
 	{
 		switch ($category) {
 			case "games":
-				$products = DB::table('games')->where('type', 'game')->where('banned', false)->orderBy('recommendations', 'desc')->paginate(20);//->get('id', 'title', 'best_price', 'steam_url');
+				$products = DB::table('games')->where('type', 'game')->where('banned', false)->orderBy('recommendations', 'desc')->paginate(20); //->get('id', 'title', 'best_price', 'steam_url');
 				foreach ($products as $key => $product) {
 					$creditIDsObj = DB::table('game_credits_mappings')->where('game_id', $product->id)->get('credit_id');
 					$creditIDs = [];
@@ -39,13 +40,21 @@ class PagesController extends Controller
 						$creditIDs[] = $c->credit_id;
 					}
 					Log::info($creditIDs);
-					$product->best_price = $product->best_price == '' ? null : substr_replace($product->best_price, '.', strlen($product->best_price)-2, 0);
+					$product->best_price = $product->best_price == '' ? null : substr_replace($product->best_price, '.', strlen($product->best_price) - 2, 0);
 					$product->developer = DB::table('game_credits_definitions')->whereIn('id', $creditIDs)->where('type', 'developer')->exists() ? DB::table('game_credits_definitions')->whereIn('id', $creditIDs)->where('type', 'developer')->get()->first()->name : null;
 					$product->publisher = DB::table('game_credits_definitions')->whereIn('id', $creditIDs)->where('type', 'publisher')->exists() ? DB::table('game_credits_definitions')->whereIn('id', $creditIDs)->where('type', 'publisher')->get()->first()->name : null;
 					$product->header_image = DB::table('game_images')
-												->where('game_id', $product->id)
-												->where('type', 'header')
-												->get()->first()->full;
+						->where('game_id', $product->id)
+						->where('type', 'header')
+						->get()->first()->full;
+					if (Auth::check()) {
+						$product->wishlist = DB::table('user_products_mappings')
+							->where('user_id', Auth::user()->id)
+							->where('product_id', $product->id)
+							->where('type', 'games')
+							->get()
+							->first();
+					}
 				}
 				// return $products;
 				return view('products', [

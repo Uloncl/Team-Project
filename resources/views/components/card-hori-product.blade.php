@@ -51,46 +51,54 @@
                     function id<?php echo $product->id ?>() {
                         if ($("#id{{ $product->id }}").hasClass("bi-heart")) {
                             $.ajax({
-                                url: "{{ route('wishlist.add') }}",
+                                url: "{{ url('/wishlist/add') }}",
                                 type: "POST",
                                 data: {
+                                    _token: "{{ csrf_token() }}",
                                     product_id: <?php echo $product->id ?>,
                                     type: "{{ $category }}"
                                 },
                                 success: function(data) {
-                                    console.log(data);
-                                    $(<?php echo $product->id ?>).removeClass('bi-heart');
-                                    $(<?php echo $product->id ?>).addClass('bi-heart-fill');
+                                    $("#id{{ $product->id }}").removeClass('bi-heart');
+                                    $("#id{{ $product->id }}").addClass('bi-heart-fill');
                                 },
                                 statusCode: {
-                                    200: function(data) {
-                                        console.log(data);
+                                    419: function(data) {
+                                        console.error(data);
                                     },
                                     500: function(data) {
-                                        console.log(data);
+                                        console.error(data);
                                     }
                                 }
                             })
                         } else {
                             $.ajax({
-                                url: "{{ route('wishlist.remove') }}",
+                                url: "{{ url('/wishlist/remove') }}",
                                 type: "POST",
                                 data: {
+                                    _token: "{{ csrf_token() }}",
                                     product_id: <?php echo $product->id ?>,
                                     type: "{{ $category }}"
                                 },
-                                success: function() {
-                                    console.log(data);
-                                    $(<?php echo $product->id ?>).removeClass('bi-heart-fill');
-                                    $(<?php echo $product->id ?>).addClass('bi-heart');
+                                success: function(data) {
+                                    $("#id{{ $product->id }}").removeClass('bi-heart-fill');
+                                    $("#id{{ $product->id }}").addClass('bi-heart');
+                                },
+                                statusCode: {
+                                    419: function(data) {
+                                        console.error(data);
+                                    },
+                                    500: function(data) {
+                                        console.error(data);
+                                    }
                                 }
                             })
                         }
                     }
                 </script>
 
-                <a type="button" href="#" onclick="id<?php echo $product->id ?>()" href="#" class="text-dark align-right float-end d-inline-block text-center py-2">
-                    <i id="id{{ $product->id }}" class="text-danger bi bi-heart"></i>
+                <a type="button" onclick="id<?php echo $product->id ?>()" class="text-dark align-right float-end d-inline-block text-center py-2">
+                    <i id="id{{ $product->id }}" class="text-danger bi {{ $product->wishlist ? 'bi-heart-fill' : 'bi-heart' }}"></i>
                 </a>
             </div>
         </div>
