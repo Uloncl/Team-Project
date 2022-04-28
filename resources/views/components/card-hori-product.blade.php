@@ -1,9 +1,13 @@
 <div class="col my-3">
     <div class="card h-100">
-        <img class="card-img-top" src="{{ $product->header_image }}" alt="Image loading error">
+        <a href="{{ url('/product', [$category, $product->id]) }}">
+            <img class="card-img-top" src="{{ $product->header_image }}" alt="Image loading error">
+        </a>
         <div class="card-body d-flex flex-column">
             <div class="mb-auto">
-                <h5 class="card-title">{{ $product->title }}</h5>
+                <a class="text-decoration-none card-title text-reset" href="{{ url('/product', [$category, $product->id]) }}">
+                    <h5 class="card-title">{{ $product->title }}</h5>
+                </a>
 
 
                 @if ($category == 'games')
@@ -97,9 +101,11 @@
                     }
                 </script>
 
+                @if (Auth::check())
                 <a type="button" onclick="id<?php echo $product->id ?>()" class="text-dark align-right float-end d-inline-block text-center py-2">
                     <i id="id{{ $product->id }}" class="text-danger bi {{ $product->wishlist ? 'bi-heart-fill' : 'bi-heart' }}"></i>
                 </a>
+                @endif
             </div>
         </div>
     </div>

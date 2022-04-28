@@ -31,6 +31,7 @@ Route::controller(PagesController::class)->group(function () {
     Route::get('settings',            'settings')   ->name("settings");
     Route::get('saved',               'saved')      ->name("saved");
     Route::get('/products/{category}/{orientation?}', 'products')->name("products");
+    Route::get('/product/{category}/{product_id}', 'product')->name("product");
 });
 
 Route::get('/register',             [RegisterController::class, 'create']       )->middleware('guest');

@@ -21,8 +21,10 @@ class CreateGamesTable extends Migration
             $table->string('type');
             $table->boolean('banned');
             $table->string('title');
+            $table->integer('parent_game_id')->nullable();
             $table->longText('description')->nullable();
             $table->longText('about')->nullable();
+            $table->longText('short_about')->nullable()->after('about');
             $table->longText('languages')->nullable();
             $table->longText('notes')->nullable();
             $table->string('release_date')->nullable();

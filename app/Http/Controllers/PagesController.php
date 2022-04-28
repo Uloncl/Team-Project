@@ -271,13 +271,60 @@ class PagesController extends Controller
 				break;
 		}
 	}
-
+	public function product($category, $product_id)
+	{
+		if ($category == 'games') {
+			$product = DB::table('games')->where('id', $product_id)->get()->first();
+			$product->about = str_replace('<img', '<hr class="my-3 solid"> <img class="w-100"', $product->about);
+			$product->about = str_replace('bb_tag', 'text-primary mt-3', $product->about);
+			$product->about = str_replace('h2', 'h5', $product->about);
+			$product->about = str_replace('<br>', '', $product->about);
+			$product->about = str_replace('<p></p>', '', $product->about);
+			$children = DB::table('games')->where('parent_game_id', $product->steam_id)->get();
+			$product->children = [];
+			foreach($children as $child) {
+				$child->header_image = DB::table('game_images')->where('game_id', $child->id)->where('type', 'header')->get('full')->first();
+				$child->best_price = $child->best_price == '' ? null : substr_replace($child->best_price, '.', strlen($child->best_price) - 2, 0);
+				$product->children[] = $child;
+			}
+			$product->header_image = DB::table('game_images')->where('game_id', $product_id)->where('type', 'header')->get('full')->first();
+			$product->promo = DB::table('game_videos')->where('game_id', $product_id)->get(['name', 'thumbnail', 'video_max']);
+			foreach($product->promo as $promo) {
+				$promo->type = 'video';
+			} 
+			$product->promo = $product->promo->concat(DB::table('game_images')->where('game_id', $product_id)->where('type', 'thumbnail')->get(['type', 'full']));
+			$tag_ids_obj = DB::table('game_tags_mappings')->where('game_id', $product_id)->get('tag_id');
+			$tag_ids = [];
+			foreach ($tag_ids_obj as $tag_id) {
+				$tag_ids[] = $tag_id->tag_id;
+			}
+			$product->tags = DB::table('game_tags_definitions')->wherein('id', $tag_ids)->get(['name', 'type']);
+			$credit_ids_obj = DB::table('game_credits_mappings')->where('game_id', $product_id)->get('credit_id');
+			$credit_ids = [];
+			foreach ($credit_ids_obj as $credit_id) {
+				$credit_ids[] = $credit_id->credit_id;
+			}
+			$product->developer = DB::table('game_credits_definitions')->wherein('id', $credit_ids)->where('type', 'developer')->get('name')->first();
+			$product->publisher = DB::table('game_credits_definitions')->wherein('id', $credit_ids)->where('type', 'publisher')->get('name')->first();
+			$packages = DB::table('game_packages')->where('game_id', $product->id)->get();
+			$product->packages = [];
+			foreach ($packages as $package) {
+				$package->price = $package->price == '' ? null : substr_replace($package->price, '.', strlen($package->price) - 2, 0);
+				$product->packages[] = $package;
+			}
+			// dd($product);
+			return view('product', [
+				'product' => $product,
+				'category' => 'games'
+			]);
+		}
+	}
 	public function saved()
 	{
 		$product_ids = DB::table('user_products_mappings')
 			->where('user_id', Auth::user()->id)
 			->get('product_id');
-		
+
 		$product_ids_t = [];
 
 		foreach ($product_ids as $id) {
@@ -287,7 +334,7 @@ class PagesController extends Controller
 		$product_ids = $product_ids_t;
 
 		$products = DB::table('games')->whereIn('id', $product_ids)->paginate(10);
-		
+
 		foreach ($products as $key => $product) {
 			$creditIDsObj = DB::table('game_credits_mappings')->where('game_id', $product->id)->get('credit_id');
 			$creditIDs = [];

@@ -13,12 +13,12 @@ class CreatePackagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('packages', function (Blueprint $table) {
+        Schema::create('game_packages', function (Blueprint $table) {
             $table->id();
             $table->foreignId('game_id')->constrained('games');
             $table->unsignedInteger('steam_package_id')->nullable()->unique();
             $table->string('option_text');
-            $table->string('option_description')->nullable();
+            $table->longText('option_description')->nullable();
             $table->boolean('is_free');
             $table->unsignedInteger('price')->nullable();
         });
