@@ -280,6 +280,13 @@ class PagesController extends Controller
 			$product->about = str_replace('h2', 'h5', $product->about);
 			$product->about = str_replace('<br>', '', $product->about);
 			$product->about = str_replace('<p></p>', '', $product->about);
+			$spec_remove_arr = array('<h2 class="bb_tag">','<strong>','</strong>','</h2>','<br>','RECOMMENDED', 'REQUIRED',' class="bb_ul"','Recommended:', 'Minimum:');
+			$product->pc_recommended = str_replace($spec_remove_arr, '', $product->pc_recommended);
+			$product->pc_minimum = str_replace($spec_remove_arr, '', $product->pc_minimum);
+			$product->linux_recommended = str_replace($spec_remove_arr, '', $product->linux_recommended);
+			$product->linux_minimum = str_replace($spec_remove_arr, '', $product->linux_minimum);
+			$product->mac_recommended = str_replace($spec_remove_arr, '', $product->mac_recommended);
+			$product->mac_minimum = str_replace($spec_remove_arr, '', $product->mac_minimum);
 			$children = DB::table('games')->where('parent_game_id', $product->steam_id)->get();
 			$product->children = [];
 			foreach($children as $child) {
@@ -298,7 +305,8 @@ class PagesController extends Controller
 			foreach ($tag_ids_obj as $tag_id) {
 				$tag_ids[] = $tag_id->tag_id;
 			}
-			$product->tags = DB::table('game_tags_definitions')->wherein('id', $tag_ids)->get(['name', 'type']);
+			$product->tag_categories = DB::table('game_tags_definitions')->wherein('id', $tag_ids)->where('type', 'category')->get(['name', 'type']);
+			$product->genres = DB::table('game_tags_definitions')->wherein('id', $tag_ids)->where('type', 'genre')->get(['name', 'type']);
 			$credit_ids_obj = DB::table('game_credits_mappings')->where('game_id', $product_id)->get('credit_id');
 			$credit_ids = [];
 			foreach ($credit_ids_obj as $credit_id) {
@@ -310,6 +318,8 @@ class PagesController extends Controller
 			$product->packages = [];
 			foreach ($packages as $package) {
 				$package->price = $package->price == '' ? null : substr_replace($package->price, '.', strlen($package->price) - 2, 0);
+				$package->option_text = str_ends_with($package->option_text, '€') ? str_replace(array('1','2','3','4','5','6','7','8','9','0',',','£','€','$','-'), '', $package->option_text) : $package->option_text;
+				$package->option_description = $package->option_description == '' ? null : strip_tags($package->option_description);
 				$product->packages[] = $package;
 			}
 			// dd($product);

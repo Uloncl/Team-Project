@@ -28,6 +28,7 @@ class CreateGamesTable extends Migration
             $table->longText('languages')->nullable();
             $table->longText('notes')->nullable();
             $table->string('release_date')->nullable();
+            $table->boolean('coming_soon')->nullable();
             $table->string('steam_url')->nullable();
             $table->String('gog_url')->nullable();
             $table->String('epic_url')->nullable();
