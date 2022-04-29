@@ -41,16 +41,24 @@
                         "
                     />
                     <p>
-                        <a href="#!" class="text-white">Games</a>
+                        <a href="#!" class="text-black" style="color: black"
+                            >Games</a
+                        >
                     </p>
                     <p>
-                        <a href="#!" class="text-white">Components</a>
+                        <a href="#!" class="text-black" style="color: black"
+                            >Components</a
+                        >
                     </p>
                     <p>
-                        <a href="#!" class="text-white">Consoles</a>
+                        <a href="#!" class="text-black" style="color: black"
+                            >Consoles</a
+                        >
                     </p>
                     <p>
-                        <a href="#!" class="text-white">Computers</a>
+                        <a href="#!" class="text-black" style="color: black"
+                            >Computers</a
+                        >
                     </p>
                 </div>
                 <!-- Grid column -->
@@ -68,13 +76,22 @@
                         "
                     />
                     <p>
-                        <a href="about" class="text-white">About us</a>
+                        <a href="about" class="text-black" style="color: black"
+                            >About</a
+                        >
                     </p>
                     <p>
-                        <a href="privacy" class="text-white">Privacy policy</a>
+                        <a
+                            href="privacy"
+                            class="text-black"
+                            style="color: black"
+                            >Privacy policy</a
+                        >
                     </p>
                     <p>
-                        <a href="help" class="text-white">Customer care</a>
+                        <a href="help" class="text-black" style="color: black"
+                            >Contact us</a
+                        >
                     </p>
                 </div>
                 <!-- Grid column -->
@@ -92,14 +109,27 @@
                         "
                     />
                     <p>
-                        <i class="fas fa-home mr-3"></i> Leeds Beckett
-                        University, Headingley
+                        <i class="fas fa-home mr-3"></i>
+                        <a href="https://goo.gl/maps/XwwTEwxNcq4Z1Lm18" style="color: black; text-decoration: none;">
+                            Leeds Beckett University, Headingley</a
+                        >
                     </p>
                     <p>
                         <i class="fas fa-envelope mr-3"></i>
-                        sahara.helpdesk1@gmail.com
+                        <a
+                            href="mailto:sahara.helpdesk1@gmail.com"
+                            style="color: black; text-decoration: none"
+                            >sahara.helpdesk1@gmail.com</a
+                        >
                     </p>
-                    <p><i class="fas fa-phone mr-3"></i> 0113 812 0000</p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i>
+                        <a
+                            href="tel:0113 812 0000"
+                            style="color: black; text-decoration: none"
+                            >0113 812 0000</a
+                        >
+                    </p>
                 </div>
                 <!-- Grid column -->
             </div>
