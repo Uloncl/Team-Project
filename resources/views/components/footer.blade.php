@@ -58,13 +58,13 @@
                             height: 2px;
                         " />
                     <p>
-                        <a href="#!" class="text-white">About us</a>
+                        <a href="about" class="text-white">About us</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-white">Privacy policy</a>
+                        <a href="privacy" class="text-white">Privacy policy</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-white">Customer care</a>
+                        <a href="help" class="text-white">Customer care</a>
                     </p>
                 </div>
                 <!-- Grid column -->
