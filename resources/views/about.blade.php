@@ -38,12 +38,12 @@
 						<p class="card-text">Back End</p>
 						<div class="row mx-5 mb-2">
 							<div class="col text-center">
-								<a href="https://www.facebook.com/andrea.lafauci/">
+								<a href="#">
 									<i style="font-size: 2rem" class="m-1 bi bi-facebook"></i>
 								</a>
 							</div>
 							<div class="col text-center">
-								<a href="https://www.linkedin.com/in/andrea-lafaucideleo/">
+								<a href="#">
 									<i style="font-size: 2rem" class="m-1 bi bi-linkedin"></i>
 								</a>
 							</div>
@@ -58,12 +58,12 @@
 						<p class="card-text">Back End</p>
 						<div class="row mx-5 mb-2">
 							<div class="col text-center">
-								<a href="https://www.facebook.com/andrea.lafauci/">
+								<a href="#">
 									<i style="font-size: 2rem" class="m-1 bi bi-facebook"></i>
 								</a>
 							</div>
 							<div class="col text-center">
-								<a href="https://www.linkedin.com/in/andrea-lafaucideleo/">
+								<a href="#">
 									<i style="font-size: 2rem" class="m-1 bi bi-linkedin"></i>
 								</a>
 							</div>
@@ -78,12 +78,12 @@
 						<p class="card-text">Back End</p>
 						<div class="row mx-5 mb-2">
 							<div class="col text-center">
-								<a href="https://www.facebook.com/andrea.lafauci/">
+								<a href="#">
 									<i style="font-size: 2rem" class="m-1 bi bi-facebook"></i>
 								</a>
 							</div>
 							<div class="col text-center">
-								<a href="https://www.linkedin.com/in/andrea-lafaucideleo/">
+								<a href="#">
 									<i style="font-size: 2rem" class="m-1 bi bi-linkedin"></i>
 								</a>
 							</div>
@@ -98,12 +98,12 @@
 						<p class="card-text">Back End</p>
 						<div class="row mx-5 mb-2">
 							<div class="col text-center">
-								<a href="https://www.facebook.com/andrea.lafauci/">
+								<a href="#">
 									<i style="font-size: 2rem" class="m-1 bi bi-facebook"></i>
 								</a>
 							</div>
 							<div class="col text-center">
-								<a href="https://www.linkedin.com/in/andrea-lafaucideleo/">
+								<a href="#">
 									<i style="font-size: 2rem" class="m-1 bi bi-linkedin"></i>
 								</a>
 							</div>
