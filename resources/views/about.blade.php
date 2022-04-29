@@ -74,11 +74,7 @@
 					</div>
 				</div>
 
-<<<<<<< HEAD
 				<div class="card col m-2 p-0" style="width: 15%; height: 15%">
-=======
-				<div class="card col m-2 p-0" style="width: 15%; height: 15%; background-size: cover">
->>>>>>> a41469ef942923ac23a11e89460a50e2020de126
 					<img src="/img/team/ben.jpg" class="card-img-top rounded-circle m-5" style="width: 65%; height: 65%" alt="Andrea" />
 					<div class="card-body">
 						<h5 class="card-title">Benjamin Miles</h5>
@@ -86,13 +82,8 @@
 						<p class="card-text">Back End Developer</p>
 						<div class="row mx-5 mb-2">
 							<div class="col text-center">
-<<<<<<< HEAD
-								<a href="#>
-									<i style=" font-size: 2rem" class="m-1 bi bi-facebook"></i>
-=======
 								<a href="#">
-									<i style="font-size: 2rem" class="m-1 bi bi-facebook"></i>
->>>>>>> a41469ef942923ac23a11e89460a50e2020de126
+									<i style=" font-size: 2rem" class="m-1 bi bi-facebook"></i>
 								</a>
 							</div>
 							<div class="col text-center">
