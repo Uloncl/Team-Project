@@ -13,6 +13,7 @@
 		<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 		<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+		<script src="https://kit.fontawesome.com/3b3d7324d5.js" crossorigin="anonymous"></script>
 
 	</head>
 	<body class="bg-light" style="overflow-x:hidden; min-width: 1880px; width: auto;">

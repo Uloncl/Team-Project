@@ -20,8 +20,12 @@ class PagesController extends Controller
 	{
 		return view('about');
 	}
-	public function profile()
-	{
+
+	public function privacy() {
+		return view('privacy');
+	}
+
+	public function profile() {
 		return view('profile');
 	}
 	public function settings()
