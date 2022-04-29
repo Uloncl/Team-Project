@@ -19,10 +19,15 @@
 							Scrum Master <br />
 							Front End Developer
 						</p>
-						<div class="row mx-5 mb-2">
+						<div class="row mx-6 mb-3">
 							<div class="col text-center">
 								<a href="https://www.facebook.com/andrea.lafauci/">
 									<i style="font-size: 2rem" class="m-1 bi bi-facebook"></i>
+								</a>
+							</div>
+							<div class="col text-center">
+								<a href="https://github.com/Bosurgi">
+									<i style="font-size: 2rem" class="m-1 bi bi-github"></i>
 								</a>
 							</div>
 							<div class="col text-center">
@@ -42,7 +47,14 @@
 							Lead Developer <br />
 							Back End Developer
 						</p>
-						<div class="row mx-5 mb-2">
+						<div class="row mx-6 mb-3">
+
+							<div class="col text-center">
+								<a href="https://www.facebook.com/andrea.lafauci/">
+									<i style="font-size: 2rem" class="m-1 bi bi-facebook"></i>
+								</a>
+							</div>
+
 							<div class="col text-center">
 								<a href="https://github.com/Nebula6">
 									<i style="font-size: 2rem" class="m-1 bi bi-github"></i>
@@ -65,7 +77,14 @@
 							UI/UX Designer <br />
 							Front End Developer
 						</p>
-						<div class="row mx-5 mb-2">
+						<div class="row mx-6 mb-3">
+
+							<div class="col text-center">
+								<a href="https://www.facebook.com/andrea.lafauci/">
+									<i style="font-size: 2rem" class="m-1 bi bi-facebook"></i>
+								</a>
+							</div>
+
 							<div class="col text-center">
 								<a href="https://github.com/aryanprince">
 									<i style="font-size: 2rem" class="m-1 bi bi-github"></i>
@@ -88,12 +107,20 @@
 							Product Manager <br />
 							Back End Developer
 						</p>
-						<div class="row mx-5 mb-2">
+						<div class="row mx-6 mb-3">
 							<div class="col text-center">
 								<a href="#">
 									<i style="font-size: 2rem" class="m-1 bi bi-facebook"></i>
 								</a>
 							</div>
+
+							<div class="col text-center">
+								<a href="#">
+									<i style="font-size: 2rem" class="m-1 bi bi-github"></i>
+								</a>
+							</div>
+
+
 							<div class="col text-center">
 								<a href="#">
 									<i style="font-size: 2rem" class="m-1 bi bi-linkedin"></i>
@@ -111,12 +138,19 @@
 							Web Designer <br />
 							Front End Developer
 						</p>
-						<div class="row mx-5 mb-2">
+						<div class="row mx-6 mb-3">
 							<div class="col text-center">
 								<a href="#">
 									<i style="font-size: 2rem" class="m-1 bi bi-facebook"></i>
 								</a>
 							</div>
+
+							<div class="col text-center">
+								<a href="#">
+									<i style="font-size: 2rem" class="m-1 bi bi-github"></i>
+								</a>
+							</div>
+
 							<div class="col text-center">
 								<a href="https://www.linkedin.com/in/mabel-mcdonald-020350180/">
 									<i style="font-size: 2rem" class="m-1 bi bi-linkedin"></i>
