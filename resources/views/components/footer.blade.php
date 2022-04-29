@@ -19,7 +19,7 @@
                             height: 2px;
                         " />
                     <p>
-                        Find the best games and deals.
+                        The e-catalogue to find the best deals for games and much more
                     </p>
                 </div>
                 <!-- Grid column -->
@@ -96,7 +96,7 @@
     <!-- Section: Links  -->
 
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        <img src="/img/Sahara.png" alt="Image missing" style="height: 100px;">
+        <a href="/"><img src="/img/Sahara.png" alt="Image missing" style="height: 100px;"></a>
         © 2020
 
     </div>
