@@ -50,4 +50,3 @@ Route::post('/password/update', [ForgotPasswordController::class, 'update'])->na
 
 Route::get('/admin', [AdminController::class, 'panel'])->name("admin.panel");
 Route::post('/admin', [AdminController::class, 'update'])->name("admin.update");
-
