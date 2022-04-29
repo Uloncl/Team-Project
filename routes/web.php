@@ -25,23 +25,13 @@ Route::post('/wishlist/add', [WishlistController::class, 'add']);
 Route::post('/wishlist/remove', [WishlistController::class, 'remove']);
 
 Route::controller(PagesController::class)->group(function () {
-<<<<<<< HEAD
-    Route::get('/',                   'home')       ->name("home");
-    Route::get('about',               'about')      ->name("about");
-    Route::get('profile',             'profile')    ->name("profile");
-    Route::get('settings',            'settings')   ->name("settings");
-    Route::get('saved',               'saved')      ->name("saved");
-    Route::get('/products/{category}/{orientation?}', 'products')->name("products");
-    Route::get('/product/{category}/{product_id}', 'product')->name("product");
-=======
-	Route::get('/',                   'home')->name("page.home");
-	Route::get('about',               'about')->name("page.about");
-	Route::get('privacy',             'privacy')->name("page.privacy");
-	Route::get('profile',             'profile')->name("page.profile");
-	Route::get('settings',            'settings')->name("page.settings");
-	Route::get('saved',               'saved')->name("page.saved");
-	Route::get('/products/{category}/{orientation?}', 'products')->name("page.products");
->>>>>>> a41469ef942923ac23a11e89460a50e2020de126
+    Route::get('/',                   'home')->name("page.home");
+    Route::get('about',               'about')->name("page.about");
+    Route::get('privacy',             'privacy')->name("page.privacy");
+    Route::get('profile',             'profile')->name("page.profile");
+    Route::get('settings',            'settings')->name("page.settings");
+    Route::get('saved',               'saved')->name("page.saved");
+    Route::get('/products/{category}/{orientation?}', 'products')->name("page.products");
 });
 
 Route::get('/register',             [RegisterController::class, 'create'])->middleware('guest');
@@ -59,4 +49,3 @@ Route::post('/password/update', [ForgotPasswordController::class, 'update'])->na
 
 Route::get('/admin', [AdminController::class, 'panel'])->name("admin.panel");
 Route::post('/admin', [AdminController::class, 'update'])->name("admin.update");
-
