@@ -38,12 +38,12 @@
 						<p class="card-text">Back End</p>
 						<div class="row mx-5 mb-2">
 							<div class="col text-center">
-								<a href="https://www.facebook.com/andrea.lafauci/">
+								<a href="#">
 									<i style="font-size: 2rem" class="m-1 bi bi-facebook"></i>
 								</a>
 							</div>
 							<div class="col text-center">
-								<a href="https://www.linkedin.com/in/andrea-lafaucideleo/">
+								<a href="#">
 									<i style="font-size: 2rem" class="m-1 bi bi-linkedin"></i>
 								</a>
 							</div>
@@ -58,12 +58,12 @@
 						<p class="card-text">Back End</p>
 						<div class="row mx-5 mb-2">
 							<div class="col text-center">
-								<a href="https://www.facebook.com/andrea.lafauci/">
+								<a href="#">
 									<i style="font-size: 2rem" class="m-1 bi bi-facebook"></i>
 								</a>
 							</div>
 							<div class="col text-center">
-								<a href="https://www.linkedin.com/in/andrea-lafaucideleo/">
+								<a href="#">
 									<i style="font-size: 2rem" class="m-1 bi bi-linkedin"></i>
 								</a>
 							</div>
@@ -72,18 +72,18 @@
 				</div>
 
 				<div class="card col m-2 p-0" style="width: 15%; height: 15%">
-					<img src="/img/team/lewis.jpg" class="card-img-top rounded-circle m-5" style="width: 65%; height: 65%" alt="Andrea" />
+					<img src="/img/team/ben.jpg" class="card-img-top rounded-circle m-5" style="width: 65%; height: 65%" alt="Andrea" />
 					<div class="card-body">
 						<h5 class="card-title">Benjamin Miles</h5>
 						<p class="card-text">Back End</p>
 						<div class="row mx-5 mb-2">
 							<div class="col text-center">
-								<a href="https://www.facebook.com/andrea.lafauci/">
-									<i style="font-size: 2rem" class="m-1 bi bi-facebook"></i>
+								<a href="#>
+									<i style=" font-size: 2rem" class="m-1 bi bi-facebook"></i>
 								</a>
 							</div>
 							<div class="col text-center">
-								<a href="https://www.linkedin.com/in/andrea-lafaucideleo/">
+								<a href="#">
 									<i style="font-size: 2rem" class="m-1 bi bi-linkedin"></i>
 								</a>
 							</div>

@@ -2,7 +2,7 @@
 	<div class="container">
 	    <div class="row justify-content-center">
 	        <div class="col-md-8">
-	            <div class="card">
+	            <div class="card m-5">
 					<div class="card-header">{{ __('Login') }}</div>
 
 	                <div class="card-body">
@@ -52,11 +52,11 @@
 							<break>
 	                        <div class="row mb-0">
 	                            <div class="col-md-8 offset-md-4">
-	                                <button type="submit" class="btn btn-primary">
+	                                <button type="submit" class="btn btn-primary" value="login">
 	                                    {{ __('Login') }}
 	                                </button>
 
-	                                <a class= "text-decoration-none text-dark" href="{{ url('/forgot') }}">forgot password</a>
+	                                <a class="text-decoration-none text-dark" href="{{ route('password.forgot') }}">forgot password</a>
 	                            </div>
 	                        </div>
 	                    </form>

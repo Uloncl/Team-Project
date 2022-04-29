@@ -34,6 +34,7 @@
 					why is there nothing wtf
 				@endforelse
 			@endif
+			{{ $products->links() }}
 			</div>
 		</div>
 	</div>
