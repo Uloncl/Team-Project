@@ -18,6 +18,10 @@ class PagesController extends Controller
 		return view('privacy');
 	}
 
+	public function help() {
+		return view('help');
+	}
+
 	public function profile() {
 		return view('profile');
 	}

@@ -21,6 +21,7 @@ Route::controller(PagesController::class)->group(function () {
 	Route::get('/',                   'home')->name("page.home");
 	Route::get('about',               'about')->name("page.about");
 	Route::get('privacy',             'privacy')->name("page.privacy");
+	Route::get('help',             'help')->name("page.help");
 	Route::get('profile',             'profile')->name("page.profile");
 	Route::get('settings',            'settings')->name("page.settings");
 	Route::get('saved',               'saved')->name("page.saved");

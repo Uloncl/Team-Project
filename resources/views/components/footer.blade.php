@@ -21,9 +21,7 @@
                             height: 2px;
                         "
                     />
-                    <p>
-                        Find the best games and deals.
-                    </p>
+                    <p>Find the best games and deals.</p>
                 </div>
                 <!-- Grid column -->
 
@@ -91,8 +89,8 @@
                         "
                     />
                     <p>
-                        <i class="fas fa-home mr-3"></i> Leeds Beckett University,
-                        Headingley
+                        <i class="fas fa-home mr-3"></i> Leeds Beckett
+                        University, Headingley
                     </p>
                     <p>
                         <i class="fas fa-envelope mr-3"></i>
