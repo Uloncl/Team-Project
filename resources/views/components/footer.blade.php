@@ -21,7 +21,10 @@
                             height: 2px;
                         "
                     />
-                    <p>Find the best games and deals.</p>
+                    <p>
+                        The e-catalogue to find the best deals for games and
+                        much more
+                    </p>
                 </div>
                 <!-- Grid column -->
 
@@ -65,13 +68,13 @@
                         "
                     />
                     <p>
-                        <a href="#!" class="text-white">About us</a>
+                        <a href="about" class="text-white">About us</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-white">Privacy policy</a>
+                        <a href="privacy" class="text-white">Privacy policy</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-white">Customer care</a>
+                        <a href="help" class="text-white">Customer care</a>
                     </p>
                 </div>
                 <!-- Grid column -->
@@ -106,7 +109,12 @@
     <!-- Section: Links  -->
 
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        <img src="/img/Sahara.png" alt="Image missing" style="height: 100px" />
+        <a href="/"
+            ><img
+                src="/img/Sahara.png"
+                alt="Image missing"
+                style="height: 100px"
+        /></a>
         © 2022
     </div>
 </footer>

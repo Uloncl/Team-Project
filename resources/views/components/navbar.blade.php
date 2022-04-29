@@ -5,7 +5,7 @@
 		if (prevScrollpos > currentScrollPos) {
 			document.getElementById("navbar").style.top = "0";
 		} else {
-			document.getElementById("navbar").style.top = "-100px";
+			document.getElementById("navbar").style.top = "-150px";
 		}
 		prevScrollpos = currentScrollPos;
 	}
@@ -42,14 +42,13 @@
 	}
 </script>
 
-<header id="navbar" class="navbar navbar-expand-md bg-{{ $theme == 'light' ? 'light' : 'navy' }} site-header sticky-top text-dark">
+<header id="navbar" class="navbar navbar-expand-md bg-{{ $theme == 'light' ? 'light' : 'navy' }} site-header sticky-top text-dark shadow">
 	<div class="row mx-5 w-100">
 		<div class="col-sm-1 text-center">
 			<a href="/" class="text-decoration-none">
 				<h2 class="my-3 text-sahara fst-italic">Sahara</h2>
 			</a>
 		</div>
-
 
 		<div class="col row my-1">
 
@@ -59,7 +58,7 @@
 						Games
 					</h6>
 				</a>
-				<ul class="dropdown-menu text-small border-0 bg-{{ $theme == 'light' ? 'light' : 'navy' }}">
+				<ul class="dropdown-menu text-small border-0 bg-{{ $theme == 'light' ? 'light' : 'navy' }} shadow">
 					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="{{ url('/products/games') }}">PC</a></li>
 					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="{{ url('/products/games') }}">Consoles</a></li>
 				</ul>
@@ -71,7 +70,7 @@
 						Components
 					</h6>
 				</a>
-				<ul class="dropdown-menu text-small border-0 bg-{{ $theme == 'light' ? 'light' : 'navy' }}">
+				<ul class="dropdown-menu text-small border-0 bg-{{ $theme == 'light' ? 'light' : 'navy' }} shadow">
 					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">CPU</a></li>
 					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">RAM</a></li>
 					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">Video Cards</a></li>
@@ -87,7 +86,7 @@
 						Consoles
 					</h6>
 				</a>
-				<ul class="dropdown-menu text-small border-0 bg-{{ $theme == 'light' ? 'light' : 'navy' }}">
+				<ul class="dropdown-menu text-small border-0 bg-{{ $theme == 'light' ? 'light' : 'navy' }} shadow">
 					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">Xbox's</a></li>
 					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">Playstations</a></li>
 					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">Nintendo</a></li>
@@ -100,7 +99,7 @@
 						Computers
 					</h6>
 				</a>
-				<ul class="dropdown-menu text-small border-0 bg-{{ $theme == 'light' ? 'light' : 'navy' }}">
+				<ul class="dropdown-menu text-small border-0 bg-{{ $theme == 'light' ? 'light' : 'navy' }} shadow">
 					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">High end</a></li>
 					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">Middle</a></li>
 					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">Low end</a></li>
@@ -134,13 +133,19 @@
 			<a href="#" class="text-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
 				<img src="https://external-preview.redd.it/I298iZdWplRbjz9GUMAm8qGgZ8rAKdeC3Q0wl9n1CVM.jpg?auto=webp&s=0a990e77e6bb0faadd35be60365e472485a2fa4e" alt="mdo" width="32" height="32" class="rounded-circle">
 			</a>
-			<ul class="dropdown-menu text-small border-0 bg-{{ $theme == 'light' ? 'light' : 'navy' }}" aria-labelledby="dropdownUser1">
+			<ul class="dropdown-menu text-small border-0 bg-{{ $theme == 'light' ? 'light' : 'navy' }} shadow" aria-labelledby="dropdownUser1">
 				<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="{{ url('/settings') }}">Settings</a></li>
 				<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="{{ url('/profile') }}">Profile</a></li>
+				@if (Auth::user()->is_admin)
 				<li>
 					<hr class="dropdown-divider">
 				</li>
-				<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="{{ url('/saved') }}">Your Saved Products</a></li>
+				<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="{{ route('admin.panel') }}">admin panel</a></li>
+				@endif
+				<li>
+					<hr class="dropdown-divider">
+				</li>
+				<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="{{ url('/saved') }}">Your Wishlist</a></li>
 				<li>
 					<hr class="dropdown-divider">
 				</li>
@@ -154,7 +159,7 @@
 			<a href="#" class="text-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
 				<img src="../img/default-pfp.png" alt="mdo" width="32" height="32" class="rounded-circle">
 			</a>
-			<ul class="dropdown-menu text-small border-0 bg-{{ $theme == 'light' ? 'light' : 'navy' }}" aria-labelledby="dropdownUser1">
+			<ul class="dropdown-menu text-small border-0 bg-{{ $theme == 'light' ? 'light' : 'navy' }} shadow" aria-labelledby="dropdownUser1">
 				<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="{{ url('/login') }}">Login</a></li>
 				<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="{{ url('/register') }}">Register</a></li>
 			</ul>
@@ -163,5 +168,4 @@
 		@endauth
 
 	</div>
-	</nav>
 </header>

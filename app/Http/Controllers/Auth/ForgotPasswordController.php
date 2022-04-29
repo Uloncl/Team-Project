@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers\Auth;
 
+
+ 
 use App\Http\Controllers\Controller;
-use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ForgotPasswordController extends Controller
 {
@@ -18,5 +21,22 @@ class ForgotPasswordController extends Controller
     |
     */
 
-    use SendsPasswordResetEmails;
+
+    
+	public function forgot() {
+		return view('auth.passwords.email');
+	}
+
+
+    public function update(Request $request){
+        
+        Request()->validate(['email'=>'required|email']);
+        
+        Mail::raw('It works', function($message){
+            $message->to(Request('email'))
+                ->subject("Hello");
+        });
+        
+        return view('auth.passwords.sent')->with("success", "email sent");
+    }
 }

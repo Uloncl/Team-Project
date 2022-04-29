@@ -5,14 +5,14 @@
 	            <div class="card">
 	                <div class="card-header">{{ __('Reset Password') }}</div>
 
-	                <div class="card-body">
+	                
 	                    @if (session('status'))
 	                        <div class="alert alert-success" role="alert">
 	                            {{ session('status') }}
 	                        </div>
 	                    @endif
 
-	                    <form method="POST" action="{{ route('password.email') }}">
+	                    <form method="POST" action="{{ route('password.update') }}">
 	                        @csrf
 
 	                        <div class="row mb-3">
@@ -36,10 +36,16 @@
 	                                </button>
 	                            </div>
 	                        </div>
+							
+							@if (session('message'))
+								<div class="alert alert-sent" role="alert">
+									{{ session('message') }}
+								</div>
+							@endif	
 	                    </form>
 	                </div>
 	            </div>
 	        </div>
 	    </div>
 	</div>
-<x-app>
+</x-app>
