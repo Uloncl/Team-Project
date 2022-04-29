@@ -1,0 +1,17 @@
+{
+<<<<<<< HEAD
+    "folders": [
+        {
+            "path": "resources"
+        }
+    ]
+}
+=======
+	"folders": [
+		{
+			"name": "Team-Project",
+			"path": "."
+		}
+	]
+}
+>>>>>>> a41469ef942923ac23a11e89460a50e2020de126

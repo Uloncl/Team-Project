@@ -2,7 +2,7 @@
 	<div class="container">
 	    <div class="row justify-content-center">
 	        <div class="col-md-8">
-	            <div class="card">
+	            <div class="card m-5">
 					<div class="card-header">{{ __('Login') }}</div>
 
 	                <div class="card-body">
@@ -37,7 +37,6 @@
 	                            </div>
 	                        </div>
 							
-							<!--
 	                        <div class="row mb-3">
 	                            <div class="col-md-6 offset-md-4">
 	                                <div class="form-check">
@@ -49,19 +48,15 @@
 	                                </div>
 	                            </div>
 	                        </div>
-							-->
 							
+							<break>
 	                        <div class="row mb-0">
 	                            <div class="col-md-8 offset-md-4">
-	                                <button type="submit" class="btn btn-primary">
+	                                <button type="submit" class="btn btn-primary" value="login">
 	                                    {{ __('Login') }}
 	                                </button>
 
-	                                @if (Route::has('password.request'))
-	                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-	                                        {{ __('Forgot Your Password?') }}
-	                                    </a>
-	                                @endif
+	                                <a class="text-decoration-none text-dark" href="{{ route('password.forgot') }}">forgot password</a>
 	                            </div>
 	                        </div>
 	                    </form>
