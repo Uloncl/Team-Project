@@ -19,7 +19,7 @@ class AdminController extends Controller
     public function update()
     {
         set_time_limit(10000000);
-        $existinggamesinTable = DB::table('games')->where('banned', false)->get(['id', 'steam_id']);
+        $existinggamesinTable = DB::table('games')->where('banned', false)->where('release_date', NULL)->get(['id', 'steam_id']);
         // dd($existinggamesinTable);
         foreach ($existinggamesinTable as $existinggame) {
             $appDetails = json_decode(Http::get('https://store.steampowered.com/api/appdetails/', [
@@ -81,7 +81,8 @@ class AdminController extends Controller
                                     'about' => $appDetails['about_the_game'],
                                     'languages' =>  isset($appDetails['supported_languages']) ? $appDetails['supported_languages'] : NULL,
                                     'notes' =>  isset($dlcDetails['content_descriptors']['notes']) ? $dlcDetails['content_descriptors']['notes'] : NULL,
-                                    'release_date' =>  isset($appDetails['release_date']) ? $appDetails['release_date']['date'] : NULL,
+                                    'coming_soon' => isset($appDetails->release_date->coming_soon) ? $appDetails->release_date->coming_soon : null,
+                                    'release_date' => isset($appDetails->release_date->date) ? $appDetails->release_date->date : null,
                                     'steam_url' =>  'https://store.steampowered.com/app/' . $appDetails['steam_appid'],
                                     'metacritic' =>  isset($appDetails['metacritic'], $appDetails['metacritic']['score']) ? $appDetails['metacritic']['score'] : NULL,
                                     'metacritic_url' =>  isset($appDetails['metacritic'], $appDetails['metacritic']['url']) ? $appDetails['metacritic']['url'] : NULL,
@@ -221,6 +222,8 @@ class AdminController extends Controller
                                                         'about' => $dlcDetails['about_the_game'],
                                                         'languages' =>  isset($dlcDetails['supported_languages']) ? $dlcDetails['supported_languages'] : NULL,
                                                         'notes' =>  isset($dlcDetails['content_descriptors']['notes']) ? $dlcDetails['content_descriptors']['notes'] : NULL,
+                                                        'coming_soon' => isset($dlcDetails->release_date->coming_soon) ? $dlcDetails->release_date->coming_soon : null,
+                                                        'release_date' => isset($dlcDetails->release_date->date) ? $dlcDetails->release_date->date : null,
                                                         'steam_url' =>  'https://store.steampowered.com/app/' . $dlcDetails['steam_appid'],
                                                         'metacritic' =>  isset($dlcDetails['metacritic'], $dlcDetails['metacritic']['score']) ? $dlcDetails['metacritic']['score'] : NULL,
                                                         'metacritic_url' =>  isset($dlcDetails['metacritic'], $dlcDetails['metacritic']['url']) ? $dlcDetails['metacritic']['url'] : NULL,
