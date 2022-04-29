@@ -1,24 +1,3 @@
-<<<<<<< HEAD
-<footer class="bg-sahara">
-  <div class="container py-5">
-    <div class="row">
-      <div class="col-12 col-md">
-        <small class="d-block mb-3 text-muted">© 2022</small>
-      </div>
-
-      <div class="row">
-        <div class="col-6 col-md">
-          <h5>About</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="link-secondary" href="about">Team</a></li>
-            <li><a class="link-secondary" href="#">Locations</a></li>
-            <li><a class="link-secondary" href="#">Privacy</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-</footer>
-=======
 <!-- Footer -->
 <footer class="text-center text-lg-start text-black bg-sahara">
     <!-- Section: Social media -->
@@ -117,10 +96,8 @@
     <!-- Section: Links  -->
 
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        <img src="/img/Sahara.png" alt="Image missing" style="height: 100px;">
-        © 2020
+        Sahara © 2022
 
     </div>
 </footer>
 <!-- Footer -->
->>>>>>> a41469ef942923ac23a11e89460a50e2020de126
