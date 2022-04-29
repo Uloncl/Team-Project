@@ -25,7 +25,7 @@
                         <h5 class="card-title">Andrea La Fauci De Leo</h5>
                         <p class="card-text">
                             Scrum Master <br />
-                            Web Developer
+                            Front End Developer
                         </p>
                         <div class="row mx-5 mb-2">
                             <div class="col text-center">
@@ -67,15 +67,15 @@
                         </p>
                         <div class="row mx-5 mb-2">
                             <div class="col text-center">
-                                <a href="#">
+                                <a href="https://github.com/Nebula6">
                                     <i
                                         style="font-size: 2rem"
-                                        class="m-1 bi bi-facebook"
+                                        class="m-1 bi bi-github"
                                     ></i>
                                 </a>
                             </div>
                             <div class="col text-center">
-                                <a href="#">
+                                <a href="https://www.linkedin.com/in/lewis-mann-0/">
                                     <i
                                         style="font-size: 2rem"
                                         class="m-1 bi bi-linkedin"
@@ -96,20 +96,20 @@
                     <div class="card-body">
                         <h5 class="card-title">Aryan Prince</h5>
                         <p class="card-text">
-                            Frontend Developer <br />
-                            UI/UX Designer
+                            UI/UX Designer <br />
+                            Front End Developer
                         </p>
                         <div class="row mx-5 mb-2">
                             <div class="col text-center">
-                                <a href="#">
+                                <a href="https://github.com/aryanprince">
                                     <i
                                         style="font-size: 2rem"
-                                        class="m-1 bi bi-facebook"
+                                        class="m-1 bi bi-github"
                                     ></i>
                                 </a>
                             </div>
                             <div class="col text-center">
-                                <a href="#">
+                                <a href="https://www.linkedin.com/in/aryanprince/">
                                     <i
                                         style="font-size: 2rem"
                                         class="m-1 bi bi-linkedin"
@@ -133,7 +133,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Benjamin Miles</h5>
                         <p class="card-text">
-                            Back End Designer <br />
+                            Product Manager <br />
                             Back End Developer
                         </p>
                         <div class="row mx-5 mb-2">
@@ -167,8 +167,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Mabel McDonald</h5>
                         <p class="card-text">
-                            Front End <br />
-                            Web Designer
+                            Web Designer <br />
+                            Front End Developer
                         </p>
                         <div class="row mx-5 mb-2">
                             <div class="col text-center">
@@ -180,7 +180,7 @@
                                 </a>
                             </div>
                             <div class="col text-center">
-                                <a href="#">
+                                <a href="https://www.linkedin.com/in/mabel-mcdonald-020350180/">
                                     <i
                                         style="font-size: 2rem"
                                         class="m-1 bi bi-linkedin"
