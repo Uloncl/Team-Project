@@ -34,16 +34,16 @@
                             height: 2px;
                         " />
                     <p>
-                        <a href="#!" class="text-white">Games</a>
+                        <a href="#!" class="text-dark text-decoration-none">Games</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-white">Components</a>
+                        <a href="#!" class="text-dark text-decoration-none">Components</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-white">Consoles</a>
+                        <a href="#!" class="text-dark text-decoration-none">Consoles</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-white">Computers</a>
+                        <a href="#!" class="text-dark text-decoration-none">Computers</a>
                     </p>
                 </div>
                 <!-- Grid column -->
@@ -58,13 +58,13 @@
                             height: 2px;
                         " />
                     <p>
-                        <a href="about" class="text-white">About us</a>
+                        <a href="{{ route('about')}}" class="text-dark text-decoration-none">About us</a>
                     </p>
                     <p>
-                        <a href="privacy" class="text-white">Privacy policy</a>
+                        <a href="{{ route('privacy')}}" class="text-dark text-decoration-none">Privacy policy</a>
                     </p>
                     <p>
-                        <a href="help" class="text-white">Customer care</a>
+                        <a href="help" class="text-dark text-decoration-none">Customer care</a>
                     </p>
                 </div>
                 <!-- Grid column -->

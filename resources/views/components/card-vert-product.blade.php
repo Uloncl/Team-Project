@@ -2,7 +2,7 @@
     <div class="card">
         <div class="row">
             <div class="col-sm-3">
-                <img class="card-img" src="{{ $product->header_image }}" alt="Image loading error">
+                <img class="card-img" src="{{ $product->header_image }}" alt="{{ $product->title }}">
             </div>
 
             <script>

@@ -1,7 +1,7 @@
 <div class="col my-3">
     <div class="card h-100">
         <a href="{{ url('/product', [$category, $product->id]) }}">
-            <img class="card-img-top" src="{{ $product->header_image }}" alt="Image loading error">
+            <img class="card-img-top w-100" src="{{ $product->header_image }}" alt="{{ $product->title }}">
         </a>
         <div class="card-body d-flex flex-column">
             <div class="mb-auto">

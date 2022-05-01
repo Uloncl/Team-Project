@@ -44,29 +44,29 @@
 
 <header id="navbar" class="navbar navbar-expand-md bg-{{ $theme == 'light' ? 'light' : 'navy' }} site-header sticky-top text-dark shadow">
 	<div class="row mx-5 w-100">
-		<div class="col-sm-1 text-center">
-			<a href="/" class="text-decoration-none">
-				<h2 class="my-3 text-sahara fst-italic">Sahara</h2>
+		<div class="col-sm-1 d-flex flex-column justify-content-center">
+			<a href="/" class="d-block text-decoration-none">
+				<h2 class="text-center text-sahara fst-italic">Sahara</h2>
 			</a>
 		</div>
 
-		<div class="col row my-1">
+		<div class="col d-flex justify-content-around">
 
-			<div class="col-sm-2 dropdown" id="dropdownUser1">
-				<a data-target="{{ url('/products/games') }}" target="_self" href="{{ url('/products/games') }}" class="text-center text-decoration-none d-block py-2 p-3">
-					<h6 class="text-{{ $theme == 'light' ? 'dark' : 'light' }} p-2 my-2 rounded-pill">
+			<div class="dropdown" id="dropdownUser1">
+				<a data-target="{{ url('/products/games') }}" target="_self" href="{{ url('/products/games') }}" class="text-center text-decoration-none d-block d-flex justify-content-center flex-column h-100">
+					<h6 class="text-{{ $theme == 'light' ? 'dark' : 'light' }} rounded-pill m-0">
 						Games
 					</h6>
 				</a>
 				<ul class="dropdown-menu text-small border-0 bg-{{ $theme == 'light' ? 'light' : 'navy' }} shadow">
-					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="{{ url('/products/games') }}">PC</a></li>
-					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="{{ url('/products/games') }}">Consoles</a></li>
+					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">PC</a></li>
+					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">Consoles</a></li>
 				</ul>
 			</div>
 
-			<div class="col-sm-2 dropdown" id="dropdownUser1">
-				<a data-target="{{ url('/products/components') }}" target="_self" href="{{ url('/products/components') }}" class="text-center text-decoration-none d-block py-2 p-3">
-					<h6 class="text-{{ $theme == 'light' ? 'dark' : 'light' }} p-2 my-2 rounded-pill">
+			<div class="dropdown" id="dropdownUser1">
+				<a data-target="#" target="_self" href="#" class="text-center text-decoration-none d-block d-flex justify-content-center flex-column h-100">
+					<h6 class="text-{{ $theme == 'light' ? 'dark' : 'light' }} rounded-pill m-0">
 						Components
 					</h6>
 				</a>
@@ -80,9 +80,9 @@
 				</ul>
 			</div>
 
-			<div class="col-sm-2 dropdown" id="dropdownUser1">
-				<a data-target="{{ url('/products/consoles') }}" target="_self" href="{{ url('/products/consoles') }}" class="text-center text-decoration-none d-block py-2 p-3">
-					<h6 class="text-{{ $theme == 'light' ? 'dark' : 'light' }} p-2 my-2 rounded-pill">
+			<div class="dropdown" id="dropdownUser1">
+				<a data-target="#" target="_self" href="#" class="text-center text-decoration-none d-block d-flex justify-content-center flex-column h-100">
+					<h6 class="text-{{ $theme == 'light' ? 'dark' : 'light' }} rounded-pill m-0">
 						Consoles
 					</h6>
 				</a>
@@ -93,9 +93,9 @@
 				</ul>
 			</div>
 
-			<div class="col-sm-2 dropdown" id="dropdownUser1">
-				<a data-target="{{ url('/products/prebuilds') }}" target="_self" href="{{ url('/products/prebuilds') }}" class="text-center text-decoration-none d-block py-2 p-3">
-					<h6 class="text-{{ $theme == 'light' ? 'dark' : 'light' }} p-2 my-2 rounded-pill">
+			<div class="dropdown" id="dropdownUser1">
+				<a data-target="#" target="_self" href="#" class="text-center text-decoration-none d-block d-flex justify-content-center flex-column h-100">
+					<h6 class="text-{{ $theme == 'light' ? 'dark' : 'light' }} rounded-pill m-0">
 						Computers
 					</h6>
 				</a>
@@ -111,8 +111,9 @@
 		<div class="w-25"></div>
 
 		<div class="col-sm-2 my-4" id="searchbar">
-			<form method="POST" action="{{ route('search')}}">
-				<input type="text" id="fname" name="fname" placeholder="Search"><br>
+			<form method="POST" action="{{ route('search.games')}}">
+				@csrf
+				<input type="text" class="form-control" id="fname" name="fname" placeholder="Search">
 			</form>
 		</div>
 

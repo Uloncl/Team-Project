@@ -26,13 +26,27 @@
             </div>
         </div>
 
-        <div class="row my-5">
-            @for ($i = 1; $i
-            < 13; $i++) <x-product />
-            @if ($i % 4 == 0)
+        <div class="row">
+            <hr class="my-3 solid">
+            <a class="text-dark text-decoration-none" href="{{ url('/products/games') }}">
+                <h4 class="text-dark text-decoration-none">
+                    Featured Games
+                </h4>
+            </a>
+            @forelse ($products as $product)
+            <x-card-hori-product class="product" :product="$product" :orientation="$orientation" :category="$category" />
+            @if ($loop->iteration % 5 == 0)
             <div class="w-100"></div>
             @endif
-            @endfor
+            @empty
+            why is there nothing wtf
+            @endforelse
+            <a class="text-decoration-none d-flex flex-row justify-content-end" href="{{ url('/products/games') }}">
+                <h4 class="text-dark text-right">
+                    See More Games >
+                </h4>
+            </a>
+            <hr class="my-3 mb-5 solid">
         </div>
     </div>
 </x-app>
