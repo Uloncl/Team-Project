@@ -25,13 +25,14 @@ Route::post('/wishlist/add', [WishlistController::class, 'add']);
 Route::post('/wishlist/remove', [WishlistController::class, 'remove']);
 
 Route::controller(PagesController::class)->group(function () {
-    Route::get('/',                   'home')       ->name("home");
-    Route::get('about',               'about')      ->name("about");
-    Route::get('aboutnew',               'aboutnew')      ->name("aboutnew");
-    Route::get('profile',             'profile')    ->name("profile");
-	Route::get('privacy',             'privacy')    ->name("page.privacy");
-    Route::get('settings',            'settings')   ->name("settings");
-    Route::get('saved',               'saved')      ->name("saved");
+    Route::get('/',                   'home')->name("home");
+    Route::get('about',               'about')->name("about");
+    Route::get('aboutnew',               'aboutnew')->name("aboutnew");
+    Route::get('profile',             'profile')->name("profile");
+    Route::get('privacy',             'privacy')->name("page.privacy");
+    Route::get('settings',            'settings')->name("settings");
+    Route::get('help',               'help')->name("help");
+    Route::get('saved',               'saved')->name("saved");
     Route::get('/products/{category}/{orientation?}', 'products')->name("products");
     Route::get('/product/{category}/{product_id}', 'product')->name("product");
 });

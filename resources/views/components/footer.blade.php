@@ -59,7 +59,7 @@
                             height: 2px;
                         " />
                     <p>
-                        <a href="about" class="text-black  text-decoration-none" style="color: black">About</a>
+                        <a href="aboutnew" class="text-black  text-decoration-none" style="color: black">About</a>
                     </p>
                     <p>
                         <a href="privacy" class="text-black  text-decoration-none" style="color: black">Privacy policy</a>
