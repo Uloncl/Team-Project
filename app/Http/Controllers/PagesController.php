@@ -48,6 +48,10 @@ class PagesController extends Controller
 	public function about(){
 		return view('about');
 	}
+	public function aboutnew()
+	{
+		return view('aboutnew');
+	}
 
 
 	public function privacy(){
