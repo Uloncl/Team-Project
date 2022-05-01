@@ -84,6 +84,11 @@
                 <div class="mb-3">
                     <div class="card shadow h-100">
                         <img class="card-img-top" src="{{ $product->header_image->full }}" alt="Card image cap">
+                        @if(
+                            isset($product->short_about) ||
+                            isset($product->developer->name) ||
+                            isset($product->publisher->name)
+                            )
                         <div class="card-body">
                             <p class="card-text">{{ $product->short_about }}</p>
                             <div class="row">
@@ -106,9 +111,18 @@
                                 @endif
                             </div>
                         </div>
+                        @endif
                     </div>
                 </div>
-
+                
+                
+                @if(
+                    isset($product->release_date) ||
+                    (isset($product->genres) &&
+                    !$product->tag_categories->empty()) ||
+                    (isset($product->tag_categories) &&
+                    !$product->genres->empty())
+                    )
                 <div class="mb-3">
                     <div class="card shadow h-100">
                         <div class="card-body">
@@ -135,8 +149,8 @@
                                 </div>
                                 @endif
                                 @endif
+                                @if(isset($product->tag_categories) && !$product->tag_categories->empty())
                                 <hr class="my-3 solid">
-                                @if(isset($product->tag_categories))
                                 <div class="d-flex flex-row justify-content-between">
                                     <div class="w-100 text-left">
                                         <ul class="list-group list-group-flush">
@@ -147,8 +161,8 @@
                                     </div>
                                 </div>
                                 @endif
+                                @if(isset($product->genres) && !$product->genres->empty())
                                 <hr class="my-3 solid">
-                                @if(isset($product->genres))
                                 <div class="d-flex flex-row justify-content-between">
                                     <div>
                                         Genres:
@@ -165,6 +179,7 @@
                         </div>
                     </div>
                 </div>
+                @endif
 
                 @if($product->children != [])
                 <div class="mb-3">
