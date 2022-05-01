@@ -20,6 +20,10 @@ class PagesController extends Controller
 	{
 		return view('about');
 	}
+	public function aboutnew()
+	{
+		return view('aboutnew');
+	}
 
 	public function privacy() {
 		return view('privacy');
