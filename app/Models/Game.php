@@ -26,33 +26,40 @@ class Game extends Model
         'gog_id',
         'epic_id',
         'type',
-        'title'
+        'banned',
+        'title',
+        'parent_game_id',
+        'description',
+        'about',
+        'short_about',
+        'languages',
+        'notes',
+        'release_date',
+        'release_date_f',
+        'coming_soon',
+        'steam_url',
+        'gog_url',
+        'epic_url',
+        'metacritic',
+        'metacritic_url',
+        'recommendations',
+        'is_free',
+        'current_steam_price',
+        'current_gog_price',
+        'current_epic_price',
+        'best_price',
+        'best_store',
+        'windows',
+        'pc_recommended',
+        'pc_minimum',
+        'linux',
+        'linux_recommended',
+        'linux_minimum',
+        'mac',
+        'mac_recommended',
+        'mac_minimum',
     ];
-    
-    /**
-     * Get the details for this game
-     */
-    public function details()
-    {
-        return $this->hasOne(Game_Detail::class);
-    }
-    
-    /**
-     * Get the pricing for this game
-     */
-    public function pricing()
-    {
-        return $this->hasOne(Game_Pricing::class);
-    }
-    
-    /**
-     * Get the requirements for this game
-     */
-    public function requirements()
-    {
-        return $this->hasOne(Game_Requirement::class);
-    }
-    
+
     /**
      * Get the videos for this game
      */
@@ -60,7 +67,7 @@ class Game extends Model
     {
         return $this->hasMany(Game_Videos::class);
     }
-    
+
     /**
      * Get the images for this game
      */
@@ -68,81 +75,59 @@ class Game extends Model
     {
         return $this->hasMany(Game_Images::class);
     }
-    
+
     /**
      * Get the credits for this game
      */
     public function credits()
     {
-        return $this->hasMany(Game_Credits_Mapping::class);
+        return $this->hasManyThrough(
+            Game_Credits_Definition::class,
+            Game_Credits_Mapping::class,
+            'credit_id', //mapping credit_id
+            'id',        //credit id on credit definitions table
+            'id',        //game id on games table
+            'game_id'    //mapping game_id
+        );
     }
-    
+
     /**
      * Get the tags for this game
      */
     public function tags()
     {
-        return $this->hasMany(Game_Tags_Mappings::class);
+        return $this->hasManyThrough(
+            Game_Tags_Definition::class,
+            Game_Tags_Mapping::class,
+            'tag_id',
+            'id',
+            'id',
+            'game_id'
+        );
     }
-}
-
-class Game_Detail extends Model
-{
-    use HasFactory;
 
     /**
-     * The table associated with the model.
-     *
-     * @var string
+     * Get the credit mappings for this game
      */
-    protected $table = 'game_details';
-    
-    /**
-     * Get the game for trhese details
-     */
-    public function game()
+    public function credits_mappings()
     {
-        return $this->hasOne(Game::class);
+        return $this->hasMany(
+            Game_Credits_Mapping::class,
+            'game_id',   //mapping game_id
+            'id'         //game id on games table
+        );
     }
-}
-
-class Game_Pricing extends Model
-{
-    use HasFactory;
 
     /**
-     * The table associated with the model.
-     *
-     * @var string
+     * Get the tag mappings for this game
      */
-    protected $table = 'game_pricing';
-    
-    /**
-     * Get the game for this pricing
-     */
-    public function game()
+    public function tags_mappings()
     {
-        return $this->hasOne(Game::class);
-    }
-}
-
-class Game_Requirement extends Model
-{
-    use HasFactory;
-
-    /**
-     * The table associated with the model.
-     *
-     * @var string
-     */
-    protected $table = 'game_requirements';
-    
-    /**
-     * Get the game for these requirements
-     */
-    public function game()
-    {
-        return $this->hasOne(Game::class);
+        return $this->hasMany(
+            Game_Tags_Mapping::class,
+            'game_id',
+            'id'
+        );
     }
 }
 
@@ -156,11 +141,12 @@ class Game_Videos extends Model
      * @var string
      */
     protected $table = 'game_videos';
-    
+
     /**
      * the game that uses this video
      */
-    public function game() {
+    public function game()
+    {
         return $this->belongsTo(Game::class);
     }
 }
@@ -175,12 +161,67 @@ class Game_Images extends Model
      * @var string
      */
     protected $table = 'game_images';
-    
+
     /**
      * the the game that uses this image
      */
-    public function game() {
+    public function game()
+    {
         return $this->belongsTo(Game::class);
+    }
+}
+
+class Game_Credits_Definition extends Model
+{
+    use HasFactory;
+
+    /**
+     * The table associated with the model.
+     *
+     * @var string
+     */
+    protected $table = 'game_credits_definitions';
+
+    /**
+     * the games that reference this tag
+     */
+    public function games()
+    {
+        return $this->hasManyThrough(
+            Game::class,
+            Game_Credits_Mapping::class,
+            'game_id',
+            'id',
+            'id',
+            'credit_id'
+        );
+    }
+}
+
+class Game_Tags_Definition extends Model
+{
+    use HasFactory;
+
+    /**
+     * The table associated with the model.
+     *
+     * @var string
+     */
+    protected $table = 'game_tags_definitions';
+
+    /**
+     * the games that reference this tag
+     */
+    public function games()
+    {
+        return $this->hasManyThrough(
+            Game::class,
+            Game_Tags_Mappings::class,
+            'game_id',
+            'id',
+            'id',
+            'tag_id'
+        );
     }
 }
 
@@ -194,42 +235,23 @@ class Game_Credits_Mapping extends Model
      * @var string
      */
     protected $table = 'game_credits_mappings';
-    
+
     /**
-     * the credit definitions for this game
+     * the credits that reference this mapping
      */
     public function credits() {
-        return $this->hasMany(Game_Credits_Definitions::class);
+        return $this->belongsTo(Game_Credits_Definition::class);
     }
-    
+
     /**
-     * the games for this credit
+     * the games that reference this mapping
      */
-    public function game() {
-        return $this->hasMany(Game::class);
+    public function games() {
+        return $this->belongsTo(Game::class);
     }
 }
 
-class Game_Credits_Definitions extends Model
-{
-    use HasFactory;
-
-    /**
-     * The table associated with the model.
-     *
-     * @var string
-     */
-    protected $table = 'game_credits_definitions';
-    
-    /**
-     * the credit mappings that reference this tag
-     */
-    public function credits() {
-        return $this->belongsToMany(Game_Credits_Mapping::class, 'game_credits_mappings', 'id', 'credit_id');
-    }
-}
-
-class Game_Tags_Mappings extends Model
+class Game_Tags_Mapping extends Model
 {
     use HasFactory;
 
@@ -239,37 +261,18 @@ class Game_Tags_Mappings extends Model
      * @var string
      */
     protected $table = 'game_tags_mappings';
-    
-    /**
-     * the tag definitions for this game
-     */
-    public function tags() {
-        return $this->hasMany(Game_Tags_Definitions::class);
-    }
-    
-    /**
-     * the games for this tag
-     */
-    public function game() {
-        return $this->hasMany(Game::class);
-    }
-}
-
-class Game_Tags_Definitions extends Model
-{
-    use HasFactory;
 
     /**
-     * The table associated with the model.
-     *
-     * @var string
-     */
-    protected $table = 'game_tags_definitions';
-    
-    /**
-     * the tag mappings that reference this tag
+     * the tags that reference this mapping
      */
     public function tags() {
-        return $this->belongsToMany(Game_Tags_Mappings::class, 'game_tags_mappings', 'id', 'tag_id');
+        return $this->belongsTo(Game_Tags_Definition::class);
+    }
+
+    /**
+     * the games that reference this mapping
+     */
+    public function games() {
+        return $this->belongsTo(Game::class);
     }
 }

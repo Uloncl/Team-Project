@@ -1,4 +1,4 @@
-<script>
+<!--<script>
 	var prevScrollpos = window.pageYOffset;
 	window.onscroll = function() {
 		var currentScrollPos = window.pageYOffset;
@@ -40,92 +40,98 @@
 		var expires = "expires=" + d.toUTCString();
 		document.cookie = name + "=" + value + ";" + expires + ";path=/";
 	}
-</script>
+</script> -->
 
 <header id="navbar" class="navbar navbar-expand-md bg-{{ $theme == 'light' ? 'light' : 'navy' }} site-header sticky-top text-dark shadow">
 	<div class="row mx-5 w-100">
-		<div class="col-sm-1 text-center">
-			<a href="/" class="text-decoration-none">
-				<h2 class="my-3 text-sahara fst-italic">Sahara</h2>
+		<div class="col-sm-1 d-flex flex-column justify-content-center">
+			<a href="/" class="d-block text-decoration-none">
+				<h2 class="text-center text-sahara fst-italic">Sahara</h2>
 			</a>
 		</div>
 
-		<div class="col row my-1">
+		<div class="col d-flex justify-content-around">
 
-			<div class="col-sm-2 dropdown" id="dropdownUser1">
-				<a data-target="{{ url('/products/games') }}" target="_self" href="{{ url('/products/games') }}" class="text-center text-decoration-none d-block py-2 p-3">
-					<h6 class="text-{{ $theme == 'light' ? 'dark' : 'light' }} p-2 my-2 rounded-pill">
+			<div class="dropdown" id="dropdownUser1">
+				<a data-target="{{ url('/products/games') }}" target="_self" href="{{ url('/products/games') }}" class="text-center text-decoration-none d-block d-flex justify-content-center flex-column h-100">
+					<h6 class="text-{{ $theme == 'light' ? 'dark' : 'light' }} rounded-pill m-0">
 						Games
 					</h6>
 				</a>
 				<ul class="dropdown-menu text-small border-0 bg-{{ $theme == 'light' ? 'light' : 'navy' }} shadow">
-					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="{{ url('/products/games') }}">PC</a></li>
-					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="{{ url('/products/games') }}">Consoles</a></li>
+					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">PC</a></li>
+					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">Consoles</a></li>
 				</ul>
 			</div>
 
-			<div class="col-sm-2 dropdown" id="dropdownUser1">
-				<a data-target="{{ url('/products/components') }}" target="_self" href="{{ url('/products/components') }}" class="text-center text-decoration-none d-block py-2 p-3">
-					<h6 class="text-{{ $theme == 'light' ? 'dark' : 'light' }} p-2 my-2 rounded-pill">
+			<div class="dropdown" id="dropdownUser1">
+				<a data-target="#" target="_self" href="#" class="text-center text-decoration-none d-block d-flex justify-content-center flex-column h-100">
+					<h6 class="text-{{ $theme == 'light' ? 'dark' : 'light' }} rounded-pill m-0">
 						Components
 					</h6>
 				</a>
 				<ul class="dropdown-menu text-small border-0 bg-{{ $theme == 'light' ? 'light' : 'navy' }} shadow">
 					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">CPU</a></li>
-					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">RAM</a></li>
-					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">Video Cards</a></li>
 					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">CPU Cooler</a></li>
+					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">RAM</a></li>
+					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">Graphics card</a></li>
 					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">Case</a></li>
 					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">Power Supply</a></li>
 				</ul>
 			</div>
 
-			<div class="col-sm-2 dropdown" id="dropdownUser1">
-				<a data-target="{{ url('/products/consoles') }}" target="_self" href="{{ url('/products/consoles') }}" class="text-center text-decoration-none d-block py-2 p-3">
-					<h6 class="text-{{ $theme == 'light' ? 'dark' : 'light' }} p-2 my-2 rounded-pill">
+			<div class="dropdown" id="dropdownUser1">
+				<a data-target="#" target="_self" href="#" class="text-center text-decoration-none d-block d-flex justify-content-center flex-column h-100">
+					<h6 class="text-{{ $theme == 'light' ? 'dark' : 'light' }} rounded-pill m-0">
 						Consoles
 					</h6>
 				</a>
 				<ul class="dropdown-menu text-small border-0 bg-{{ $theme == 'light' ? 'light' : 'navy' }} shadow">
-					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">Xbox's</a></li>
-					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">Playstations</a></li>
+					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">PlayStation</a></li>
+					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">Xbox</a></li>
 					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">Nintendo</a></li>
 				</ul>
 			</div>
 
-			<div class="col-sm-2 dropdown" id="dropdownUser1">
-				<a data-target="{{ url('/products/prebuilds') }}" target="_self" href="{{ url('/products/prebuilds') }}" class="text-center text-decoration-none d-block py-2 p-3">
-					<h6 class="text-{{ $theme == 'light' ? 'dark' : 'light' }} p-2 my-2 rounded-pill">
+			<div class="dropdown" id="dropdownUser1">
+				<a data-target="#" target="_self" href="#" class="text-center text-decoration-none d-block d-flex justify-content-center flex-column h-100">
+					<h6 class="text-{{ $theme == 'light' ? 'dark' : 'light' }} rounded-pill m-0">
 						Computers
 					</h6>
 				</a>
 				<ul class="dropdown-menu text-small border-0 bg-{{ $theme == 'light' ? 'light' : 'navy' }} shadow">
 					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">High end</a></li>
-					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">Middle</a></li>
-					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">Low end</a></li>
+					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">Compact and tiny</a></li>
+					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">Budget builds</a></li>
+					<li><a class="dropdown-item text-{{ $theme == 'light' ? 'dark' : 'light' }}" href="#">Workstation PCs</a></li>
 				</ul>
 			</div>
-			
+
 		</div>
 
 		<div class="w-25"></div>
 
 		<div class="col-sm-2 my-4" id="searchbar">
-			<form method="POST" action="{{ route('search')}}">
-				<input type="text" id="fname" name="fname" placeholder="Search"><br>
+			<form method="POST" action="{{ route('search.games')}}">
+				@csrf
+				<input type="text" class="form-control" id="fname" name="fname" placeholder="Search">
 			</form>
 		</div>
 
 
-		<!-- LIGHT BUTTON
-		
+		<!-- LIGHT BUTTON -->
+
+		<!--<i id="theme-toggle" class="icon-{{ $theme == 'dark' ? 'sun' : 'moon' }}"></i>
+
+		<body class="{{ $theme . '-theme' }}">
+
 			<div class="col-1 d-flex">
-			<div id="theme-toggle" class="my-3 justify-content-end btn btn-sahara">
-				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="{{ $theme == 'light' ? 'black' : 'white' }}" class="align-middle bi bi-{{ $theme == 'light' ? 'sun' : 'moon' }}-fill" viewBox="0 0 16 16">
-					<path fill-rule="evenodd" d="{{ $theme == 'light' ? 'M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z' : 'M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z' }}"/>
-				</svg>
-			</div>
-		</div>-->
+				<div id="theme-toggle" class="my-3 justify-content-end btn btn-sahara">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="{{ $theme == 'light' ? 'black' : 'white' }}" class="align-middle bi bi-{{ $theme == 'light' ? 'sun' : 'moon' }}-fill" viewBox="0 0 16 16">
+						<path fill-rule="evenodd" d="{{ $theme == 'light' ? 'M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z' : 'M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z' }}" />
+					</svg>
+				</div>
+			</div> -->
 
 		@auth
 

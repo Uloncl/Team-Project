@@ -35,16 +35,16 @@
                             height: 2px;
                         " />
                     <p>
-                        <a href="#!" class="text-black text-decoration-none" style="color: black">Games</a>
+                        <a href="#!" class="text-decoration-none" style="color: black">Games</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-black text-decoration-none" style="color: black">Components</a>
+                        <a href="#!" class="text-decoration-none" style="color: black">Components</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-black text-decoration-none" style="color: black">Consoles</a>
+                        <a href="#!" class="text-decoration-none" style="color: black">Consoles</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-black text-decoration-none" style="color: black">Computers</a>
+                        <a href="#!" class="text-decoration-none" style="color: black">Computers</a>
                     </p>
                 </div>
                 <!-- Grid column -->
@@ -59,13 +59,13 @@
                             height: 2px;
                         " />
                     <p>
-                        <a href="about" class="text-black  text-decoration-none" style="color: black">About</a>
+                        <a href="{{ route('about')}}" class="text-dark text-decoration-none" style="color: black">About us</a>
                     </p>
                     <p>
-                        <a href="privacy" class="text-black  text-decoration-none" style="color: black">Privacy policy</a>
+                        <a href="{{ route('privacy')}}" class="text-dark text-decoration-none" style="color: black">Privacy policy</a>
                     </p>
                     <p>
-                        <a href="help" class="text-black  text-decoration-none" style="color: black">Contact us</a>
+                        <a href="help" class="text-dark text-decoration-none" style="color: black">Customer care</a>
                     </p>
                 </div>
                 <!-- Grid column -->
