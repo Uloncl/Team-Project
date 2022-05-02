@@ -27,7 +27,7 @@ Route::post('/wishlist/remove', [WishlistController::class, 'remove']);
 
 Route::controller(PagesController::class)->group(function () {
     Route::get('/',        'home')     ->name("home");
-    Route::get('about',    'aboutnew')    ->name("about");
+    Route::get('about',    'about')    ->name("about");
     Route::get('profile',  'profile')  ->name("profile");
 	Route::get('privacy',  'privacy')  ->name("privacy");
     Route::get('settings', 'settings') ->name("settings");
