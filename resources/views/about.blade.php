@@ -241,14 +241,14 @@
                                 </p>
                                 <div class="row">
                                     <div class="col text-center">
-                                        <a
-                                            href="#"
-                                        >
-                                            <i
-                                                style="font-size: 1.8rem"
+                                        <a 
+                                            href="#" 
+                                        > 
+                                            <i 
+                                                style="font-size: 1.8rem" 
                                                 class="m-1 bi bi-facebook"
-                                            ></i>
-                                        </a>
+                                            ></i> 
+                                        </a> 
                                     </div>
                                     <div class="col text-center">
                                         <a href="https://github.com/Ben-Miles2601">
