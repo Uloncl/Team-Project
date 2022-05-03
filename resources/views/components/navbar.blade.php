@@ -112,9 +112,8 @@
 		<div class="w-25"></div>
 
 		<div class="col-sm-2 my-4" id="searchbar">
-			<form method="POST" action="{{ route('search.games')}}">
-				@csrf
-				<input type="text" class="form-control" id="fname" name="fname" placeholder="Search">
+			<form method="GET" action="{{ url('/search/games') }}">
+				<input type="text" class="form-control" id="fname" name="query" placeholder="Search">
 			</form>
 		</div>
 

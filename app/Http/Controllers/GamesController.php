@@ -118,10 +118,9 @@ class GamesController extends Controller
             'category' => 'games'
         ]);
     }
-    public function search(Request $request)
+    public function search($query)
     {
-        $query = $request->fname;
-
+        dd($query);
         $pre_products = Game::query()
             ->where('banned', false)->where('type', 'game')
             ->where('title', 'like', '%' . $query . '%')
