@@ -1,4 +1,4 @@
-<div class="col my-3">
+<div class="m-3" style="width: 22%">
     <div class="card h-100">
         <a href="{{ url('/product', [$category, $product->id]) }}">
             <img class="card-img-top w-100" src="{{ $product->header_image }}" alt="{{ $product->title }}">

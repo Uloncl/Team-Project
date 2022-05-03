@@ -16,7 +16,7 @@
 		
 		<script src="https://kit.fontawesome.com/3b3d7324d5.js" crossorigin="anonymous"></script>
 	</head>
-	<body class="bg-light" style="overflow-x:hidden; min-width: 1880px; width: auto;">
+	<body class="bg-light">
 		<div id="app">
 			<x-navbar/>
 			{{ $slot }}

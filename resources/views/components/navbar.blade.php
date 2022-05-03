@@ -1,4 +1,4 @@
-<!--<script>
+<script>
 	var prevScrollpos = window.pageYOffset;
 	window.onscroll = function() {
 		var currentScrollPos = window.pageYOffset;
@@ -40,7 +40,7 @@
 		var expires = "expires=" + d.toUTCString();
 		document.cookie = name + "=" + value + ";" + expires + ";path=/";
 	}
-</script> -->
+</script>
 
 <header id="navbar" class="navbar navbar-expand-md bg-{{ $theme == 'light' ? 'light' : 'navy' }} site-header sticky-top text-dark shadow">
 	<div class="row mx-5 w-100">
