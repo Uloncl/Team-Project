@@ -38,7 +38,7 @@ Route::controller(PagesController::class)->group(function () {
 Route::controller(GamesController::class)->group(function () {
     Route::get('/products/games/{orientation?}',    'games') ->name("games");
     Route::get('/product/games/{product_id}',       'game')  ->name("game");
-    Route::post('/search/games',                    'search')->name('search.games');
+    Route::get('/search/games/',                    'search')->name('search.games');
 });
 
 Route::get('/register',             [RegisterController::class, 'create'])->middleware('guest');

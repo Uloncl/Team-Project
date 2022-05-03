@@ -14,13 +14,10 @@
 				</div>
 			</div>
 
-			<div class="row">	
+			<div class="d-flex flex-md-wrap">	
 			@if ($orientation == "horizontal")
 				@forelse ($products as $product)
 					<x-card-hori-product class="product" :product="$product" :orientation="$orientation" :category="$category"/>
-					@if ($loop->iteration % 5 == 0)
-						<div class="w-100"></div>
-					@endif
 				@empty
 					why is there nothing wtf
 				@endforelse

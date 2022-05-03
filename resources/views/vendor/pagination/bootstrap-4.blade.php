@@ -1,5 +1,5 @@
 @if ($paginator->hasPages())
-<nav class="my-3 d-flex justify-content-between">
+<nav class="my-3 d-flex justify-content-between w-100">
     <p class="my-auto">
         {!! __('Showing') !!}
         @if ($paginator->firstItem())

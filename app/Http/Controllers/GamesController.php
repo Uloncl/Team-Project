@@ -120,8 +120,7 @@ class GamesController extends Controller
     }
     public function search(Request $request)
     {
-        $query = $request->fname;
-
+        $query = $request->get('query');
         $pre_products = Game::query()
             ->where('banned', false)->where('type', 'game')
             ->where('title', 'like', '%' . $query . '%')
@@ -144,7 +143,8 @@ class GamesController extends Controller
                         ->orderByRaw('title like ? desc', $query)
                         ->orderByRaw('instr(title,?) asc', $query)
                         ->orderBy('title')
-                        ->paginate(20);
+                        ->paginate(20)
+                        ->withQueryString();
         foreach ($products as $key => $product) {
             $creditIDsObj = DB::table('game_credits_mappings')->where('game_id', $product->id)->get('credit_id');
             $creditIDs = [];
@@ -168,6 +168,7 @@ class GamesController extends Controller
                     ->first();
             }
         }
+        // dd($products);
         return view('products', [
             "category"        => 'games',
             "orientation"   => 'horizontal',
