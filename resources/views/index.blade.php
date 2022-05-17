@@ -35,7 +35,7 @@
             </a>
             @forelse ($products as $product)
             <x-card-hori-product class="product" :product="$product" :orientation="$orientation" :category="$category" />
-            @if ($loop->iteration % 5 == 0)
+            @if ($loop->iteration % 4 == 0)
             <div class="w-100"></div>
             @endif
             @empty
