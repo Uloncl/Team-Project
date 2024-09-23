@@ -16,6 +16,8 @@
 <span>&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
 <a href="#-roadmap">Roadmap</a>
 
+</div>
+
 ## 📝 Introduction
 
 Sahara is a price tracker for video games and PC components, allowing users to browse, filter, and wishlist their favorite items. Built on the Laravel framework, the platform scrapes prices from multiple sources and aims to introduce real-time pricing soon.
